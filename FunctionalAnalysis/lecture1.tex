@@ -1,5 +1,6 @@
 \section{Lecture 1  --- Introduction to Hilbert Spaces and some examples --- 9th January, 2023}
 
+\subsection{Inner Product Spaces}
 \begin{definition}[Inner Product]
     Let $V$ be a vector space over a field $\mathbb F$ (where $\mathbb F$ is $\R$ or $\C$). A function $\langle \cdot , \cdot \rangle : V \times V \to \mathbb F$ is called an \textit{inner product} if it satisfies the following properties
     \begin{enumerate}
@@ -44,3 +45,46 @@ We define an inner product on this vector space by
     We call this function \textit{norm induced by the inner product}. This norm is indeed a norm as one can check!
     \label{def:norm-induced-by-ip}
 \end{definition}
+
+The proof of the following theorems are skipped:
+\begin{theorem}[Cauchy Schwarz inequality]
+    Let $V$ be an inner product space, $x,y \in V$. Then we have that 
+    \begin{equation*}
+	\lvert \ip{x,y} \le \norm{x}\norm{y}
+    \end{equation*}
+    \label{thm:CS-inequality}
+\end{theorem}
+
+\begin{theorem}[Triangle Inequality]
+    Let $V$ be an inner product space, $x,y \in V$. Then we have that 
+    \begin{equation*}
+	\norm{x+y} \le \norm{x} + \norm{y}
+    \end{equation*}
+    \label{thm:triangle-inequality}
+\end{theorem}
+
+\subsection{Hilbert Spaces}
+\begin{definition}
+    Let $V$ be an inner product space. One can consider $V$ as a metric space by defining the following metric $d$:
+    \begin{equation*}
+	d(v,w) = \norm{v-w}
+    \end{equation*}
+    for all $v,w \in V$. Then $(V,d)$ is a metric space \textcolor{red}{(Check!)}. We say that $V$ is a \textit{Hilbert Space} if $(V,d)$ is a complete metric space.
+    \label{def:Hilbert-Space}
+\end{definition}
+
+\begin{example} We consider some examples and not-so-example of Hilbert Space:
+\begin{enumerate}
+    \item $\R ^{n}$ and $\C ^{n}$ with the standard inner product are complete!
+    \item $\ell ^{2} (\N )$ is complete.
+    \item $L^2(X)$ is complete where $(X, \mathscr A , \mu)$ is a measure space.
+    \item $\mathcal {C} [0,1]$ is not complete. \textcolor{blue}{(Needs Baire Category Theorem!)}
+    \item Consider$c_{00} = \left\{ \left( x_{n} \right)_{n\in \N} \in \ell ^{2} (\N) \, : \, \left( x_{n} \right) _{n \in \N} \text{ is eventually zero} \right\}$. $c_{00}$ has the induced inner product. We show that $c_{00}$ with this induced product is not complete!
+	One consider the sequence of sequences given by
+	\begin{equation*}
+	    f_{n} = \left( 1, \frac{1}{2} , \ldots , \frac{1}{n} , \ldots \right)
+	\end{equation*}
+	One can then easily show that $\left( f_n \right)$ is Cauchy but it does not converge in $c_{00}$.
+\end{enumerate}
+    
+\end{example}

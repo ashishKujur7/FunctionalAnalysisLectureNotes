@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  9 JAN 2023 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  10 JAN 2023 09:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -982,51 +982,64 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 226.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 226.
- (./main.toc)
+ (./main.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 2.
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
-(./lecture1.tex
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 4.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 4.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 4.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 4.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 4.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 4.
- [1
+(./ref.tex) (./lecture1.tex [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
-[2] (./main.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]) (./lecture2.tex)
+Runaway argument?
+{Lecture 2 --- \textit {insert title here!} --- 11th January, 2023 \par \ETC.
+./main.tex:232: File ended while scanning use of \@xdblarg.
+<inserted text> 
+                \par 
+l.232 \input{lecture2.tex}
+                          
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+[4] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9A63AB31B6F3ADAE57B98B4824A127F5;488.
+(rerunfilecheck)             Checksum: F5B606CC8F197D1C914BDB9BC9BDADBA;781.
  ) 
 Here is how much of TeX's memory you used:
- 23525 strings out of 474971
- 444766 string characters out of 5778663
- 766461 words of memory out of 5000000
- 44559 multiletter control sequences out of 15000+600000
- 543068 words of font info for 112 fonts, out of 8000000 for 9000
+ 23560 strings out of 474971
+ 445176 string characters out of 5778663
+ 765604 words of memory out of 5000000
+ 44569 multiletter control sequences out of 15000+600000
+ 547598 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,6n,118p,527b,678s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,6n,118p,527b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/ut
-opia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (2 pages, 73628 bytes).
+f-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/a
+dobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/
+putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (4 pages, 84585 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 35 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
