@@ -1,0 +1,46 @@
+\section{Lecture 1  --- Introduction to Hilbert Spaces and some examples --- 9th January, 2023}
+
+\begin{definition}[Inner Product]
+    Let $V$ be a vector space over a field $\mathbb F$ (where $\mathbb F$ is $\R$ or $\C$). A function $\langle \cdot , \cdot \rangle : V \times V \to \mathbb F$ is called an \textit{inner product} if it satisfies the following properties
+    \begin{enumerate}
+	\item $\ip{x, x} \ge 0$
+	\item $\ip{x+y, z} = \ip{x, z} + \ip{y, z}$
+	\item $\ip{\alpha x, y} = \alpha \ip{x, y}$
+	\item $\ip{x, y} = \overline{\ip{y, x}}$
+    \end{enumerate}
+    for all $x,y,z \in V$ and $\alpha \in \F$. A vector space $V$ with an inner product is called an \textit{inner product space}.
+    \label{def:inner-product}
+\end{definition}
+
+\begin{example}[Examples of inner product spaces]
+    Here are some examples of inner product spaces:
+    \begin{enumerate}
+	\item The obvious first example is that of $\R ^{n}$ with the standard $2$-inner product given by
+	    \begin{equation*}
+		\ip {x,y} = \sum_{i=1}^{n} x_{i} \overline{y_{i}}
+	    \end{equation*}
+
+	\item One can then consider the space $\ell ^{2} \left( \N \right)$ which is the vector space of all square summable sequences on $\C$. That is,
+	    \begin{equation*}
+		\ell ^{\infty} = \left\{ \left( x_{n} \right) \in \C ^{\N} \, \mid \, \sum_{i\in \N} |a_i|^{2} < \infty \right\} \end{equation*}
+We define an inner product on this vector space by 
+ \begin{equation*}
+		\ip {x,y} = \sum_{i=1}^{\infty} x_{i} \overline{y_{i}}
+	    \end{equation*}
+	    One can show using Holder's inequality that the sum turns out to be finite and the "inner product" is indeed an inner product.
+	\item Next, we consider the vector space of all polynomials over $\C$ which we denote by $\C \left[ x \right]$. If $p , q \in \C [x]$, we define an inner product on $\C \left[ x \right]$ by 
+	    \begin{equation*}
+		\ip{p,q} = \int_{0}^{1} p\overline q \, \mathrm{dx}
+	    \end{equation*}
+	\item One can define inner products on $C[0,1]$ and $L^{2} (X, \mathscr A , \mu)$ in an similar fashion as in item 3. Note that $\left( X, \mathscr A, \mu \right)$ is a measure space.
+    \end{enumerate}
+\end{example}
+
+\begin{definition}
+    Let $V$ be an inner product space. We can define a function $\norm{\cdot} : V \to \R _{\ge 0}$ by
+    \begin{equation*}
+	\norm{x} = \sqrt{\ip{x,x}}
+    \end{equation*}
+    We call this function \textit{norm induced by the inner product}. This norm is indeed a norm as one can check!
+    \label{def:norm-induced-by-ip}
+\end{definition}
