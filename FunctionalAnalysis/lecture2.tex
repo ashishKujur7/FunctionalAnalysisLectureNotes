@@ -35,7 +35,7 @@ Let $S$ be a closed convex set in a Hilbert space $H.$ Let $x\in H.$ The distanc
 \begin{align*}
 d(x,S)= \inf\{ \|x-y\|: y\in S\}.
 \end{align*} 
-It turns out that there exist a unique $s_0\in S$ such that $d(x,S)= \|x-s_0\|.$
+It follows that there exist a unique $s_0\in S$ such that $d(x,S)= \|x-s_0\|.$
     \label{thm:closed-and-convex}
 \end{theorem}
 \begin{proof}
@@ -58,16 +58,16 @@ It turns out that there exist a unique $s_0\in S$ such that $d(x,S)= \|x-s_0\|.$
      \end{align}
      Now since $d\left( s_n ,x \right)$ converges to $\delta$, we must have that $d \left( s_{n} , x \right)^{2}$ converges to $\delta ^{2}$ and hence there is some $K\in \N$ such that for all $i\ge K$, 
      \begin{equation*}
-	 \norm{x-s_{i}}^{2} < \delta^{2} + \frac{\varepsilon}{4} 
+	 \norm{x-s_{i}}^{2} < \delta^{2} + \frac{\varepsilon ^2}{4} 
      \end{equation*}
      Now for all $n,m \ge K$ and from equation \ref{eqn:2.1.1}, we have that 
 \begin{align*}
     \norm{s_m - s_n}^{2} &= 2 \left( \norm{x-s_{n}}^{2} + \norm{x-s_m}^{2} \right) - \norm{x - \frac{s_n + s_m}{2}}^{2} \\
-	 &\stackrel{(!)}{<} 2 \cdot 2\left( \delta ^{2} + \frac{\varepsilon}{4} \right)-  4 \delta ^{2} \\
-	 &= \varepsilon
+	 &\stackrel{(!)}{<} 2 \cdot 2\left( \delta ^{2} + \frac{\varepsilon ^2}{4} \right)-  4 \delta ^{2} \\
+	 &= \varepsilon^2
      \end{align*}
      Note that in inequality $(!)$, we made use of the convexity of $S$ to conlude that $\frac{s_n + s_m}{2} \in S$. 
-     This shows that $\left( s_{n} \right)$ is Cauchy. Now, since $H$ is a Hilbert space, $\left( s_{n} \right)$ must converge to some $s_{0} \in H$. Closedness of $S$ allows us to conclude that $s_0$ must be in $S$
+     This shows that $\left( s_{n} \right)$ is Cauchy. Now, since $H$ is a Hilbert space, $\left( s_{n} \right)$ must converge to some $s_{0} \in H$. Closedness of $S$ allows us to conclude that $s_0$ must be in $S.$
 
      Hence, $x -s_{n}$ converges to $x- s_{0}$. By Theorem \ref{thm:norm-is-uc}, we conclude that $\norm{x-s_{n}}$ converges to $\norm{x-s_0}$. Since $\norm{x-s_{n}}$ also converges to $\delta$, we have by uniqueness of limits that $\delta = \norm{x-s_{0}}$.
 
@@ -82,15 +82,16 @@ It turns out that there exist a unique $s_0\in S$ such that $d(x,S)= \|x-s_0\|.$
      Hence, $s_0 = t_0$ and this completes the proof of the theorem.
 \end{proof}
 
-\begin{example}[distance is achieved but the vector may not be unique] Consider the normed linear space $\left( \R ^{2}, \norm{\cdot} _{1} \right)$. Now consider the set $S= \left\{ \left( x_{1} , x_{2} \right) : x_{1} + x_{2} =1 \right\}$.Note that $d \left( (0,0),S \right)=d\left( 0,0 \right), \left( 1,0 \right)) = d\left( \left( 0,0 \right), \left( 0,1 \right) \right)$. Hence, the uniqueness is not guaranteed.
+\begin{example}[distance is achieved but the vector may not be unique] Consider the normed linear space $\left( \R ^{2}, \norm{\cdot} _{1} \right)$. Now consider the subset $S$ of $\R ^2$ given by  $$S= \left\{ \left( x_{1} , x_{2} \right) : x_{1} + x_{2} =1 \right\}.$$ 
+Note that $d \left( (0,0),S \right)=1= d\left( 0,0 \right), \left( 1,0 \right)) = d\left( \left( 0,0 \right), \left( 0,1 \right) \right)$. Hence, the uniqueness is not guaranteed.
 \end{example}
 
 \begin{exercise}
-    Consider the space $\left( C[0,1] \right)$ with the supremum norm. Let $S$ be the set
+    Consider the space $\left( C[0,1] \right)$ with the supremum norm $\| \cdot\|_{\infty},$ that is, $\|f\|_{\infty}= \sup \big\{|f(x)| : x\in[0,1] \big \}.$ Let $S$ be the set
     \begin{equation*}
-	S=\left\{ f \in C[0,1] \, : \, \int_{0}^{1/2} f\left( x \right) dx - \int_{1/2}^{1} f \left( x \right) dx =1 \right\}
+	S=\left\{ f \in C[0,1] \, : \, \int_{0}^{1/2} f\left( x \right) dx - \int_{1/2}^{1} f \left( x \right) dx =1 \right\}.
     \end{equation*}
-    Show that the set $S$ is closed and convex but the distance is never achieved. That is, it is not the case that there is some $f\in S$ such that $\norm{f}_{\infty} = 1 =\sup_{x\in [0,1]} |f(x)|$.
+    Show that the set $S$ is closed and convex but the distance $ d(0,S)=1,$ is never achieved at any point in $S$. That is, it is not the case that there is some $f\in S$ such that $d(0,f)= \norm{f}_{\infty} = 1$.
 \end{exercise}
 \begin{proof}[Solution]
     We begin by showing that $S$ is convex. Let $f, g \in S$ and $t\in [0,1]$. Then we have that 
@@ -192,7 +193,11 @@ into a sum of $Px\in M$ and $Qx\in M^{\perp}.$ Thus $H = M \oplus M^{\perp}.$
 	    \end{align*}
 
 	    and thus, we have that $\abs{\ip{Qx,y}} = 0$. This completes the proof of (a).
-	\item [(b)] By uniqueness of part (a), it follows that $Px$ is the nearest point to $x$ in $M$. It remains to prove that $Qx$ is the nearest point to $x$ in $M^{\perp}$. \textcolor{red}{Needs to be fixed!}
+	\item [(b)] By uniqueness of part (a), it follows that $Px$ is the nearest point to $x$ in $M$. It remains to prove that $Qx$ is the nearest point to $x$ in $M^{\perp}$. Note that $x-Qx=Px\in M.$ Now for any $y\in M^{\perp}$ we have  $Qx-y\in M^{\perp}.$ Thus we get 
+	\begin{align*}
+	\|x-y\|^2= \|(x-Qx) + (Qx -y)\|^2 = \|x-Qx\|^2 + \|Qx -y\|^2 \geqslant \|x-Qx\|^2.
+	\end{align*}
+This shows that $Qx$ is the nearest point to $x$ in $M^{\perp}.$	
 
 	\item [(c)] Let $x_{1}, x_{2} \in M$. By part $(a)$, we have that 
 	    \begin{align*}

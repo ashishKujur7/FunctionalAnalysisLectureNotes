@@ -4,10 +4,11 @@
 \begin{definition}[Inner Product]
     Let $V$ be a vector space over a field $\mathbb F$ (where $\mathbb F$ is $\R$ or $\C$). A function $\langle \cdot , \cdot \rangle : V \times V \to \mathbb F$ is called an \textit{inner product} if it satisfies the following properties
     \begin{enumerate}
-	\item $\ip{x, x} \ge 0$
 	\item $\ip{x+y, z} = \ip{x, z} + \ip{y, z}$
 	\item $\ip{\alpha x, y} = \alpha \ip{x, y}$
 	\item $\ip{x, y} = \overline{\ip{y, x}}$
+	\item $\ip{x, x} \ge 0$ 
+	\item  $\ip{x, x} = 0$ only if $x=0.$
     \end{enumerate}
     for all $x,y,z \in V$ and $\alpha \in \F$. A vector space $V$ with an inner product is called an \textit{inner product space}.
     \label{def:inner-product}
@@ -16,14 +17,14 @@
 \begin{example}[Examples of inner product spaces]
     Here are some examples of inner product spaces:
     \begin{enumerate}
-	\item The obvious first example is that of $\R ^{n}$ with the standard $2$-inner product given by
+	\item The obvious first example is that of $\C ^{n}$ with the standard $2$-inner product given by
 	    \begin{equation*}
 		\ip {x,y} = \sum_{i=1}^{n} x_{i} \overline{y_{i}}
 	    \end{equation*}
 
 	\item One can then consider the space $\ell ^{2} \left( \N \right)$ which is the vector space of all square summable sequences on $\C$. That is,
 	    \begin{equation*}
-		\ell ^{\infty} = \left\{ \left( x_{n} \right) \in \C ^{\N} \, \mid \, \sum_{i\in \N} |a_i|^{2} < \infty \right\} \end{equation*}
+		\ell^{2} \left( \N \right) = \left\{ \left( x_{n} \right) \in \C ^{\N} \, \mid \, \sum_{i\in \N} |x_i|^{2} < \infty \right\} \end{equation*}
 We define an inner product on this vector space by 
  \begin{equation*}
 		\ip {x,y} = \sum_{i=1}^{\infty} x_{i} \overline{y_{i}}
@@ -42,7 +43,7 @@ We define an inner product on this vector space by
     \begin{equation*}
 	\norm{x} = \sqrt{\ip{x,x}}
     \end{equation*}
-    We call this function \textit{norm induced by the inner product}. This norm is indeed a norm as one can check!
+    We call this function \textit{norm induced by the inner product}. ( This norm is indeed a norm as one can check! )
     \label{def:norm-induced-by-ip}
 \end{definition}
 
@@ -78,12 +79,12 @@ The proof of the following theorems are skipped:
     \item $\R ^{n}$ and $\C ^{n}$ with the standard inner product are complete!
     \item $\ell ^{2} (\N )$ is complete.
     \item $L^2(X)$ is complete where $(X, \mathscr A , \mu)$ is a measure space.
-    \item $\mathcal {C} [0,1]$ is not complete. \textcolor{blue}{(Needs Baire Category Theorem!)}
-    \item Consider$c_{00} = \left\{ \left( x_{n} \right)_{n\in \N} \in \ell ^{2} (\N) \, : \, \left( x_{n} \right) _{n \in \N} \text{ is eventually zero} \right\}$. $c_{00}$ has the induced inner product. We show that $c_{00}$ with this induced product is not complete!
+    \item $\mathcal {C} [0,1]$ is not complete w.r.t $L^2[0,1]$ inner product. 
+    \item Consider $c_{00} = \left\{ \left( x_{n} \right)_{n\in \N} \in \ell ^{2} (\N) \, : \, \left( x_{n} \right) _{n \in \N} \text{ is eventually zero} \right\}$. $c_{00}$ has the induced inner product. We show that $c_{00}$ with this induced product is not complete!
 	One consider the sequence of sequences given by
 	\begin{equation*}
-	    f_{n} = \left( 1, \frac{1}{2} , \ldots , \frac{1}{n} , \ldots \right)
+	    f_{n} = \left( 1, \frac{1}{2} , \ldots , \frac{1}{n} , 0,0, \ldots \right)
 	\end{equation*}
-	One can then easily show that $\left( f_n \right)$ is Cauchy but it does not converge in $c_{00}$.
+	One can then easily show that $\left( f_n \right)$ is Cauchy sequence in $c_{00}$ but it does not converge in $c_{00}$.
 \end{enumerate}
 \end{example}

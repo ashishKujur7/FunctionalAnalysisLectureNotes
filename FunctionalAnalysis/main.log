@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.6)  13 JAN 2023 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.6)  14 JAN 2023 01:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,39 +1076,33 @@ futmi/m/it/14.4 s[]$ \T1/futs/m/n/14.4 and $\FML/futmi/m/it/14.4 t[]$ \T1/futs/
 m/n/14.4 as in Equa-tion []Ÿ2.1.1[],
  []
 
-
-Overfull \hbox (63.55675pt too wide) in paragraph at lines 85--86
-\T1/futs/m/n/14.4 sider the normed lin-ear space $[]$. Now con-sider the set $\
-FML/futmi/m/it/14.4 S \FMS/futm/m/n/14.4  []$\T1/futs/m/n/14.4 .Note
- []
-
 [6] [7]
-Overfull \hbox (8.71295pt too wide) in paragraph at lines 152--154
+Overfull \hbox (8.71295pt too wide) in paragraph at lines 153--155
 [][]\T1/futs/b/n/14.4 Theorem Ÿ2.2.4 \T1/futs/m/n/14.4 (Ex-is-tence of an Or-th
 og-o-nal Pro-jec-tion onto a closed sub-spaces)\T1/futs/b/n/14.4 .
  []
 
 
-Overfull \hbox (10.44928pt too wide) in paragraph at lines 168--170
+Overfull \hbox (10.44928pt too wide) in paragraph at lines 169--171
 []\T1/futs/m/n/14.4 Since sub-spaces are con-vex, we can ap-peal to The-o-rem [
 ]Ÿ2.1.1[] as we please.
  []
 
-
-Overfull \hbox (17.25372pt too wide) in paragraph at lines 186--187
+[8]
+Overfull \hbox (17.25372pt too wide) in paragraph at lines 187--188
 []\T1/futs/m/n/14.4 Note that by equa-tion []Ÿ2.2.1[], $\FML/futmi/m/it/14.4 v[
 ]$ \T1/futs/m/n/14.4 and $\FML/futmi/m/it/14.4 v[]$ \T1/futs/m/n/14.4 are or-th
 og-o-nal and hence by Pythago-
  []
 
-[8]) [9] (main.aux)
+[9]) [10] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 77F4A1FC4BC753A99C2ACC5F0CC92052;1359.
  ) 
 Here is how much of TeX's memory you used:
- 24014 strings out of 475281
- 461727 string characters out of 2774065
- 868616 words of memory out of 3000000
+ 24016 strings out of 475281
+ 461741 string characters out of 2774065
+ 870617 words of memory out of 3000000
  44953 multiletter control sequences out of 15000+600000
  575757 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1125,9 +1119,9 @@ Programs/MiKTeX/fonts/type1/adobe/utopia/putbi8a.pfb><C:/Users/Ramiz/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Ramiz/AppData
 /Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><C:/Users/Ramiz/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (9 pages, 142030 bytes).
+Output written on main.pdf (10 pages, 143545 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
