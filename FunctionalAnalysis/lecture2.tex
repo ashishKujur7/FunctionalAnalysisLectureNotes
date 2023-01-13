@@ -1,3 +1,225 @@
-\section{Lecture 2 --- \textit{insert title here!} --- 11th January, 2023
+\section{Lecture 2 --- \textit{Hilbert Spaces!} --- 11th January, 2023}
+The important goal of this lecture is to show that if $H$ is a Hilbert Space then we show that under certain conditions an element can be projected onto a set. But before that, we prove the following theorem:
 
-    new section!
+\begin{theorem}[Norm is uniformly continuous]
+Let $H$ be a Hilbert space. The norm function on $H$, that is,  $\|\cdot\| : H \to \mathbb R$ given by $\|x\|= \sqrt{\langle x,x\rangle},\,\,x\in H,$ is continuous.
+    \label{thm:norm-is-uc}
+\end{theorem}
+\begin{proof}
+    Let $x,y \in H$. Then by the triangle inequality, we have the following:
+    \begin{equation*}
+	\norm{x} = \norm{\left( x-y \right) + y} \le \norm{x-y} + \norm{y}
+    \end{equation*}
+    and hence
+    \begin{equation*}
+	\norm{x} - \norm{y} \le \norm{x-y}
+    \end{equation*}
+
+    Interchanging the role of $x$ and $y$ in the previous inequality, we have htat 
+    \begin{equation*}
+	\norm{y} - \norm{x} \le \norm{x-y}
+    \end{equation*}
+    and thus, we have proved that
+    \begin{equation*}
+	\left\lvert \norm{x} - \norm{y} \right\rvert \le \norm{x-y}
+    \end{equation*}
+    which says that $\norm{\cdot}$ is uniformly continuous.
+\end{proof}
+
+Note that theorem \ref{thm:norm-is-uc} holds for any normed linear space, that is, there is no use of completeness there.
+
+\subsection{Closed and Convex!}
+
+\begin{theorem}
+Let $S$ be a closed convex set in a Hilbert space $H.$ Let $x\in H.$ The distance of $x$ from $S,$ denoted as $d(x,S)$, is given by
+\begin{align*}
+d(x,S)= \inf\{ \|x-y\|: y\in S\}.
+\end{align*} 
+It turns out that there exist a unique $s_0\in S$ such that $d(x,S)= \|x-s_0\|.$
+    \label{thm:closed-and-convex}
+\end{theorem}
+\begin{proof}
+    First of all, recall the parallelogram identity which holds for any innter product spaces, and hence in particular for Hilbert spaces,
+    \begin{equation*}
+	\norm{x+y}^{2} + \norm{x-y}^{2} = 2 \left( \norm{x}^{2} + \norm{y}^{2} \right)
+    \end{equation*}
+    The parallelogram law plays a crucial role in the proof of this theorem.
+    Now, let's get busy to prove the theorem.
+    First of all, by definition of infimum, we can find a sequence $\left( s_{n} \right)$ in $S$ such that $d (s_{n}, x) \to d \left( x,S \right)$. To be economical, let us denote $\delta := d \left( x,S \right)$. We show that $\left( s_n \right)$ is Cauchy sequence in $H$. To do so, let $\varepsilon >0$ be given.
+
+    Observe that for any $n,m \in \mathbb N$,
+    \begin{align*}
+	\norm{\frac{x-s_{n}}{2} - \frac{x-s_m}{2}}^{2} + \norm{\frac{x-s_{n}}{2} + \frac{x-s_m}{2}}^{2} = \frac{1}{2} \left( \norm{x-s_{n}}^{2} + \norm{x-s_m}^{2} \right)
+    \end{align*}
+     and hence
+     \begin{align}
+	 \frac{1}{4} \norm{s_m - s_n}^{2} = \frac{1}{2} \left( \norm{x-s_{n}}^{2} + \norm{x-s_m}^{2} \right) - \frac{1}{4} \norm{x - \frac{s_n + s_m}{2}}^{2}
+	 \label{eqn:2.1.1}
+     \end{align}
+     Now since $d\left( s_n ,x \right)$ converges to $\delta$, we must have that $d \left( s_{n} , x \right)^{2}$ converges to $\delta ^{2}$ and hence there is some $K\in \N$ such that for all $i\ge K$, 
+     \begin{equation*}
+	 \norm{x-s_{i}}^{2} < \delta^{2} + \frac{\varepsilon}{4} 
+     \end{equation*}
+     Now for all $n,m \ge K$ and from equation \ref{eqn:2.1.1}, we have that 
+\begin{align*}
+    \norm{s_m - s_n}^{2} &= 2 \left( \norm{x-s_{n}}^{2} + \norm{x-s_m}^{2} \right) - \norm{x - \frac{s_n + s_m}{2}}^{2} \\
+	 &\stackrel{(!)}{<} 2 \cdot 2\left( \delta ^{2} + \frac{\varepsilon}{4} \right)-  4 \delta ^{2} \\
+	 &= \varepsilon
+     \end{align*}
+     Note that in inequality $(!)$, we made use of the convexity of $S$ to conlude that $\frac{s_n + s_m}{2} \in S$. 
+     This shows that $\left( s_{n} \right)$ is Cauchy. Now, since $H$ is a Hilbert space, $\left( s_{n} \right)$ must converge to some $s_{0} \in H$. Closedness of $S$ allows us to conclude that $s_0$ must be in $S$
+
+     Hence, $x -s_{n}$ converges to $x- s_{0}$. By Theorem \ref{thm:norm-is-uc}, we conclude that $\norm{x-s_{n}}$ converges to $\norm{x-s_0}$. Since $\norm{x-s_{n}}$ also converges to $\delta$, we have by uniqueness of limits that $\delta = \norm{x-s_{0}}$.
+
+     It remains to prove the uniqueness of such a vector. Let us suppose that $s_0$ and $t_0$ be two vectors such that $\norm{x-s_{0}} = \norm{x-t_{0}}=\delta$.
+
+     Applying parallelogram identity on the vectors $s_{0}$ and $t_0$ as in Equation \ref{eqn:2.1.1}, we get
+\begin{align*}
+	 \frac{1}{4} \norm{s_0 - t_0}^{2} &= \frac{1}{2} \left( \norm{x-s_{0}}^{2} + \norm{x-t_0}^{2} \right) - \frac{1}{4} \norm{x - \frac{s_0 + t_0}{2}}^{2} \\
+	 & \le \delta^2 -  \norm{x - \frac{s_0 + t_0}{2}}^{2} \\
+	 & \le 0
+     \end{align*}
+     Hence, $s_0 = t_0$ and this completes the proof of the theorem.
+\end{proof}
+
+\begin{example}[distance is achieved but the vector may not be unique] Consider the normed linear space $\left( \R ^{2}, \norm{\cdot} _{1} \right)$. Now consider the set $S= \left\{ \left( x_{1} , x_{2} \right) : x_{1} + x_{2} =1 \right\}$.Note that $d \left( (0,0),S \right)=d\left( 0,0 \right), \left( 1,0 \right)) = d\left( \left( 0,0 \right), \left( 0,1 \right) \right)$. Hence, the uniqueness is not guaranteed.
+\end{example}
+
+\begin{exercise}
+    Consider the space $\left( C[0,1] \right)$ with the supremum norm. Let $S$ be the set
+    \begin{equation*}
+	S=\left\{ f \in C[0,1] \, : \, \int_{0}^{1/2} f\left( x \right) dx - \int_{1/2}^{1} f \left( x \right) dx =1 \right\}
+    \end{equation*}
+    Show that the set $S$ is closed and convex but the distance is never achieved. That is, it is not the case that there is some $f\in S$ such that $\norm{f}_{\infty} = 1 =\sup_{x\in [0,1]} |f(x)|$.
+\end{exercise}
+\begin{proof}[Solution]
+    We begin by showing that $S$ is convex. Let $f, g \in S$ and $t\in [0,1]$. Then we have that 
+    \begin{align*}
+	\int_{0}^{1/2} \left( t f\left( x \right) + \left( 1-t \right) g\left( x \right)\right) dx - \int_{1/2}^{1} \left( t f\left( x \right) + \left( 1-t \right) g\left( x \right) dx  \right) &= t + (1-t) \\
+	&= 1
+    \end{align*}
+    Note that the second equality follows by the virtue of $f,g \in S$.
+
+    Now, we proceed to show that the $S$ is closed. Let $\left( f_{n} \right) $ be a sequence of functions in $S$ converging to $f \in C\left[ 0,1 \right]$. We need to prove that $f \in S$. Now convergence in supremum norm is the same as the uniform convergence, so, we have that following:
+    \begin{align*}
+	\lim_{n\to \infty}\left( \int_{0}^{1/2} f_{n}\left( x \right) dx - \int_{1/2}^{1} f_{n} \left( x \right) dx \right) =1
+    \end{align*}
+    implies 
+    \begin{align*}
+\int_{0}^{1/2} f\left( x \right) dx - \int_{1/2}^{1} f \left( x \right) dx =1 
+\end{align*}
+and thus $f \in S$.
+Consider the zero function and the set $S$, we show that that there is no $f \in S$ such that $d (0,S) = d(f,0)=\norm{f}_{\infty}$. \textcolor{red}{Incomplete!}
+\end{proof}
+
+\subsection{Projections}
+\begin{theorem}
+Let $H$ be a Hilbert space. For any fixed $y\in H,$ consider the map $L_y : H \to \mathbb C$ defined by $L_y(x)= \langle x, y \rangle,\,\,x\in H.$ Then $L_y$ is a continuous linear functional on $H.$ 
+    \label{thm:ip-linear-functional}
+\end{theorem}
+
+\begin{proof}
+    Let $y\in H$ be fixed. Consider the function $L_{y} : H \to \C$ given by $L_{y} \left( x \right) = \ip{x,y}$ for each $x \in H$. We show that $L_{y}$ is Lipschitz continuous.
+    Let $x_0 \in H$. If $x\in H$, we have that
+    \begin{align*}
+	\abs{L_{y} \left( x \right) - L_{y} x_{0}} &= \abs{\ip {x,y}-\ip{x_{0},y}}	\\
+	&= \abs{\ip{x-x_{0},y}} \\
+	& \le \norm{x-x_{0}} \norm{y}
+    \end{align*}
+    Note the inequality follows from Cauchy Schwarz and this completes the proof.
+\end{proof}
+
+\begin{definition}
+    Let $H$ be a Hilbert space. For any $y\in H,$ the symbol $y^{\perp}$ denote the subspace defined by
+\begin{align*}
+    y^{\perp}:= \{x\in H : \langle x,y\rangle=0\}
+    \label{def:orthonormal-of-subspace}
+\end{align*}
+\end{definition}
+
+Observe that $y^{\perp}$ is a closed subspace of $H$. This is because $y^{\perp}$ is the kernel of the continuous map $L_{y}$ as given by Theorem \ref{thm:ip-linear-functional}.
+
+\begin{definition}
+    Let $H$ be a Hilbert space. Let $M$ be any subspace of $H$. Let the symbol $M^{\perp}$ denote the subspace given by 
+   \begin{align*}
+M^{\perp} = \{x\in H : \langle x,y\rangle =0\,\mbox{for all}\,y\in M\}= \bigcap_{y\in M} y^{\perp}.  \end{align*} 
+
+\end{definition}
+
+Observe that $M^{\perp}$ is always closed since it is intersection of closed subspaces of $H$.
+
+\begin{theorem}[Existence of an Orthogonal Projection onto a closed subspaces]
+Let $M$ be a closed subspace of a Hilbert space $H.$ Then 
+\begin{itemize}
+\item [(a)] Every $x\in H$ has a unique decomposition 
+\begin{align*}
+x= Px + Qx
+\end{align*}
+into a sum of $Px\in M$ and $Qx\in M^{\perp}.$ Thus $H = M \oplus M^{\perp}.$
+\item [(b)] $Px$ and $Qx$ are the nearest points to $x$ in $M$ and in $M^{\perp}$ respectively.
+
+\item [(c)] The mappings $P: H \to M$ and $Q: H \to M^{\perp}$ are linear and satisfies $P^2=P$ and $Q^2=Q.$ The map $P$ and $Q$ are called the \textbf{orthogonal projection onto $M$ and $M^{\perp}$} respectively.
+
+\item [(d)] $\|x\|^2= \|Px\|^2 + \|Qx\|^2$ for every $x\in H.$
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+    Since subspaces are convex, we can appeal to Theorem \ref{thm:closed-and-convex} as we please. We now start to prove each of the statements of theorem:
+    \begin{itemize}
+	\item [(a)] Let $x \in H$ be arbitrary. Then by the Theorem \ref{thm:closed-and-convex} there is a unique vector $Px \in M$ such that 
+	    \begin{equation*}
+		d(x, M) = \norm{x-Px}
+	    \end{equation*}
+	    Define $Qx \in M$ by $Qx = x-Px$. We need to show that $Qx \in M^{\perp}$. Let $y \in M$. We want to show that $\ip{x-Px , y} = 0$. To do so, observe that
+	    \begin{align}
+		\ip{Qx - \ip{Qx,y} \frac{y}{\norm{y}^{2}},y}&= \ip{Qx,y} - \ip{\ip{Qx,y} \frac{y}{\norm{y}^{2}},y}
+		=0
+		\label{eqn:2.2.1}
+	    \end{align}
+
+	    Now, 
+	    \begin{align*}
+		Qx = \underbrace{\left( Qx - \ip{Qx, y} \frac{y}{\norm{y}^{2}} \right)}_{=: v_1} + \underbrace{\ip{Qx,y} \frac{y}{\norm{y}^{2}}}_{=:v_2}
+	    \end{align*}
+
+	    Note that by equation \ref{eqn:2.2.1}, $v_1$ and $v_2$ are orthogonal and hence by Pythagoras theorem for inner product spaces, we may write
+\begin{align*}
+    \delta ^{2} = \norm{Qx}^{2} &= \norm{ Qx - \ip{Qx, y} \frac{y}{\norm{y}^{2}}}^{2} + \norm{\ip{Qx,y} \frac{y}{\norm{y}^{2}}}^{2} \\
+    &= \norm{ Qx - \ip{Qx, y} \frac{y}{\norm{y}^{2}}}^{2} + \frac{\abs{\ip{Qx,y}}}{\norm{y}^{2}} \\
+    &= \norm{ x- Px - \ip{Qx, y} \frac{y}{\norm{y}^{2}}}^{2} + \frac{\abs{\ip{Qx,y}}}{\norm{y}^{2}}
+    &\ge \delta ^{2} +  \frac{\abs{\ip{Qx,y}}}{\norm{y}^{2}}
+	    \end{align*}
+
+	    and thus, we have that $\abs{\ip{Qx,y}} = 0$. This completes the proof of (a).
+	\item [(b)] By uniqueness of part (a), it follows that $Px$ is the nearest point to $x$ in $M$. It remains to prove that $Qx$ is the nearest point to $x$ in $M^{\perp}$. \textcolor{red}{Needs to be fixed!}
+
+	\item [(c)] Let $x_{1}, x_{2} \in M$. By part $(a)$, we have that 
+	    \begin{align*}
+		x_{1} &= Px_{1} + Qx_{1} \\
+		x_{2} &= Px_{2} + Qx_{2} \\
+		x_{1} + x_{2} &= P\left( x_{1} + x_{2} \right) + Q \left( x_{1} + x_{2} \right)
+	    \end{align*}
+
+	    Now taking sums and rearranging, we have that
+	    \begin{equation*}
+		\underbrace{Px_{1} + Px_{2} - P\left( x_{1} + x_{2} \right)}_{\in M} = \underbrace{Q\left( x_{1} + x_{2} \right) - Qx_{1} - Qx_{2}}_{\in M^{\perp}}
+	    \end{equation*}
+	    Since $M \cap M^{\perp} = \left\{ 0 \right\}$, the linearity of $P$ and $Q$ follows.
+
+	    Now, let $x\in P$. We need to prove that $P^{2}x = Px$. Now note that $Px \in M$. Thus by part (a) we have
+	    \begin{equation*}
+		Px = P^{2} x + QPx
+	    \end{equation*}
+	    By uniqueness of part (a), we must have that $Px = P^{2}x$. This completes the proof. $Q^{2}= Q$ can be proved similarly.
+
+	\item [(d)] This follows immediately from Pythagoras theorem.
+    \end{itemize}
+\end{proof}
+
+\begin{corollary}
+Let $M$ be a closed subspace of a Hilbert space $H.$ Then $(M^{\perp})^{\perp} = M.$ In case $M$ is a subspace then $(M^{\perp})^{\perp} = \overline{M},$ the closure of $M$ in $H.$
+\end{corollary}
+
+
+

@@ -14,6 +14,7 @@
 \usepackage{csquotes}
 \usepackage{fourier}
 \usepackage{tikz-cd}
+\usepackage{lipsum}
 
 \newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -24,10 +25,12 @@
 \newtheorem{notation}[theorem]{Notation}
 \newtheorem{observation}[theorem]{Observation}
 \newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{exercise}[theorem]{Exercise}
 
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
+\numberwithin{equation}{subsection}
 
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
@@ -215,21 +218,24 @@
 \newcommand{\im}{{\text{im }}}
 \newcommand{\ip}[1]{\left\langle #1 \right\rangle}
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
 
 \title{Lecture Notes in Functional Analysis}
-\author{Ashish Kujur}
-\date{Last Updated: \today}
-
+\author{Lectures by Dr. Md Ramiz Reza \footnote{Notes by Ashish Kujur, Last Updated: \today}}
+\date{}
 \begin{document}
 
-\maketitle
-\section*{Introduction}
-This is a set of lecture notes which I took for reviewing stuff that I typed after taking class from \textit{Dr. Md. Ramiz Reza}. All the typos and errors are of mine.
-\tableofcontents
-
-\input{ref.tex}
+\maketitle \tableofcontents
+\input{ref}
 \input{lecture1}
-\input{lecture2.tex}
+\input{lecture2}
 %\input{lecture3}
 %\input{lecture4}
 %\input{lecture5}
@@ -237,5 +243,4 @@ This is a set of lecture notes which I took for reviewing stuff that I typed aft
 %\input{lecture7}
 %\input{lecture8}
 %\input{lecture9}
-
 \end{document}

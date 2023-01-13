@@ -1,3 +1,6 @@
 \contentsline {section}{\numberline {\S 1}Lecture 1 --- Introduction to Hilbert Spaces and some examples --- 9th January, 2023}{2}{section.1}%
 \contentsline {subsection}{\numberline {\S 1.1}Inner Product Spaces}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {\S 1.2}Hilbert Spaces}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {\S 2}Lecture 2 --- \textit {Hilbert Spaces!} --- 11th January, 2023}{4}{section.2}%
+\contentsline {subsection}{\numberline {\S 2.1}Closed and Convex!}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {\S 2.2}Projections}{7}{subsection.2.2}%
