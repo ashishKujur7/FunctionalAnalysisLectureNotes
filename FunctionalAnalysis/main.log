@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  14 JAN 2023 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  14 JAN 2023 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1059,13 +1059,13 @@ Overfull \hbox (2.17145pt too wide) in paragraph at lines 49--50
 mu-tan-dis\T1/futs/m/n/14.4 , and the fol-low-ing re-sult holds: 
  []
 
-) [12] (./main.aux)
+[12]) [13] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6ED50C773C95232D7B84D2A2EAFBB5FD;3008.
  ) 
 Here is how much of TeX's memory you used:
- 24033 strings out of 474971
- 455832 string characters out of 5778663
+ 24036 strings out of 474971
+ 455865 string characters out of 5778663
  871309 words of memory out of 5000000
  44977 multiletter control sequences out of 15000+600000
  575757 words of font info for 153 fonts, out of 8000000 for 9000
@@ -1081,10 +1081,10 @@ dobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/
 putbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (12 pages, 134425 bytes).
+Output written on main.pdf (13 pages, 137540 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

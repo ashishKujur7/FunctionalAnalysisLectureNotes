@@ -48,9 +48,48 @@ Now, since $\left( c_{n} \right)$ is Cauchy in $\F$, it must converge to some $c
 
 This argument generalises, \textit{mutatis mutandis}, and the following result holds:
 \begin{theorem}
-    Every finite dimensional subspace of a inner product space is closed.
+    Every finite dimensional subspace of a Hilbert space is closed.
     \label{thm:fds-are-closed}
 \end{theorem}
+\begin{proof}
+    We do a proof by induction on the dimension of finite dimensional subspace. The base case is clear by the argument given before the statement of this theorem.
+
+    Suppose the theorem is true for all subspaces of dimension $n$.
+
+    Let $H$ be an inner product space and $U$ be a finite dimensional subspace of $H$ of dimension $n+1$.
+
+    Let $v$ be a nonzero vector of $U$. Then let 
+    \begin{equation*}
+	v_{U}^{\perp} = v^{\perp} \cap U
+    \end{equation*}
+    
+    It is easy to see that $U=\text{span } v \oplus v_{U}^{\perp}$. Since $v_{U}^{\perp}$ is a subspace of dimension $n$, it is closed by the induction hypothesis.
+
+    We now proceed to show that $U$ is closed in $H$. Let $\left( u_{n} \right) $ be a sequence in $U$ converging to $x \in H$. Then for each $n \in \N$ we have that $u_{n} = c_{n} v + v_{n}$ for some $c_{n} \in F$ and some $v_{n} \in v_{U}^{\perp}$.
+    Since $\left( u_{n} \right)$ is convergent, we have that $\left( u_{n} \right)$ is Cauchy. Thus, 
+    \begin{equation*}
+	|c_n - c_m |^2 \norm{v}^{2} + \norm{v_n - v_m}^{2} \to 0 \text { as } m,n \to \infty
+    \end{equation*}
+    and note that this is due to Pythagoras theorem.
+
+    Then $\left( c_{n} \right)$ converges to $c$ and $\left( v_{n} \right)$ is Cauchy and hence converges to some $y \in H$. Since $v_{U}^{\perp}$ is closed, we have that $y \in v_{U}^{\perp} $. Thus, $u_{n}$ converges to $cv + y$ and by uniqueness of limits, we have that $x=cv+y \in U$.
+\end{proof}
+
+\begin{example}
+    Consider the subspace $c_{00}$ in $\ell ^{2} \left( \N \right)$. We showed that $c_{00}$ is not complete with inner product on $\ell ^{2} \left( \N \right)$, so, it cannot be closed (because closed subspaces of a complete metric space are closed!). So, we may ask what is the closure of $c_{00}$ in $\ell ^{2} \left( \N \right)$?
+
+    It is precisely $\ell ^{2} \left( \N \right)$. One can show this as follows:
+    if $f \in \ell ^{2} \left( \N \right)$ then we may consider the sequence $\left( g_{n} \right)$ in $c_{00}$ given by
+    \begin{equation*}
+	g_{n} = \left( f_{1} , f_{2} , \ldots , f_{n} , 0 , 0 ,0 , \ldots \right)
+    \end{equation*}
+    It is easily seen that $g_{n}$ converges to $f$.
+\end{example}
+
+\begin{exercise}
+    If $M$ is a subspace of a Hilbert Space $H$ then so is $\overline M$.
+\end{exercise}
 \subsection{Statement and Proof of Riesz Representation Theorem}
+
 
 \subsection{Projections and Orthonormal Sets in finite dimensions\ldots}
