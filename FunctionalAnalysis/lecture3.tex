@@ -18,12 +18,17 @@ Before we move onto prove the Riesz Representation Theorem, we finish the proof 
     \end{align*}
     \label{prop:o-comp-of-o-comp}
 \end{proposition}
+\begin{proof}
+    Let us first show that $M \subset \left( M ^{\perp} \right)^{\perp}$ (which in fact holds for any set $M$). Let $v \in M$ and $w \in M^{\perp}$. It is cleary by definition of $M^{\perp}$ that $\ip{v,w} = 0$. Hence, $v \in \left( M^{\perp} \right)^{\perp}$.
+
+    Let us proceed to show the inclusion in the other direction. Let $v \in \left( M^{\perp} \right)^{\perp}$. Since $M$ is closed, by Theorem \ref{thm:existence-of-o-proj}, we have that $v = Pv + Qv$ where $Pv \in M$ and $Qv \in M^{\perp}$. By the previous paragraph, we have that $M \subset \left( M^{\perp} \right)^{\perp}$ and hence $Pv \in \left( M^{\perp} \right) ^{\perp}$. Hence, we have that $Qv \in \left( M^{\perp} \right)^{\perp}$. Now, $Qv \in M^{\perp} \cap \left( M^{\perp} \right) ^{\perp}$. Hence, $Qx = 0$ and thus, $v=Pv \in M$.
+\end{proof}
 
 Note that Proposition \ref{prop:perp-and-closure-perp} does not depend on $H$ being a Hilbert Space while Proposition \ref{prop:o-comp-of-o-comp} does!
 
 Now, proof of Corollary \ref{cor:M-perp-perp} follows immediately:
 \begin{proof}[Proof of Corollary \ref{cor:M-perp-perp}]
-    Observe that
+    The first part of Corollary \ref{cor:M-perp-perp} is basically Proposition \ref{prop:o-comp-of-o-comp}. Now to prove the second part, observe that
     \begin{align*}
     \left( M^{\perp} \right) ^{\perp} &= \left( \left( \overline M \right) ^{\perp} \right) ^{\perp} & \text{by Proposition } \ref{prop:perp-and-closure-perp} \\
     &= \overline{\overline{M}} & \text{by Proposition} \ref{prop:o-comp-of-o-comp} \\
@@ -32,7 +37,20 @@ Now, proof of Corollary \ref{cor:M-perp-perp} follows immediately:
 \end{proof}
 
 \subsection{Existence of closed subspaces of Hilbert Spaces}
+Let $H$ be a Hilbert space of dimension at least $1$. Does there always exist a closed subspace of $H$? The answer is \textit{Yes}!
 
-\subsection{Hilbert Spaces}
+Let us proceed to prove this: Let $H$ be any Hilbert space of dimension at least one. So, there is at least one nonzero vector $v$. Let $M$ be the subspace spanned by $v$. We show that $M$ is closed. Let $\left( y_{n} \right)$ be a sequence in $M$ converging to some $x \in H$.
+By definition of $M$, we have that for every $n\in \N$, $y_{n} = c_{n}v$ for some $c_n \in \mathbb F$. We claim that $c_{n}$ is a Cauchy sequence in $\mathbb F$.
+
+To show that $\left( c_{n} \right)$ is Cauchy in $\mathbb F$, let $\varepsilon > 0$ be given. Since $\left( c_{n} v \right)$ is convergent, it is Cauchy. So there is some $N \in \N$ such that for $n,m \ge N$, we have $\norm{c_n v - c_{m} v} < \norm{v} \varepsilon$. Which is turn implies that for $n,m \ge N$, $\abs{c_{n} - c_{m}} < \varepsilon$.
+
+Now, since $\left( c_{n} \right)$ is Cauchy in $\F$, it must converge to some $c\in F$. Now, the sequence $\left( c_{n} v \right)$ converges to $cv$ in $M$ and by the uniqueness of limits, we have that $y=cv$ and hence $y\in M$.
+
+This argument generalises, \textit{mutatis mutandis}, and the following result holds:
+\begin{theorem}
+    Every finite dimensional subspace of a inner product space is closed.
+    \label{thm:fds-are-closed}
+\end{theorem}
+\subsection{Statement and Proof of Riesz Representation Theorem}
 
 \subsection{Projections and Orthonormal Sets in finite dimensions\ldots}

@@ -7,5 +7,5 @@
 \contentsline {section}{\numberline {\S 3}Lecture 3 --- \textit {Riesz Representation Theorem for Hilbert Spaces} --- 13th January, 2023}{10}{section.3}%
 \contentsline {subsection}{\numberline {\S 3.1}Lecture 2 continued \ldots }{10}{subsection.3.1}%
 \contentsline {subsection}{\numberline {\S 3.2}Existence of closed subspaces of Hilbert Spaces}{11}{subsection.3.2}%
-\contentsline {subsection}{\numberline {\S 3.3}Hilbert Spaces}{11}{subsection.3.3}%
-\contentsline {subsection}{\numberline {\S 3.4}Projections and Orthonormal Sets in finite dimensions\ldots }{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {\S 3.3}Statement and Proof of Riesz Representation Theorem}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {\S 3.4}Projections and Orthonormal Sets in finite dimensions\ldots }{12}{subsection.3.4}%
