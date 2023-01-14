@@ -1,5 +1,36 @@
 \section{Lecture 3 --- \textit{Riesz Representation Theorem for Hilbert Spaces} --- 13th January, 2023}
 
+\subsection{Lecture 2 continued \ldots}
+Before we move onto prove the Riesz Representation Theorem, we finish the proof of Corollary \ref{cor:M-perp-perp}. It follows immediately from the following results:
+
+\begin{proposition}[orthogonal complement of a set and the orthogonal completement of its closure are same!]
+    Let $M$ be a subset of a inner product space $H$. Then $M^{\perp} =  \left( \overline{M} \right)^{\perp}$
+    \label{prop:perp-and-closure-perp}
+\end{proposition}
+\begin{proof}
+    It follows by definition that $M \subset \overline M$ and hence $\left( \overline M \right)^{\perp} \subset M^{\perp}$. Now for reverse the inclusion, let $v \in M^{\perp}$ and let $y \in \overline M$. We need to show that $\ip{v,y} = 0$. Since $y\in \overline M$ there is a sequence $\left( y_{n} \right)$ in $M$ such that $y_{n} \to y$. Since $v \in M^{\perp}$, we have that $\ip {v , y_{n}}=0 $ for all $n\in \N$. Since $\ip{v, y_{n}} \to \ip{v,y}$, we have by uniqueness of limits that $\ip{v,y} = 0$. This completes the proof.
+\end{proof}
+
+\begin{proposition}[orthogonal complement of orthogonal complement]
+    Let $M$ be a closed subspace of the Hilbert space $H$. Then 
+    \begin{align*}
+	M = \left( M^{\perp} \right) ^{\perp}
+    \end{align*}
+    \label{prop:o-comp-of-o-comp}
+\end{proposition}
+
+Note that Proposition \ref{prop:perp-and-closure-perp} does not depend on $H$ being a Hilbert Space while Proposition \ref{prop:o-comp-of-o-comp} does!
+
+Now, proof of Corollary \ref{cor:M-perp-perp} follows immediately:
+\begin{proof}[Proof of Corollary \ref{cor:M-perp-perp}]
+    Observe that
+    \begin{align*}
+    \left( M^{\perp} \right) ^{\perp} &= \left( \left( \overline M \right) ^{\perp} \right) ^{\perp} & \text{by Proposition } \ref{prop:perp-and-closure-perp} \\
+    &= \overline{\overline{M}} & \text{by Proposition} \ref{prop:o-comp-of-o-comp} \\
+    &= \overline M
+    \end{align*}
+\end{proof}
+
 \subsection{Existence of closed subspaces of Hilbert Spaces}
 
 \subsection{Hilbert Spaces}
