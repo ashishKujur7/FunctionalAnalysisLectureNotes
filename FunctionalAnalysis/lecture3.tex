@@ -96,8 +96,41 @@ In Theorem \ref{thm:ip-linear-functional}, we saw that for any $y \in H$ where $
     Let $L : H \to \C$ be continuous linear functional. Then there exists a $y_{0} \in H$ such that $L=L_{y_{0}}$.
     \label{thm:riesz-rep-thm-for-hilbert}
 \end{theorem}
-\begin{proof}
-    Let
+
+But before proving Riesz Representation Theorem, let us prove that following theorem:
+
+\begin{proposition}[necessary and sufficient condition for a subspace to be dense]
+    Suppose $M$ is a subspace of a Hilbert space $V$. Then $\overline M = V$ iff $M^{\perp} = 0$.
+    \label{prop:dense-nas}
+\end{proposition}
+\begin{proof}[Proof of Proposition \ref{prop:dense-nas}]
+    First suppose $\overline M = V$. We need to show that $M^{\perp} = 0$. By \ref{prop:perp-and-closure-perp}, we have that $V^{\perp} = \left( \overline M \right)^{\perp} = M^{\perp}$. But since $V^{\perp} = \left\{ 0 \right\}$, we have that $M^{\perp} = \left\{ 0 \right\}$.
+
+    To prove the converse, suppose that $M^{\perp} = 0$. Taking $\perp$ both sides, we have that $\overline M = 0$ by using \ref{cor:M-perp-perp}.
 \end{proof}
+
+
+\begin{proof}[Proof of \ref{thm:riesz-rep-thm-for-hilbert}]
+    Let $L : H \to \C$ be continuous linear functional. Since $L$ is continuous, $\ker L$ is closed. Let $M:= \ker L$.
+
+    Now, there are two possible cases: either $M^{\perp} = 0$ or $M^{\perp} \supsetneq \left\{ 0 \right\}$.
+
+    If $M^{\perp} = \left\{ 0 \right\}$, then $M= \overline {M} = (M^{\perp})^{\perp} = \left\{ 0 \right\} ^{\perp} = H$. Hence, we have that $L = L_{0}$ and this case is done.
+
+    Let us consider the other case where $M^{\perp} \supsetneq \left\{ 0 \right\}$. We claim that $\dim M^{\perp} = 1$. Since $M^{\perp} \supsetneq \left\{ 0 \right\}$, we may select a nonzero vector $w \in M^{\perp}$. We show that $M^{\perp} = \text{span } \left\{ w \right\}$. To do so, let $\tilde {w} \in M^{\perp}$. Consider the vector $x:= L\left( \tilde {w} \right) w - L(w) \tilde {w}$. Clearly, $L(x) = 0$. Hence $x \in M$. Since $w, \tilde{w} \in M^{\perp}$, we also have that $x \in M^{\perp}$. But then $x \in M \cap M^{\perp} = \left\{ 0 \right\}$and hence $x=0$. Thus, $L \left( \tilde w \right) w = L(w) \tilde w$. Observe that $L(w) \ne 0$ for otherwise $w \in M$ and $w \in M\cap M^{\perp}$ forcing $w = 0$. Hence $\tilde w = \left( L\left( w \right) \right)^{-1} L (\tilde w ) w$. Hence $\tilde w \in \text{span } \left\{ w \right\}$ which completes the proof of the claim.
+
+    Let $w$ be as in previous paragraph. We have that $H = M \oplus M^{\perp} = \ker L \oplus \text{span } w$. Hence, $\left( \text{span } \left\{ w \right\} \right) ^{\perp} = (M^{\perp})^{\perp} = \overline {M} = M$. Since $\left( \text{span } \left\{ w \right\} \right) = w^{\perp}$, we have that $w^{\perp} = M$.
+
+    Now, let $x\in H$. Now,
+    \begin{equation*}
+	x=\underbrace{x-\frac{\ip{x,w}w}{\norm{w}^{2}}}_{w^{\perp}=M} + \underbrace{\frac{\ip{x,w}w}{\norm{w}^{2}}}_{\in M^{\perp}}
+    \end{equation*}
+    Hence, we have that
+    \begin{equation*}
+	L(x)=\ip{x, \frac{\overline {L(w)}w}{\norm {w} ^{2}}}
+    \end{equation*}
+
+    This completes the proof!
+   \end{proof}
 
 \subsection{Projections and Orthonormal Sets in finite dimensions\ldots}

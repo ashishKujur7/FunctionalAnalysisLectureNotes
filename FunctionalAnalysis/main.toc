@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {\S 1}Lecture 1 --- Introduction to Hilbert Spaces and some examples --- 9th January, 2023}{2}{section.1}%
+\contentsline {section}{\numberline {\S 1}Lecture 1 --- \textit {Introduction to Hilbert Spaces and some examples} --- 9th January, 2023}{2}{section.1}%
 \contentsline {subsection}{\numberline {\S 1.1}Inner Product Spaces}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {\S 1.2}Hilbert Spaces}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {\S 2}Lecture 2 --- \textit {Hilbert Spaces!} --- 11th January, 2023}{4}{section.2}%
@@ -8,4 +8,4 @@
 \contentsline {subsection}{\numberline {\S 3.1}Lecture 2 continued \ldots }{10}{subsection.3.1}%
 \contentsline {subsection}{\numberline {\S 3.2}Existence of closed subspaces of Hilbert Spaces}{11}{subsection.3.2}%
 \contentsline {subsection}{\numberline {\S 3.3}Statement and Proof of Riesz Representation Theorem}{13}{subsection.3.3}%
-\contentsline {subsection}{\numberline {\S 3.4}Projections and Orthonormal Sets in finite dimensions\ldots }{13}{subsection.3.4}%
+\contentsline {subsection}{\numberline {\S 3.4}Projections and Orthonormal Sets in finite dimensions\ldots }{14}{subsection.3.4}%
