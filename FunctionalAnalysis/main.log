@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  17 JAN 2023 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  22 JAN 2023 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1018,10 +1018,10 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \openout5 = `main.toc'.
 
 
-(./ref.tex) (./lecture1.tex [1
+(./ref.tex [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]) (./lecture2.tex [
-4] [5]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+(./lecture1.tex [2] [3]) (./lecture2.tex [4] [5]
 Overfull \hbox (4.1186pt too wide) in paragraph at lines 76--77
 []\T1/futs/m/n/14.4 Applying par-al-lel-o-gram iden-tity on the vec-tors $\FML/
 futmi/m/it/14.4 s[]$ \T1/futs/m/n/14.4 and $\FML/futmi/m/it/14.4 t[]$ \T1/futs/
@@ -1059,18 +1059,39 @@ Overfull \hbox (2.17145pt too wide) in paragraph at lines 49--50
 mu-tan-dis\T1/futs/m/n/14.4 , and the fol-low-ing re-sult holds: 
  []
 
-[12] [13]) [14] (./main.aux)
+[12] [13]) (./lecture4.tex
+Overfull \hbox (13.715pt too wide) in paragraph at lines 1--1
+[]\T1/futs/b/n/20.74 Lecture 4 --- \T1/futs/b/it/20.74 Pro-jec-tion for sub-spa
+ces hav-ing count-
+ []
+
+[14]
+Overfull \hbox (32.35927pt too wide) in paragraph at lines 28--30
+[][]\FMS/futm/m/n/14.4 h\FML/futmi/m/it/14.4 x; u[]\FMS/futm/m/n/14.4 i\FML/fut
+mi/m/it/14.4 u[]$ \T1/futs/m/it/14.4 is a Cauchy se-quence in $\FML/futmi/m/it/
+14.4 M:$ \T1/futs/m/it/14.4 Hence the limit $[][] \FML/futmi/m/it/14.4 S[]\T1/f
+uts/m/n/14.4 (\FML/futmi/m/it/14.4 x\T1/futs/m/n/14.4 ) \FMS/futm/m/n/14.4 Å []
+[]h\FML/futmi/m/it/14.4 x; u[]\FMS/futm/m/n/14.4 i\FML/futmi/m/it/14.4 u[]$
+ []
+
+[15]
+Overfull \hbox (4.91121pt too wide) in paragraph at lines 62--64
+\T1/futs/m/n/14.4 Conversely, sup-pose that equal-ity in Bessel's in-equal-ity 
+holds then from equalion
+ []
+
+[16] [17]) [18] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6ED50C773C95232D7B84D2A2EAFBB5FD;3008.
+(rerunfilecheck)             Checksum: 0CF46D2CD899DE0A85A072EB7857148F;4490.
  ) 
 Here is how much of TeX's memory you used:
- 24041 strings out of 474971
- 455945 string characters out of 5778663
- 871483 words of memory out of 5000000
- 44979 multiletter control sequences out of 15000+600000
- 575757 words of font info for 153 fonts, out of 8000000 for 9000
+ 24072 strings out of 474971
+ 456407 string characters out of 5778663
+ 871772 words of memory out of 5000000
+ 44993 multiletter control sequences out of 15000+600000
+ 583917 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,17n,118p,938b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,17n,118p,938b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dis
@@ -1082,10 +1103,10 @@ obe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/p
 utbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (14 pages, 147750 bytes).
+Output written on main.pdf (18 pages, 166079 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

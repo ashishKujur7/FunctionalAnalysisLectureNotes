@@ -1,0 +1,98 @@
+\section{Lecture 4 --- \textit{Projection for subspaces having countable orthonormal basis} --- 17th January, 2022} 
+\subsection{Projections and Orthonormal Sets in finite dimensions\ldots}
+Suppose $M$ is a finite dimensional subspace of an Hilbert space $H$ and dimension of $M$ is $n.$ Let $\mathcal B = \{u_{i} : 1 \leqslant i\leqslant n\}$ be an orthonormal basis of $M$ (existence of such basis follows from the Gram-Schmidt orthogonalization process to any basis of $M$). For any $x\in H,$ consider the vector $\sum\limits_{j=1}^n \langle x, u_j\rangle u_j$ in $M.$  Thus we obtain
+
+\begin{align*}
+x=\Big( x-\sum\limits_{j=1}^n \langle x, u_j\rangle u_j \Big)  + \Big( \sum\limits_{j=1}^n \langle x, u_j\rangle u_j \Big)
+\end{align*}
+We verify that $x-\sum_{j=1}^n \langle x, u_j\rangle u_j \in M^{\perp}$. Observe that for all $1\le i \le n$,
+\begin{align*}
+    \ip{x - \sum_{j=1}^{n} \ip{x,u_{j}}u_{j}, u_{i}} &= \ip{x, u_{i}} - \sum_{j=1}^{n} \ip{x,u_{j}}\ip{u_{j}, u_{i}}\\
+    &=\ip{x,{u_{i}}} - \ip{x,{u_{i}}} = 0
+\end{align*}
+
+
+Now by the uniqueness of the decomposition (see Theorem \ref{thm:existence-of-o-proj}) $H= M \oplus M^{\perp},$ it follows that 
+\begin{align*}
+P_{_M}x &= \sum_{j=1}^n \langle x, u_j\rangle u_j,\\
+P_{_{M^{\perp}}}x &= x-  \sum_{j=1}^n \langle x, u_j\rangle u_j,
+\end{align*}
+where $P_{_M}$ and $P_{_{M^{\perp}}}$ denotes the orthogonal projection onto $M$ and $M^{\perp}$ respectively. Furthermore, it follows that 
+\begin{align}
+\|P_{_M}x\|^2 = \sum_{j=1}^n |\langle x, u_j\rangle|^2 = \|x\|^2- \|P_{_{M^{\perp}}}x\|^2 \leqslant \|x\|^2,\,\,x\in H.
+\label{eqn:Bessel-in-finite}
+\end{align}
+
+\subsection{Generalising projections to infinite dimensions\ldots}
+\begin{proposition}
+Suppose $\mathcal B = \{u_{i} :  i\in \mathbb N\}$ is an orthonormal set in a Hilbert space $H.$ Then for any $x\in H,$ we have $$ \sum_{j=1}^{\infty} |\langle x, u_j\rangle|^2 \leqslant \|x\|^2.$$
+This is known as the Bessel's inequality. Let $M= \overline{\text{span } \{u_i: i\in\mathbb N\}}$ be the smallest closed subspace spanned by the orthonormal set $\mathcal B.$ It follows that $S_n(x) = \sum_{j=1}^{n} \langle x, u_j\rangle u_j $ is a Cauchy sequence in $M.$  Hence the limit $\lim_{n\to\infty} S_n(x) =  \sum_{j=1}^{\infty} \langle x, u_j\rangle u_j $ exist in the Hilbert space $M$. Moreover, $P_{_M}(x),$ the orthogonal projection of $x$ onto $M,$ is given by
+\begin{align*}
+P_{_M}(x)= \sum_{j=1}^{\infty} \langle x, u_j\rangle u_j = \lim_{n\to\infty} S_n(x).
+\end{align*}
+Furthermore equality occurs in the Bessel's inequality if and only if $x\in M.$
+\end{proposition}
+\begin{proof}
+    Fix a natural number $k$ and consider $M_k= \text{span} \{u_j: 1\leqslant j \leqslant k\}.$ By Equation \ref{eqn:Bessel-in-finite} we find that 
+\begin{align*}
+\|P_{_{M_k}}x\|^2 = \sum_{j=1}^k |\langle x, u_j\rangle|^2 \leqslant \|x\|^2,\,\,x\in H,
+\end{align*}
+where where $P_{_{M_k}}$ denotes the orthogonal projection onto $M.$ Since this holds true for every $k\in \mathbb N,$ it follows that
+$$ \sum_{j=1}^{\infty} |\langle x, u_j\rangle|^2 \leqslant \|x\|^2.$$ 
+For $S_n(x) = \sum_{j=1}^{n} \langle x, u_j\rangle u_j ,$  note that 
+\begin{align*}
+\|S_m(x) - S_k(x)\|^2= \sum_{j=k+1}^m |\langle x, u_j\rangle|^2,\,\, \,\,~~~~k\geqslant m.
+\end{align*}
+Since $\sum_{j=1}^{\infty} |\langle x, u_j\rangle|^2 < \infty ,$ it follows that $\{S_n(x)\}_{n\in\mathbb N}$ is a Cauchy sequence in $M$ and converges to some vector in $M.$ Let $z= \lim_{n\to\infty} S_n(x).$ It is straightforward to verify that $\langle x-S_n(x), u_j\rangle = 0$ for every $n\geqslant j.$ Since $x-z= \lim_{n\to\infty} (x-S_n(x)),$ it follows that $\langle x-z,u_j\rangle =0.$ This holds true for any $j\in \mathbb N.$ Hence 
+we get that $x-z\in M^{\perp}.$ Thus we have
+\begin{align*}
+x= z+ (x-z) ,\,\,\,x-z\in M^{\perp},\,z\in M.
+\end{align*}
+By the uniqueness of the decomposition $H= M \oplus M^{\perp},$ we obtain that 
+\begin{align*}
+P_{_M}(x)= z= \sum_{j=1}^{\infty} \langle x, u_j\rangle u_j = \lim_{n\to\infty} S_n(x),\,\, P_{{_M}^{\perp}}(x)=x-z.
+\end{align*}
+
+Now, we proceed to show that the Bessel inequality holds iff $x\in M$. Suppose that $x\in M$. Then we have that $P_{M} \left( x \right) = x$ and hence $x = z + (x-z) = x + (x-z)$ and hence $x=z$. But note that $\norm{z} ^{2} = \norm{\sum_{j=1}^{\infty}\ip{x, u_{j}} u_{j}} = \sum_{j=1}^{\infty} \abs{\ip{x,u_{j}}}$ but this follows from 
+\begin{align*}
+    \norm{\sum_{j=1}^{\infty}\ip{x, u_{j}} u_{j}} = \sum_{j=1}^{\infty} \abs{\ip{x,u_{j}} }
+\end{align*} and then taking $n\to \infty$, we get
+\begin{align}
+    \norm{\sum_{j=1}^{n}\ip{x, u_{j}} u_{j}} = \sum_{j=1}^{n} \abs{\ip{x,u_{j}}}  \label{eqn:Bessel-in-infinite}
+\end{align}
+Conversely, suppose that equality in Bessel's inequality holds then from equalion \ref{eqn:Bessel-in-infinite} and the fact that $\norm{x} ^{2} = \norm{z} ^{2} \norm{x-z} ^{2}$ that $\norm{x-z} ^{2} = 0$ and hence $x\in M$.
+\end{proof}
+
+\begin{corollary}\label{cor:span-closure-of-onb}
+    Suppose $\mathcal B = \{u_{i} :  i\in \mathbb N\}$ is a maximal orthonormal set in a Hilbert space $H.$ Let $M= \overline{\text{span} \{u_i: i\in\mathbb N\}}$ be the smallest closed subspace spanned by the orthonormal set $\mathcal B.$ Then it follows that $M=H$ and for any $x\in H$ we have 
+\begin{align*}
+x= \sum_{j=1}^{\infty} \langle x, u_j\rangle u_j = \lim_{n\to\infty} S_n(x),\,\,\, \|x\|^2= \sum_{j=1}^{\infty} |\langle x, u_j\rangle|^2.
+\end{align*}
+\end{corollary}
+\begin{proof}
+If $M^{\perp}\neq 0,$ then consider a non zero unit vector $u$ in $M^{\perp}.$ Then $\mathcal B \cup \{u\}$ is another family of orthonormal set containing $\mathcal B.$ This contradicts the maximality of $\mathcal B.$ Hence by the maximality of $\mathcal B ,$ it follows that $M^{\perp} = \{0\}.$ Now the corollary follows from the proposition.
+\end{proof}
+
+\subsection{Existence of a maximal orthonormal set in a inner product space} Let $(X, \leqslant)$ be the collection of all orthonormal set in $V$ equipped with the partial ordering of set inclusion, that is, for $A,B\in X,$ we have $A\leqslant B$ if $A \subseteq B.$ It is straightforward to verify that if $\mathscr C$ is a chain (totally ordered set) in the partially ordered set  $(X,\leqslant),$ then the chain $\mathscr C$ has an upper bound in $X$ namely the union of the members of $\mathscr C.$ Hence by Zorn's Lemma it follows that $X$ has a maximal element, that is, $V$ has a maximal orthonormal set. Now, we make a definition:
+
+\begin{definition}[orthonormal basis]
+    \label{def:orthonormal-basis}
+    A maximal orthonormal set in a Hilbert space is called an \textit{orthonormal basis of the Hilbert space}. 
+\end{definition}
+
+\subsection{Separability of Hilbert Spaces}
+\begin{proposition}
+Let $H$ be a Hilbert space. Then $H$ is separable (that is it has a countable dense set) if and only if $H$ admits an at most countable orthonormal basis. 
+\label{prop:separable-hilbert-spaces}
+\end{proposition}
+\begin{proof}
+Suppose $\mathcal B = \{u_{\alpha} : \alpha \in I\}$ be an collection of orthonormal set in $H.$ It is straightforward to verify that $\|u_{\alpha}-u_{\beta}\|= \sqrt{2}$ for every $\alpha,\beta\in I$ with $\alpha \neq \beta.$ Thus  the collection of balls $\{B(u_{\alpha},\frac{\sqrt{2}}{2}) : \alpha \in I\}$ are pairwise disjoint. If $I$ is uncountable then we have uncountable such balls  which are pairwise disjoint. This contradicts any existence of countable dense set in $H.$ Thus if $H$ is separable then any orthonormal collection in $H$ has to be at most countable (finite or countably infinite). Hence any maximal orthonormal set in $H$ must be at most countable. This proves that for a separable Hilbert space $H$ we have an at most countable orthonormal basis.
+
+For the converse direction assume that $H$ admits a countable orthonormal basis, say $\mathcal B = \{u_{i} : i \in \mathbb N\}.$ Let $D = \cup_{n\in\mathbb N} D_n,$ where $D_n$ is given by
+\begin{align*}
+D_n= \Big\{ \sum\limits_{j=1}^n c_j u_j : c_j \in \mathbb Q + i \mathbb Q \Big\}
+\end{align*}
+Note that each $D_n$ is countable and hence $D$ is countable. It is  straightforward to see that $\overline{D_n} = \text{span } \{u_j : 1\leqslant j \leqslant n\}$ for each $n\in\mathbb N.$ It follows that $\text{span } \{u_j : j\in \mathbb N\} \subseteq \overline{D}.$ This gives us that $\overline{\text{span } \{u_j : j\in \mathbb N\}} \subseteq \overline{D}.$ In view of the Corollary \ref{cor:span-closure-of-onb} we obtain that $D$ is dense in $H$ and hence $H$ is separable.
+\end{proof}
+
+

@@ -1,11 +1,15 @@
 \contentsline {section}{\numberline {\S 1}Lecture 1 --- \textit {Introduction to Hilbert Spaces and some examples} --- 9th January, 2023}{2}{section.1}%
 \contentsline {subsection}{\numberline {\S 1.1}Inner Product Spaces}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {\S 1.2}Hilbert Spaces}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {\S 1.2}Hilbert Spaces}{4}{subsection.1.2}%
 \contentsline {section}{\numberline {\S 2}Lecture 2 --- \textit {Hilbert Spaces!} --- 11th January, 2023}{4}{section.2}%
 \contentsline {subsection}{\numberline {\S 2.1}Closed and Convex!}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {\S 2.2}Projections}{7}{subsection.2.2}%
 \contentsline {section}{\numberline {\S 3}Lecture 3 --- \textit {Riesz Representation Theorem for Hilbert Spaces} --- 13th January, 2023}{10}{section.3}%
 \contentsline {subsection}{\numberline {\S 3.1}Lecture 2 continued \ldots }{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {\S 3.2}Existence of closed subspaces of Hilbert Spaces}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {\S 3.2}Existence of closed subspaces of Hilbert Spaces}{12}{subsection.3.2}%
 \contentsline {subsection}{\numberline {\S 3.3}Statement and Proof of Riesz Representation Theorem}{13}{subsection.3.3}%
-\contentsline {subsection}{\numberline {\S 3.4}Projections and Orthonormal Sets in finite dimensions\ldots }{14}{subsection.3.4}%
+\contentsline {section}{\numberline {\S 4}Lecture 4 --- \textit {Projection for subspaces having countable orthonormal basis} --- 17th January, 2022}{14}{section.4}%
+\contentsline {subsection}{\numberline {\S 4.1}Projections and Orthonormal Sets in finite dimensions\ldots }{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {\S 4.2}Generalising projections to infinite dimensions\ldots }{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {\S 4.3}Existence of a maximal orthonormal set in a inner product space}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {\S 4.4}Separability of Hilbert Spaces}{17}{subsection.4.4}%
