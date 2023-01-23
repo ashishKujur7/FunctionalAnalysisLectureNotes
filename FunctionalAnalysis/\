@@ -104,9 +104,3 @@ given $f,g \in H^{2} \left( \mathbb D \right)$, define
 $\ip{f,g} = \sum_{n=1}^{\infty} a_{n} \overline{b_{n}}$
 
 one can establish a one-to-one correspondence between the $H^{2} \left( \mathbb D \right)$ and $\ell ^{2} \left( \C \right)$
-
-\begin{align*}
-    f \mapsto \left( a_{0} , a_{1}, a_{2} , \ldots \right)
-\end{align*}
-
-where $a_i$ is defined as above. this is a separable hilbert space which can be easily by the isometry!
