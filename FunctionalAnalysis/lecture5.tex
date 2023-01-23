@@ -1,0 +1,23 @@
+\section{Lecture 5 --- \textit{Examples Galore!} --- 18th January, 2023}
+
+
+\subsection{Properties of Finite Dimensional Hilbert Spaces}
+\begin{proposition}
+Suppose $H$ is a finite dimensional Hilbert space. Then $H$ is isometrically isomorphic to the Euclidean space $(\mathbb C^n,\langle \cdot,\cdot \rangle_2),$  where $\langle \cdot,\cdot\rangle_2$ is the standard Euclide
+\end{proposition}
+
+\begin{proposition}
+ Suppose $H$ is a separable infinite dimensional Hilbert space. Then $H$ is isometrically isomorphic to $\ell^2(\mathbb N).$
+ \end{proposition}
+
+\subsection{Revisiting the examples of Hilbert spaces}
+\begin{itemize}
+\item[(a)] Consider $\ell^2(\mathbb N).$ Let $e_n$ be the sequence in $\ell^2(\mathbb N)$ defined by $e_n(i)=\delta_{i,n}$ for every $i,n \in \mathbb N.$ Then the set $\{e_n : n\in\mathbb N\}$ forms an orthonormal basis for $\ell^2(\mathbb N).$
+\item[(b)] Consider $c_{00}$ as a subspace of $\ell^2(\mathbb N).$ It is an inner product space but not complete w.r.t the metric induced by the associated inner product. In fact $c_{00}$ is dense in $\ell^2(\mathbb N),$ that is, the closure of $c_{00}$ in $\ell^2(\mathbb N)$ is the space $\ell^2(\mathbb N)$ itself. 
+\item[(c)] Consider $(L^2(\mathbb T), d\sigma),$ where $\sigma$ is the Lebesgue measure (the normalised arc length measure) on the unit circle $\mathbb T.$ Consider the function $z^n : \mathbb T \to \mathbb C$ given by $$z^n(e^{it}) = e^{int},\,t\in [0,2\pi).$$ Note that 
+\begin{align*}
+\langle z^n, z^m\rangle_{L^2(\mathbb T)} = \frac{1}{2\pi} \int_{0}^{2\pi} e^{i(n-m)t} dt,\,\,n,m\in\mathbb Z.
+\end{align*}
+Thus $\{z^n: n\in\mathbb Z\}$ forms an orthogonal set. In view of Stone-Weirstrass Theorem, we have $\text{span }\{z^n: n\in\mathbb Z\}$ is dense in $\mathscr C(\mathbb T)$ in uniform norm $\|\cdot\|_{\infty}.$ Since $\|f\|_{2} \leqslant\|f\|_{\infty}$ for every $f\in \mathscr C(\mathbb T),$ it follows that $span\{z^n: n\in\mathbb Z\}$ is dense in $\mathscr C(\mathbb T)$ in $L^2$ norm $\|\cdot\|_{2}.$ 
+\end{itemize}
+
