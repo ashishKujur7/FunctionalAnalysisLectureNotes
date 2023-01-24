@@ -1,10 +1,53 @@
-\section{Lecture 6 --- \textit{Nonseparable Hilbert Spaces} --- 23rd January, 2023}
+% !TEX root = main.tex
+\section{Lecture 6 --- \textit{Nonseparable Hilbert Spaces \& Generalising Sums\ldots} --- 23rd January, 2023}
  
-\textcolor{red}{sketch --- work under progress!}
-
 \subsection{Non separable Hilbert Spaces}
 
-example of nonseparable hilbert spaces
+In previous lectures, we saw a couple of examples of separable Hilbert spaces but did not even a see a example to a nonseparable Hilbert space. To remedy this situation, we define a Hilbert space $\ell ^{2} \left( \R \right)$.
+
+First of all, note how we define $\ell ^{2} \left( \N \right)$
+
+\begin{equation*}
+    \ell ^{2} \left( \N \right)  = \left\{ f : \N \to \C \mid \sum_{i=1}^{\infty} \abs{f \left( i \right)} < \infty \right\}
+\end{equation*}
+
+where the inner product is given by the standard $2$-inner product. Can we do the same for $\ell ^{2} \left( \R \right)$? To answer that question, we make a definition:
+
+\begin{definition}
+    Let $g: \R \to \R _{\ge 0}$. For any finite $F \subset \R$, define $S_{F} = \sum_{x\in F} g\left( x \right)$.  We say that $\sum_{x\in R} g(x) < +\infty$ if $\sup_{F} S_{F} < \infty$ where $F$ varies over all finite subsets of $\R$. 
+
+\end{definition}
+
+With the above definition, we have an easy proposition:
+
+
+\begin{proposition}
+    Let $g: \R \to \R_{\ge 0}$. Suppose that $\sum_{x\in \R} g(x) < \infty$. Then $A:=\left\{ x \in \R : g(x)\ne 0 \right\}$ is countable!
+ \end{proposition}
+
+ \begin{proof}
+     For each $n\in \N$, define $A_{n} = \left\{ x \in \R : \abs{g(x)} >1/n \right\}$.
+     It is easy to see that $A=\cup_{n=1}^{\infty} A_{n}$ (the infamous Archimedean property) and $\{ A_{i} \}_{i \in \N}$ is an increasing sequence of sets.
+
+     We claim that for all $n\in \N$, $A_{n}$ is finite. If our claim is false then there must be some $n_{0} \in \N$ such that $A_{n_{0}}$ is infinite. Let $\left\{ x_{i} : i \in \N \right\}$ be a countable subset of $A_{n_{0}}$. Then note that $\sup_{F} S_{F} \ge \sum_{i=1}^{n} g(x_{i})$ for all $n\in \N$. But then $\sup_{F} S_{F} \ge \frac{n}{n_{0}}$ for each $n\in \N$. Hence $\sup_{F} S_{F} = +\infty$ which contradicts our assumption. This proves our claim.
+
+     Since $A$ is countable union of finite sets, we have that $A$ is countable.
+ \end{proof}
+
+ What the above proposition says is that every nonnegative function whose domain is the reals is zero almost everywhere!\footnote{this is both in the measure theoretic sense and literal sense!}
+
+ But then we want to define this notion for $f : \R \to \C$ as is the case in $\ell ^{2} \left( \N \right)$ functions. How do we do that?
+
+ \begin{definition}
+     Let $g: X \to \C$ be a function. Let $S_{F} = \sum_{i\in X} g(i)$ where $F$ is any finite subset of $\R$. We will say that $S_{F}$ converges to some $\lambda \in \C$ if for every $\varepsilon > 0$, there is a finite subset $F_{0}$ of $X$ such that for every finite subset $F \supset F_{0}$, we have that $\abs{S_{F} - \lambda } < \varepsilon$.
+     \label{<+label+>}
+ \end{definition}<++>
+
+\horz
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 $\ell ^{2} \left( \N \right)  = \left\{ f : \N \to \C \mid \sum_{i=1}^{\infty} \abs{f \left( i \right)} < \infty \right\}$
 consider $\ell ^{2} \left( \R \right)$
 
@@ -109,4 +152,5 @@ one can establish a one-to-one correspondence between the $H^{2} \left( \mathbb 
     f \mapsto \left( a_{0} , a_{1}, a_{2} , \ldots \right)
 \end{align*}
 
-where $a_i$ is defined as above. this is a separable hilbert space which can be easily by the isometry!
+where $a_i$ is defined as above. this is a separable hilbert space which can be easily by the isometry as one can check!
+

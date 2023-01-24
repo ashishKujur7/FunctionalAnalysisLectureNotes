@@ -16,5 +16,5 @@
 \contentsline {section}{\numberline {\S 5}Lecture 5 --- \textit {Examples Galore!} --- 18th January, 2023}{22}{section.5}%
 \contentsline {subsection}{\numberline {\S 5.1}Properties of Finite Dimensional Hilbert Spaces}{22}{subsection.5.1}%
 \contentsline {subsection}{\numberline {\S 5.2}Revisiting the examples of Hilbert spaces}{22}{subsection.5.2}%
-\contentsline {section}{\numberline {\S 6}Lecture 6 --- \textit {Nonseparable Hilbert Spaces} --- 23rd January, 2023}{23}{section.6}%
+\contentsline {section}{\numberline {\S 6}Lecture 6 --- \textit {Nonseparable Hilbert Spaces \& Generalising Sums\ldots } --- 23rd January, 2023}{23}{section.6}%
 \contentsline {subsection}{\numberline {\S 6.1}Non separable Hilbert Spaces}{23}{subsection.6.1}%
