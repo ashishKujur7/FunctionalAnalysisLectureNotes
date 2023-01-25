@@ -18,3 +18,8 @@
 \contentsline {subsection}{\numberline {\S 5.2}Revisiting the examples of Hilbert spaces}{22}{subsection.5.2}%
 \contentsline {section}{\numberline {\S 6}Lecture 6 --- \textit {Nonseparable Hilbert Spaces \& Generalising Sums\ldots } --- 23rd January, 2023}{23}{section.6}%
 \contentsline {subsection}{\numberline {\S 6.1}Non separable Hilbert Spaces}{23}{subsection.6.1}%
+\contentsline {section}{\numberline {\S 7}Lecture 7 --- \textit {insert title here} --- 25th January, 2023}{26}{section.7}%
+\contentsline {subsection}{\numberline {\S 7.1}Possibly, final}{26}{subsection.7.1}%
+\contentsline {subsection}{\numberline {\S 7.2}Class Sketch}{26}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {\S 7.2.1}Definition}{26}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {\S 7.2.2}Examples}{26}{subsubsection.7.2.2}%

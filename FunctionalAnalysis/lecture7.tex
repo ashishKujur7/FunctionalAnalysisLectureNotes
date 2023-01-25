@@ -1,0 +1,122 @@
+% !TEX root = main.tex
+\section{Lecture 7 --- \textit{insert title here} --- 25th January, 2023}
+\horz
+\subsection{Possibly, final}
+
+\horz
+
+\subsection{Class Sketch}
+\horz
+
+\subsubsection{Definition}
+Let $V$ be a vector space over $\R$ or $\C$ . A norm $\norm{ \cdot } : V \to \R _{\ge 0}$ is a funtion (we call this the length) if the following properties are satisfied:
+\begin{enumerate}
+    \item $\norm{v} \ge 0$ for all $v\in V$
+    \item $\norm{v} = 0$ iff $v=0$
+    \item $\norm{cv} = \abs{c}\norm{v}$ for all $c\in F$
+    \item $\norm{v+w} \le \norm{v} + \norm{w}$
+\end{enumerate}
+
+One can define a function on a normed linear space $d(v,w) = \norm{v-w}$. It is not hard to see that $(V,d)$ is a metric space. $(V, \norm{}$ is called a Banach space if the metric space $(V,d)$ is complete where $d$ is the metric induced by the norm.
+    
+
+    \subsubsection{Examples}
+    Every hilbert space is a banach space since inner product induces a norm.
+
+
+    $L^{p} \left( X,\mu \right)$ is Banach space where $(X, \mu)$ is any measure space where $p\in [1,\infty)$.
+
+    $X= \left\{ 1,\ldots , n \right\}$ and $\mu$ is the counting measure then $L^{p} \left( X, \mu \right)$ is the $\C ^{n}$ with the $\norm{x}_{p} = \left( \sum_{i=1} ^{n} \abs{x_{i}}^{p} \right) ^{1/p}$ for $p\in [1, \infty)$ and $\norm{x}_{\infty} = \max_{1\le i \le n} \abs{x_{i}}$
+
+
+    One can also consider case such that $X=[0,1]$ or $X= \R$ with $\mu=\lambda$ the Lebesgue measure.
+
+    Also, $X=C[0,1]$ with $\norm{f}_{\infty} = \sup_{x\in [0,1]} \abs{f(x)}$.
+
+    Consider $X=\N$ and $\mu$ be the counting measure, we get what we call $\ell ^{p} \left( \N \right)$ whenever $p\in [1,\infty)$. If $p=\infty$, we have $\ell ^{\infty} \left( \N \right)$, we have the set of all bounded sequences. \textcolor{red}{explicitly try to write out the norms!}
+    
+
+    Consider $C[0,1]$ as a subset of $L^{p} [0,1]$, $1 \le p < \infty$. For any $p$, then $C(X)$ is a dense subset of $L^{p} (X)$ where $X$ is a locally compact Hausdorff space.
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \horz
+
+    See tutorial problem for an example of a Banach space such that the distance of point and a closed convex set is not achieved!
+
+    Let $B$ be a Banach space. Let $M$ be a subspace of $B$. Does there exist subspace $N$ such that $B=M\oplus N$?
+
+    Consider $\R ^{2}$ with $1$-norm. Consider the subspace $M$ spanned by $e_{1}$. Then any subspace spanned by a single vector linearly dependent does the work.
+    \horz
+
+    If $H$ is a Hilbert space then $\norm{x+y} ^{2} + \norm{x-y}^{2} = 2\left( \norm{x}^{2} + \norm{y}^{2} \right)$.
+
+    Suppose $\left( V, \norm{} \right)$ is a normed space. Suppose that for all $x,y \in V$ , we have that  $\norm{x+y} ^{2} + \norm{x-y}^{2} = 2\left( \norm{x}^{2} + \norm{y}^{2} \right)$. We claim that $\norm{\cdot }$ is induced by a unique inner product.
+
+    One can define 
+    \begin{align*}
+	\ip{v,w} = \frac{1}{4} \sum_{k=1}^{4} \norm{v+i^{k} w } ^{2}
+    \end{align*}
+
+    It can be shown that the above defines an inner product indeed!
+
+    \horz
+
+    Let $V$ be a real inner product space. Then we have that 
+    \begin{align*}
+	\norm{v+w}^{2} - \norm{v-w} ^{2} = 4 \ip{v,w}
+    \end{align*}
+
+    Suppose $V, \norm{}$ satisfies the parallelogram law then one can define the inner product as above and one can check that it is indeed an inner product.
+
+
+\horz
+
+A set $\left\{ u_{i} : i \in \N \right\}$ is called a Schauder basis of a normed linear space $( V, \norm{ } )$ if there exists a \textit{unique} sequence in $\F$, $\left\{ c_{i} : i \in \N \right\}$, $x= \lim_{n} \sum_{i=1}^{n} c_{i} u_{i} = \sum_{i=1}^{\infty} c_{i} u_{i}$ for every $x\in V$.
+
+Any basis of a finite dimensional vector space is a Schauder basis.
+
+Consider $\ell ^{1} \left( \N \right)$. As expected, $\left\{ e_{i} : i \in \N \right\}$ is a Schauder basis for $\ell ^{1} \left( \N \right)$. Let $x= \left( x_{i} \right) \in \ell ^{1} \left( \N\right)$. Then the sequence terms give the necessary sequence, that is,
+\begin{align*}
+    S_{n } = \sum_{i=1}^{n} x_{i} e_{i}
+\end{align*}
+We claim that $S_{n} \to x$ in $\ell ^{1}  \left( \N \right)$. that is, $\norm{S_{n} - x}_{1} \to 0$. Note that
+\begin{equation*}
+    \norm{S_{n} - x}_{1} = \sum_{i=n+1} ^{\infty} \abs{x_i} \to 0 \text{ as } n\to \infty
+\end{equation*}
+
+It remains to show uniqueness. Let $x= \left( x_{i} \right)$. Suppose $x=\sum c_{i} e_{i} = \sum d_{i} e_{i}$. But this is the same as $\sum c_{i} e_{i} = 0$.  Consider $p_{n} = \sum_{i=1}^{n} c_{i} e_{i}$ and hence $p_{n} \to 0$. Hence $\norm{p_{n}} \to 0$. Thus, $\sum_{i=1}^{n} \abs{c_{i}} \to 0$ and hence $c_{i} = 0$ for all $i\in \N$ and this completes the proof of the claim.
+
+
+Orthonormal basis are always an example of a separable Hilbert space (Verify!)
+
+
+\horz
+
+\begin{proposition}
+    Let $B$ be a Banach space which admits a Schauder basis $\left\{ u_{i} : i \in \N \right\}$. Then $B$ is separable that is, it admits a countable dense set.
+\end{proposition}
+
+We consider an example first. In the case of $\ell ^{2} \left( \N \right)$, consider the set
+\begin{equation*}
+    \cup_{n=1}^{\infty} \left\{ \sum c_{i} e_{i} \, \mid \, \Q + i \Q \right\}
+\end{equation*}
+This does the job!
+
+
+We claim the set
+\begin{equation*}
+    \cup_{n=1}^{\infty} \left\{ \sum c_{i} u_{i} \, \mid \, \Q + i \Q \right\}
+\end{equation*}
+
+Consider $M_n = \text{span} \left\{ u_{1}, \ldots , u_{n} \right\}$ and $D_{n}$ be the set of vectors which are span of $u_{1}, \ldots , u_{n}$ with rational coefficients. Then closure of $D_{n}$ is $M_n$. Then 
+\begin{align*}
+    \bigcup_{n\in \N} \overline{D_{n}} \subset M_{n} \subset \text{span } \left\{ u_{i} : i \in \N \right\}
+\end{align*}
+ 
+Since $\left\{ u_{i} \right\}$ is a Schauder basis, we can write $B= \overline {\text{span } \left\{ u_{i} : i \in \N \right\}}$. Observe that $\cup_{n=1}^{\infty} \overline{D_{n}} \subset \overline {D}$. But then $\overline {D_{n}} = M_{n}$. Hence, we have that $\text{span } \left\{ u_{i} : i \in \N \right\} = \cup_{n=1}^{\infty} M_{n} \subset \overline {D}$. Taking closure again, we have that  \textcolor{red}{complete this!}
+
+
+\horz
+
+One can show that $\left\{ e_{i} : i\in \N \right\}$ is not a Schauder basis for $\ell ^{\infty} \left( \N \right) $. In fact, it does not admit a Schauder basis at all!
