@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  25 JAN 2023 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.6)  25 JAN 2023 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1199,16 +1199,16 @@ utmi/m/it/14.4 p \FMS/futm/m/n/14.4 2 \T1/futs/m/n/14.4 [1\FML/futmi/m/it/14.4
 ; \FMS/futm/m/n/14.4 1\T1/futs/m/n/14.4 )$. 
  []
 
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 43--43
- [] 
- []
-
 [26
 
 
 
 ]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 43--43
+ [] 
+ []
+
+
 Overfull \hbox (12.0pt too wide) in paragraph at lines 50--50
  [] 
  []
@@ -1237,7 +1237,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 120--120
 (./lecture3.aux) (./lecture4.aux) (./lecture5.aux) (./lecture6.aux)
 (./lecture7.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8905CB828725996985FECAA3491747FC;6909.
+(rerunfilecheck)             Checksum: F88307605D2C22A65666882F9F8B0ACA;6985.
  ) 
 Here is how much of TeX's memory you used:
  24310 strings out of 474971
@@ -1258,7 +1258,7 @@ obe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/p
 utbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (28 pages, 196771 bytes).
+Output written on main.pdf (28 pages, 197089 bytes).
 PDF statistics:
  436 PDF objects out of 1000 (max. 8388607)
  378 compressed objects within 4 object streams
