@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.26)  27 JAN 2023 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.26)  28 JAN 2023 10:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,7 +841,7 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./main.aux
-(./question15.aux))
+(./question15.aux) (./question17.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 235.
@@ -865,14 +865,16 @@ LaTeX Font Info:    ... okay on input line 235.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 235.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
 235.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 235.
 LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 235.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
 235.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 235.
@@ -1011,18 +1013,30 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 )
 [2
 
-] (./main.aux (./question15.aux))
+]
+\openout2 = `question17.aux'.
+
+ (./question17.tex
+Overfull \hbox (24.88516pt too wide) detected at line 45
+[]
+ []
+
+[3
+
+
+
+]) [4] [5] (./main.aux (./question15.aux) (./question17.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3349AC272F00B835B58FF96A040E7841;101.
+(rerunfilecheck)             Checksum: 86E0B25A35EF594D511A37FF5E487E0F;202.
  ) 
 Here is how much of TeX's memory you used:
- 23875 strings out of 474971
- 454171 string characters out of 5778662
- 858801 words of memory out of 5000000
- 44912 multiletter control sequences out of 15000+600000
- 538951 words of font info for 110 fonts, out of 8000000 for 9000
+ 23910 strings out of 474971
+ 455015 string characters out of 5778662
+ 868144 words of memory out of 5000000
+ 44934 multiletter control sequences out of 15000+600000
+ 539378 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,15n,118p,467b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,15n,118p,467b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dis
@@ -1031,10 +1045,10 @@ nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/ut
 opia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a
 .pfb>
-Output written on main.pdf (2 pages, 56542 bytes).
+Output written on main.pdf (5 pages, 67498 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
