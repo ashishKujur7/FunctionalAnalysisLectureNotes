@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.26)  1 FEB 2023 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.26)  1 FEB 2023 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1028,6 +1028,14 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 9.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 9.
+
+Overfull \hbox (6.04564pt too wide) in paragraph at lines 11--12
+\T1/futs/m/n/14.4 uct space, we have that $[] \FMS/futm/m/n/14.4 Å []$ \T1/futs
+/m/n/14.4 for ev-ery $\FML/futmi/m/it/14.4 ; ^^L \FMS/futm/m/n/14.4 2 \FML/fut
+mi/m/it/14.4 I$ \T1/futs/m/n/14.4 with $\FML/futmi/m/it/14.4  \FMS/futm/m/n/14
+.4 6Å \FML/futmi/m/it/14.4 ^^L$\T1/futs/m/n/14.4 . Let $[]$
+ []
+
 ) [2
 
 ]
@@ -1060,7 +1068,7 @@ Here is how much of TeX's memory you used:
  44975 multiletter control sequences out of 15000+600000
  560291 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,15n,118p,467b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,15n,118p,684b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dis
@@ -1070,7 +1078,7 @@ ype1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/a
 dobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/
 putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 
-Output written on main.pdf (6 pages, 76308 bytes).
+Output written on main.pdf (6 pages, 77320 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

@@ -8,5 +8,5 @@ Let $(V,\langle \cdot, \cdot \rangle)$ be an inner product space. Let $\overline
     $\left( \Longleftarrow \right)$ Suppose that $\dim V$ is finite. In Lecture 5, we showed that $V$ is isometrically isomorphic to $\C ^{n}$ with Euclidean norm, that is, there exists a linear map $T: V \to \C^{n}$ which is an isometry. 
     Since every isometry is an homeomorphism\footnote{\href{https://planetmath.org/isometry}{proof here!}}, we have that $T^{-1} \left( \overline{B_{\C^{n}}\left( 0,1 \right)} \right) = \overline{B_{V} \left( 0,1 \right)}$. Since a continuous image of a compact set is compact, we have that $\overline{B_{V}(0,1)}$ is compact!
 
-    $\left( \Longrightarrow \right)$ Follow the hint?
+    $\left( \Longrightarrow \right)$ (Contrapositive proof) Suppose that $\dim V$ is infinite. Then by Zorn's Lemma, it has a maximal orthonormal set $\left\{ u_{\alpha} : \alpha \in I \right\}$. Since $V$ is an inner product space, we have that $\norm{u_{\alpha} - u_{\beta}} = \sqrt{2}$ for every $\alpha , \beta \in I$ with $\alpha \ne \beta$. Let $\left\{ e_{i} : i \in \N \right\}$ be any countable subset of $\left\{ u_{\alpha} : \alpha \in I \right\}$. Now, $\left\{ e_{i} \right\}_{i\in \N}$ is a sequence in $\overline {B(0,1)}$ but it cannot possibly have a convergent subsequence, hence, $\overline{B(0,1)}$ is not compact.
 \end{proof}
