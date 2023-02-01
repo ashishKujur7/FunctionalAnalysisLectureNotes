@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {\S 1}Lecture 1 --- 3rd January --- Baby Stuff}{1}{section.1}%
-\contentsline {subsection}{\numberline {\S 1.1}References for the Course}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {\S 1.2}Geometry of curves in three dimensions}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {\S 1.3}Brief Review of Inverse Function Theorem \& Reparameterization of Curves}{2}{subsection.1.3}%
-\contentsline {subsection}{\numberline {\S 1.4}Arc Length Parameterization}{3}{subsection.1.4}%
