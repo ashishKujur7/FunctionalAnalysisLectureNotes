@@ -1,0 +1,34 @@
+\section{Question 4}
+\horz
+Let $M$ be a subspace of an inner product space $(V,\langle \cdot, \cdot \rangle).$ Show that $\overline{M},$ the closure of $M,$ in $V$ is also a subspace. Moreover show that $M^{\perp}= {\overline{M}}^{\perp}.$
+\horz
+\begin{proof}[Solution] We make the following claims:
+
+\begin{claim}[orthogonal complement of a set and the orthogonal completement of its closure are same!]
+    Let $M$ be a subset of a inner product space $H$. Then $M^{\perp} =  \left( \overline{M} \right)^{\perp}$
+\end{claim}
+\begin{proof}
+    It follows by definition that $M \subset \overline M$ and hence $\left( \overline M \right)^{\perp} \subset M^{\perp}$. Now for reverse the inclusion, let $v \in M^{\perp}$ and let $y \in \overline M$. We need to show that $\ip{v,y} = 0$. Since $y\in \overline M$ there is a sequence $\left( y_{n} \right)$ in $M$ such that $y_{n} \to y$. Since $v \in M^{\perp}$, we have that $\ip {v , y_{n}}=0 $ for all $n\in \N$. Since $\ip{v, y_{n}} \to \ip{v,y}$, we have by uniqueness of limits that $\ip{v,y} = 0$. This completes the proof.
+\end{proof}
+
+\begin{claim}[orthogonal complement of orthogonal complement]
+    Let $M$ be a closed subspace of the Hilbert space $H$. Then 
+    \begin{align*}
+	M = \left( M^{\perp} \right) ^{\perp}
+    \end{align*}
+\end{claim}
+\begin{proof}[Proof of Claim]
+    Let us first show that $M \subset \left( M ^{\perp} \right)^{\perp}$ (which in fact holds for any set $M$). Let $v \in M$ and $w \in M^{\perp}$. It is clear by definition of $M^{\perp}$ that $\ip{v,w} = 0$. Hence, $v \in \left( M^{\perp} \right)^{\perp}$.
+
+    Let us proceed to show the inclusion in the other direction. Let $v \in \left( M^{\perp} \right)^{\perp}$. Since $M$ is closed, by Projection Theorem, we have that $v = Pv + Qv$ where $Pv \in M$ and $Qv \in M^{\perp}$. By the previous paragraph, we have that $M \subset \left( M^{\perp} \right)^{\perp}$ and hence $Pv \in \left( M^{\perp} \right) ^{\perp}$. Hence, we have that $Qv \in \left( M^{\perp} \right)^{\perp}$. Now, $Qv \in M^{\perp} \cap \left( M^{\perp} \right) ^{\perp}$. Hence, $Qx = 0$ and thus, $v=Pv \in M$.
+\end{proof}
+
+Now, we start the proof. Let $M$ be subspace of $V$. Consider the following:
+ \begin{align*}
+    \left( M^{\perp} \right) ^{\perp} &= \left( \left( \overline M \right) ^{\perp} \right) ^{\perp} & \text{by Claim 1}  \\
+    &= \overline{\overline{M}} & \text{by Claim 2} \\
+    &= \overline M
+    \end{align*}
+
+    
+\end{proof}
