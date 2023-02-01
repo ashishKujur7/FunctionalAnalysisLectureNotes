@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.26)  27 JAN 2023 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.1.26)  1 FEB 2023 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -842,51 +842,51 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./main.aux
 (./ref.aux) (./lecture1.aux) (./lecture2.aux) (./lecture3.aux) (./lecture4.aux)
-(./lecture5.aux) (./lecture6.aux) (./lecture7.aux))
+(./lecture5.aux) (./lecture6.aux) (./lecture7.aux) (./lecture8.aux)
+(./lecture9.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 236.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 237.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-236.
-
-(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
+237.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 237.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-236.
+237.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 236.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 237.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-236.
+237.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    ... okay on input line 237.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -922,7 +922,7 @@ LaTeX Font Info:    ... okay on input line 236.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 236.
+Package hyperref Info: Link coloring OFF on input line 237.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -950,62 +950,62 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 236.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 236.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 237.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 237.
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 238.
+ 239.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 238.
+(Font)              scaled to size 15.89755pt on input line 239.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 238.
+(Font)              scaled to size 11.03998pt on input line 239.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 238.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 238
+(Font)              scaled to size 8.27998pt on input line 239.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 239
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 238
+LaTeX Font Info:    Trying to load font information for U+msb on input line 239
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23
-8.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 238.
+(Font)              scaled to size 15.89755pt on input line 239.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 238.
+(Font)              scaled to size 11.03998pt on input line 239.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 238.
+(Font)              scaled to size 8.27998pt on input line 239.
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-238.
+239.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 238.
+(Font)              scaled to size 9.19998pt on input line 239.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 238.
+(Font)              scaled to size 6.99199pt on input line 239.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 238.
+(Font)              scaled to size 5.51999pt on input line 239.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 238.
+(Font)              scaled to size 9.19998pt on input line 239.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 238.
+(Font)              scaled to size 6.99199pt on input line 239.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 238.
+(Font)              scaled to size 5.51999pt on input line 239.
  (./main.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 2.
@@ -1233,17 +1233,68 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 120--120
  [] 
  []
 
-) [28] (./main.aux (./ref.aux) (./lecture1.aux) (./lecture2.aux)
+) [28]
+\openout2 = `lecture8.aux'.
+
+ (./lecture8.tex
+Overfull \hbox (12.0pt too wide) in paragraph at lines 3--3
+ [] 
+ []
+
+
+Overfull \hbox (4.24028pt too wide) in paragraph at lines 57--58
+[][]\T1/futs/b/n/14.4 Example Ÿ8.1.6. []\T1/futs/m/n/14.4 It fol-lows by Holder
+'s in-equal-ity that in $\U/futm/m/n/14.4 R[]$\T1/futs/m/n/14.4 , any $\FML/fut
+mi/m/it/14.4 p$\T1/futs/m/n/14.4 -norm is equiv-
+ []
+
+[29
+
+
+
+]
+Overfull \hbox (4.26532pt too wide) in paragraph at lines 89--91
+[][]\T1/futs/b/n/14.4 Proposition Ÿ8.1.8. []\T1/futs/m/it/14.4 Sup-pose $\FML/f
+utmi/m/it/14.4 V$ \T1/futs/m/it/14.4 be a normed lin-ear space. Let $\FML/futmi
+/m/it/14.4 Y \FMS/futm/m/n/14.4  [] [] ^^Z
+ []
+
+[30] [31]
+Overfull \hbox (4.95967pt too wide) in paragraph at lines 171--172
+\T1/futs/m/n/14.4 in-de-pen-dent vec-tors $\FML/futmi/m/it/14.4 v[]; v[]; []$ \
+T1/futs/m/n/14.4 can-not be com-plete! Con-sider the sub-spaces $\FML/futmi/m/i
+t/14.4 M[] \FMS/futm/m/n/14.4 
+ []
+
+) [32]
+\openout2 = `lecture9.aux'.
+
+ (./lecture9.tex
+Overfull \hbox (1.96567pt too wide) in paragraph at lines 1--1
+[]\T1/futs/b/n/20.74 Lecture 9 --- \T1/futs/b/it/20.74 Baire Cat-e-gory The-o-r
+em \T1/futs/b/n/20.74 --- 1st Febru-
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
+ [] 
+ []
+
+[33
+
+
+
+] [34]) [35] (./main.aux (./ref.aux) (./lecture1.aux) (./lecture2.aux)
 (./lecture3.aux) (./lecture4.aux) (./lecture5.aux) (./lecture6.aux)
-(./lecture7.aux))
+(./lecture7.aux) (./lecture8.aux) (./lecture9.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F88307605D2C22A65666882F9F8B0ACA;6985.
+(rerunfilecheck)             Checksum: BC87560083C9ED7F4152C78F1A189FD5;8378.
  ) 
 Here is how much of TeX's memory you used:
- 24310 strings out of 474971
- 462225 string characters out of 5778662
- 872582 words of memory out of 5000000
- 45157 multiletter control sequences out of 15000+600000
+ 24415 strings out of 474971
+ 464458 string characters out of 5778662
+ 873605 words of memory out of 5000000
+ 45215 multiletter control sequences out of 15000+600000
  583917 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,17n,118p,940b,723s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1258,10 +1309,10 @@ obe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/p
 utbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (28 pages, 197089 bytes).
+Output written on main.pdf (35 pages, 218906 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 378 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 459 compressed objects within 5 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

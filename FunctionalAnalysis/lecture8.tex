@@ -1,0 +1,172 @@
+\section{Lecture 8 --- \textit{Equivalence of norms} --- 30th January, 2023}
+
+\horz
+
+\subsection{Equivalence of Norms}
+\begin{definition}
+    Let $V$ be a vector space. Let $\norm{}_{1}$ and $\norm{}_{2}$ be two norms on $V$. We say that $\norm{}_{1}$ and $\norm{}_{2}$ are equivalent if there exists positive constants $C_{1}, C_{2}$ such that
+    \begin{align*}
+	C_{2} \norm{v}_{1} \le \norm{v}_{2} \le C_{1} \norm{v}_{1}
+    \end{align*}
+    for all $v\in V$.
+    \label{def:equivalent-norms}
+\end{definition}
+
+Let $B_{i} \left( 0,1 \right)$ be the unit ball of $i$ norm. Then by definition, we have that
+\begin{equation*}
+    B_{1} \left( 0,1 \right) \subset B_2 \left( 0, c_{2} \right)
+\end{equation*} 
+and
+\begin{equation*}
+    B_{2} \left( 0,1 \right) \subset B_{1} \left( 0,\frac{1}{c_{2}} \right)
+\end{equation*}
+
+\begin{example}
+    Consider $\R ^{2}$ with $1$-norm and $2$-norm. It can be shown that
+    \begin{equation*}
+	\norm{x}_{2} \le \norm{x}_{1}
+    \end{equation*}
+    It follows from Cauchy Schwarz that
+    \begin{equation*}
+	\abs{x_{1}} + \abs{x_{2}} \le \sqrt{2} \sqrt{\abs{x_{1}}^{2} + \abs{x_{2}}^{2}}
+    \end{equation*}
+    and hence we have that
+    \begin{equation*}
+	\norm{x}_{1} \le \sqrt{2} \norm{x}_{2}
+    \end{equation*}
+    Hence, the norms are equivalent.
+\end{example}
+
+\begin{proposition}
+    Let $V$ be a vector space. Let $\norm{}_{1}$ and $\norm{}_{2}$ be two equivalent norms on $V$. A sequence $\{ x_{n} \}$ converges to $x$ in one norm iff it converges in the other.
+    \label{prop:equivalent-sequences-converge}
+\end{proposition}
+
+\begin{corollary}
+    Let $V$ be a vector space. Let $\norm{}_{1}$ and $\norm{}_{2}$ be two norms on $V$. Let $A$ be subset of $V$. Then closure of $A$ in $1$-norm is the same as the closure of $A$ in $2$-norm.
+    \label{cor:equivalent-implies-same-closure}
+\end{corollary}
+
+\begin{corollary}
+    Let $V$ be a vector space. Let $\norm{}_{1}$ and $\norm{}_{2}$ be two norms on $V$. Let $A$ be subset of $V$. $A$ is closed (corr. open) in $1$-norm iff $A$ is closed (corr. open) in $2$-norm.
+    \label{cor:equivalent-implies-same topology}
+\end{corollary}
+
+\begin{example}
+    \label{ex:p-norm-equiv-1-norm}
+    It follows by Holder's inequality that in $\R^{n}$, any $p$-norm is equivalent to $1$-norm.
+    \begin{proof}[Proof of Example \ref{ex:p-norm-equiv-1-norm}]
+	Recall Holder's inequality, which states that if $a,b \in \C^{n}$ and $p,q$ are conjugate exponents then
+	\begin{align*}
+	    \sum_{i=1}^{n} \abs{a_{i} b_{i}} \le \norm{a}_{p} \norm{b}_{q}
+	\end{align*}
+	Now if $x\in \C^{n}$ and taking $y=\left( 1,\ldots , 1 \right)$ we have that
+	\begin{align*}
+	    \norm{x}_{1} = \sum_{i=1}^{n} \abs{x_{i}} \le 2^{1/q}\norm{x}_{p} 
+	\end{align*}
+	and also note that
+	\begin{align*}
+	    \norm{x}_{\infty} \le \norm{x}_{1}
+	\end{align*}
+	Hence it follows that $1$-norm and $p$-norm are equivalent for any $p \ge 1$.
+    \end{proof}
+    \end{example}
+
+    \begin{example}[Looking for norms which are not equivalent]
+	Consider $c_{00}$ which is the span of $e_{i}$. It is evident that
+	\begin{align*}
+	    \norm{x}_{\infty} \le \norm{x}_{1}
+	\end{align*}
+	for every $x\in c_{00}$.
+	But consider the sequence $A_{n} = \left( \underbrace{\frac{1}{n} , \ldots , \frac{1}{n}}_{n \text{ terms}}, \ldots \right)$. Note that this sequence converges to $0$ in $\infty$ norm, however, this does not converge in the $1$ norm for the very simple reason that
+	\begin{equation*}
+	    \norm{A_{n}}_{1} =1
+	\end{equation*}
+	for every $n\in \N$.
+    \end{example}
+
+    \begin{proposition}
+	Suppose $V$ be a normed linear space. Let $Y = \text{span } \left\{ v_{1,\ldots , v_{n}} \right\} \subset V$ where $v_{i}$ is a basis. Then
+	there exists positive constants such that
+	\begin{align*}
+	    C \norm{x}_{2} \le \norm{\sum_{i=1}^{n} x_{i} v_{i}} \le M \norm{x}_{2}
+	\end{align*}
+	\label{prop:finite-dim-noob}
+    \end{proposition}
+    \begin{proof}
+	Observe that
+	\begin{align*}
+	    \norm{\sum_{i=1}^{n} x_{i} v_{i}} \le \sum_{i=1}^{n} \abs{x_{i}} \norm{v_{i}}
+	    \stackrel{\text{CS inequality}}{\le }M \norm{x}_{2}
+	\end{align*}
+	where $M= \left( \abs{\norm{v_{1}}^{2} + \ldots + \norm{v_{n}}^{2}} \right)^{1/2}$.
+
+	Consider the function $f$ on the unit sphere $S$ given by
+	$f(x)=\norm{\sum_{i=1}^{n} x_{i} v_{i}}$ for every $x\in S$.
+
+	Now we claim that $f$ is continuous.
+	Consider
+	\begin{align*}
+	    \abs{f(x)-f(y)} = \abs{\norm{\sum_{i} x_{i} v_{i}}  - \norm{\sum_{i} y_{i} v_{i}} } \le M \norm{x-y}_{2}
+	\end{align*}
+
+	Since $f(x)>0$ for every $x\in S$ and since $f$ is continuous, we have hthat there is some $x_{0} \in S$ such that $\delta = f(x_{0}) = \inf_{x\in S} f\left( x \right)$.
+
+	Thus, we have that $\norm{\sum_{i=1}^{n} x_{i} v_{i}} \ge \delta$ for every $x\in S$.
+
+	Now, let $x\in V$. Then $\left( \frac{x_{1}}{\norm{x}}, \ldots , \frac{x_{n}}{\norm{x}} \right) \in S$ and the result follows.
+    \end{proof}
+
+    \begin{corollary}
+	Let $\left( C^{n}, \norm{} \right)$ be a normed linear space. Then this normed linear space is equivalent with the usual Euclidean norm on $\C ^{n}$.
+    \end{corollary}
+    \begin{proof}
+	Take $v_{i}$ to be standard basis.
+    \end{proof}
+
+    \begin{corollary}
+	Let $Y$ be a finite dimensional subspsace of a normed linear space $V$. Then $Y$ is complete (and hence closed).
+    \end{corollary}
+    \begin{proof}
+	Let $Y$ be a finite dimensional closed subspace. Let $v_{1}, \ldots , v_{k}$ be a basis for $Y$. Let $\left\{ x_{n} \right\}$ be a Cauchy sequence in $Y$.
+    Suppose that for each $n \in \N$, we have that
+    \begin{equation*}
+	x_{n} = a_{n1} v_{1} + \ldots + a_{nk} v_{k}\text{ .}
+    \end{equation*}
+
+    Let $\left\{ a_{n} \right\}$ be the sequence in $\C ^{n}$ given
+    \begin{align*}
+	a_{n} = \left( a_{n1}, \ldots , a_{nk} \right)
+    \end{align*}
+    for each $n\in \N$.
+    Then from Proposition \ref{prop:finite-dim-noob}, we have for $n,m \in \N$ and $i\in \left\{ 1,2, \ldots , k \right\}$, we have that
+    \begin{align*}
+	C |a_{ni}-a_{mi}| \le C \norm{a_{n}-a_{m}}_{2} \le \norm{x_{n} - x_{m}} \le M \norm{a_{n}-a_{m}}_{2}
+    \end{align*}
+    Since $\left\{ x_{n} \right\}$ is Cauchy, we have that each $a_{ni}$ is Cauchy and hence converges at some $a_{i}$.
+
+    Now, we show that $\left\{ x_{n} \right\}$ converges to the vector
+    \begin{align*}
+	x:=a_{1} v_{1} + \ldots + a_{k} v_{k}
+    \end{align*}
+    This is easy to see by Cauchy Schwarz inequality that
+    \begin{align*}
+	\norm{x_{n} -x} \le M \norm{a_{n} - a}_{2}
+    \end{align*}
+    This completes the proof.
+    \end{proof}
+     
+    \begin{exercise}
+	Consider $C[0,1]$. Show that that sup norm and any $p$ norm are not equivalent.
+    \end{exercise}
+    \begin{proof}[Solution]
+	Does this work?
+    \end{proof}
+
+    \begin{exercise}
+	$c_{00}$ and the set of all polynomials are not complete.\\
+	Hint: Use BCT!
+    \end{exercise}
+    \begin{proof}
+	A space generated by an infinite but countably many number of linearly independent vectors $v_{1}, v_2 , \ldots$ cannot be complete! Consider the subspaces $M_{n} =\operatorname{span} \left[ v_{1}, v_{2}, \ldots , v_{n} \right]$. Each of which are finite dimensional and hence closed and do not have an interior,so, by Baire's Theorem, we have that they cannot be complete!
+    \end{proof}

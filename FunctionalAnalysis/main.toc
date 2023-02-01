@@ -23,3 +23,9 @@
 \contentsline {subsection}{\numberline {\S 7.2}Class Sketch}{26}{subsection.7.2}%
 \contentsline {subsubsection}{\numberline {\S 7.2.1}Definition}{26}{subsubsection.7.2.1}%
 \contentsline {subsubsection}{\numberline {\S 7.2.2}Examples}{26}{subsubsection.7.2.2}%
+\contentsline {section}{\numberline {\S 8}Lecture 8 --- \textit {Equivalence of norms} --- 30th January, 2023}{29}{section.8}%
+\contentsline {subsection}{\numberline {\S 8.1}Equivalence of Norms}{29}{subsection.8.1}%
+\contentsline {section}{\numberline {\S 9}Lecture 9 --- \textit {Baire Category Theorem} --- 1st February, 2023}{33}{section.9}%
+\contentsline {subsection}{\numberline {\S 9.1}Consequence of Baire's Theorem}{33}{subsection.9.1}%
+\contentsline {subsection}{\numberline {\S 9.2}Compactness of unit ball}{33}{subsection.9.2}%
+\contentsline {subsection}{\numberline {\S 9.3}Quotient Space}{34}{subsection.9.3}%

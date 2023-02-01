@@ -1,0 +1,102 @@
+\section{Lecture 9 --- \textit{Baire Category Theorem} --- 1st February, 2023}
+\horz
+
+\subsection{Consequence of Baire's Theorem}
+
+It follows from Baire's theorem that
+\begin{proposition}
+    If $X$ is a Banach space then any Hamel basis of $X$ is uncountable.
+    \label{prop:B-space-implies-uncountable-Hamel-basis}
+\end{proposition}
+
+Some interesting other consequences are that: $\R^{2}$ is not a union of countably many straight lines.
+
+\subsection{Compactness of unit ball}
+
+We saw that in a Hilbert Space, the unit ball in compact iff the space is of finite dimension.
+
+Now, consider the unit ball of $\ell ^{1}$
+\begin{align*}
+    B_{1} \left( 0 \right) = \left\{ \left( x \right) \mid \norm{x} \le 1 \right\}
+\end{align*}
+Note that $\left\{ e_{i} \right\}$ is a sequence in the unit ball. Note that for $n,m \in \N$,
+\begin{align*}
+    \norm{e_{n} - e_{m}}_{1} =2
+\end{align*}
+This says that $\ell ^{1}$  is not complete.
+
+Now consider $\ell ^{\infty}$. The same argument works but the distance between any two distinct sequences $e_{n}$ and $e_{m}$ is $1$.
+
+The same argument works for $\ell ^{p}$.
+
+This proves the following:
+\begin{proposition}
+    Unit ball of $\ell ^{p}$ is not compact.
+\end{proposition}
+
+\begin{proposition}[Riesz Lemma]
+    Let $X$ be a NLS, $M$ is a closed subspace of $X$. Fix $t \in (0,1)$. Then there is $x_{0} \in X$ such that $\norm{x_{0}}=1$ and $d\left( x_{0}, M \right) \ge t$.
+\end{proposition}
+
+We see an application before the proof:
+Suppose $\dim X = \infty$. So, let $M_{1}$ be the span of some nonzero vector $v\in X$ whose norm is $1$. This $M_1$ is closed. By the lemma, there is $v_{2}$ in the unit circle such that $d\left( v_{2}, M_{1} \right) \ge 1/2$.
+
+Now consider $M_{2}$ be the span of $v_{1}$ and $v_{2}$. Again by the lemma, there is $v_{3}$ in the unit circle such that $d \left( v_{3} , M_{2} \right) \ge 1/2$.
+
+Suppose that we have obtained a sequence $v_{1}, v_{2}, \ldots, v_{n}$ such that $M_{n}$ is a span of $v_{1}, \ldots , v_{n}$ and then repeating the argument, we can obtained $v_{n+1}$ in the unit circle such that $d \left( v_{n+1} , M_{n} \right) \ge 1/2$.
+
+Now, observe that $\norm{v_{j} - v_{k}} \ge 1/2$. Hence the unit ball cannot be closed.
+
+\begin{proof}[Proof of Riesz Lemma]
+    Consider $y \not \in M$. Then $\delta := d(y, M) > 0$ because $M$ is closed.Consider $\delta /t > \delta$. Since $\delta$ is the infimum of distances between $y$ and the points of $M$. We can find $m_{0} \in M$ such that $\norm{y-m_{0} }< \frac{\delta}{t}$.
+
+    Take $x_{0} = (y-m_{0})/\norm{y-m_{0}}$. Note that norm of $x_{0}$ is $1$.
+
+    Then we have that 
+    \begin{align*}
+	\norm{x_{0} - m} &= \norm{\frac{y-m_{0}}{\norm{y-m_{0}}} - m } \\
+	&= \frac{1}{\norm{y-m_{0}}} \norm{y-\underbrace{m_{0}- m \norm{y-m_{0}}_{\in M}}} \\
+	    &\ge \frac{\delta}{ \norm{y-m_{0}}} >t
+    \end{align*}
+
+This shows that $d \left( x_{0}, M \right) \ge t$.
+\end{proof}
+
+Let $X, Y$ be two normed linear space. One can construct another NLS by $X \oplus Y$ in the following way:
+\begin{equation*}
+    \norm{\left( x_{1} , x_{2} \right)}_{1} = \norm{x_{1}}_{X} + \norm{x_{2}}_{Y} 
+\end{equation*}
+and in general in the $p$ norm style.
+
+\subsection{Quotient Space}
+Let $X$ be a normed linear space, $M$ be a closed subspace. Then
+\begin{align*}
+    X/M = \left\{ [x] : x\in X \right\}
+\end{align*}
+
+One can define $\norm{[x]} = \inf \left\{ \norm{x-m} : m \in M \right\}$. One can show that with this norm, $X/M$ becomes a NLS indeed!
+
+But is $X/M$ a Banach space? Yes:
+\begin{proposition}
+    If $X$ is complete then $X/M$ is also complete.
+    \label{prop:quotient-are-complete}
+\end{proposition}
+
+example: $M=\left\{ \left( x \right) : x_{1} =0 \right\}$ of $c_{00}$.
+
+\begin{lemma}
+    Let $X$ be a Banach space. If $\left\{ v_{j} \right\}$ is absolutely summable, that is, $\sum_{j=1}^{\infty} \norm{v_{j}} < \infty$. Then $S_{n} = \sum_{j=1}^{n}$ is convergent. 
+    \label{lemma:Banach-absolutely-summable}
+\end{lemma}
+\begin{proof}
+    Consider $\norm{s_{n} - s_{m}}$. Show that cauchy and be done.
+\end{proof}
+
+\begin{theorem}
+    Let $X$ be a NLS. The following are equivalent:
+    \begin{enumerate}
+	\item $X$ is complete
+	\item Every absolutely summable sequence is summable.
+    \end{enumerate}
+    \label{thm:equivalent-thm}
+\end{theorem}
