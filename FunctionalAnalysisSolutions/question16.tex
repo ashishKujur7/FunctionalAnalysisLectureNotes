@@ -1,0 +1,45 @@
+\section{Question 16}
+\horz
+Let $V$ be a finite dimensional inner product space with inner product $\langle\cdot ,\cdot \rangle.$ Suppose $\beta_b= (b_1,b_2,\ldots,b_n)$ and  $\beta_e=(e_1,e_2,\ldots,e_n)$ are two ordered basis for $V$ which are related by the following relation:
+$e_ j= \sum_{k=1}^n P_{k,j}b_k,$ for $j=1,2,\ldots,n.$ In short (in matrix multiplication notation) they are related by the following :
+\begin{align*} \label{Basis change matrix}
+(e_1,e_2,\ldots,e_n)= (b_1,b_2,\ldots,b_n)\begin{pmatrix}
+P_{1,1} & P_{1,2}& \ldots & P_{1,n}\\
+P_{2,1} & P_{2,2}& \ldots & P_{2,n}\\
+\vdots & \vdots & \ddots & \vdots\\
+P_{n,1} & P_{n,2}& \ldots & P_{n,n}
+\end{pmatrix},  \,\,\mbox{that is,}\,\,\beta_e=\beta_b P.
+%\,\,P= \begin{pmatrix}
+%P_{1,1} & P_{1,2}& \ldots & P_{1,n}\\
+%P_{2,1} & P_{2,2}& \ldots & P_{2,n}\\
+%\vdots & \vdots & \ddots & \vdots\\
+%P_{n,1} & P_{n,2}& \ldots & P_{n,n}
+%\end{pmatrix},
+\end{align*}
+Let $G_e$ and $G_b$  be the Grammian matrix given by 
+\begin{align*}
+G_e= \begin{pmatrix}
+\langle e_1,e_1\rangle & \langle e_2,e_1\rangle & \ldots & \langle e_n,e_1\rangle\\
+\langle e_1,e_2\rangle & \langle e_2,e_2\rangle & \ldots & \langle e_n,e_2\rangle\\
+\vdots & \vdots & \ddots & \vdots\\
+\langle e_1,e_n\rangle & \langle e_2,e_n\rangle & \ldots & \langle e_n,e_n\rangle
+\end{pmatrix}, \,G_b= \begin{pmatrix}
+\langle b_1,b_1\rangle & \langle b_2,b_1\rangle & \ldots & \langle b_n,b_1\rangle\\
+\langle b_1,b_2\rangle & \langle b_2,b_2\rangle & \ldots & \langle b_n,b_2\rangle\\
+\vdots & \vdots & \ddots & \vdots\\
+\langle b_1,b_n\rangle & \langle b_2,b_n\rangle & \ldots & \langle b_n,b_n\rangle
+\end{pmatrix}
+\end{align*}
+(a) Show that  $G_e = {\bar{P}}^tG_bP,$ where $P$ is the matrix $(\!( P_{i,j})\!).$\\
+(b) Show that the matrix $G_b$ is positive definite, that is, 
+\begin{itemize}
+\item[(i)] ${\bar{G_b}}^t= G_b,$ that is, $G_b$ is self adjoint,
+\item[(ii)] $\langle G_b x,x\rangle_2 > 0$ for every non zero $x\in \mathbb C^n.$ Here $\langle\cdot,\cdot\rangle_2 $ denotes the standard Eucledian inner product on $\mathbb C^n.$
+\end{itemize}
+(c) Show that $\{e_1,e_2,\ldots,e_n\}$ is an orthonormal basis of $V$ if and only if $P {\bar{P}}^t={G_b}^{-1}.$\\
+(d) Let $T$ be a linear map from $V$ into itself. Suppose the matrix representation of the linear map $T$ w.r.t the basis $\beta_b$ and $\beta_e$ is given by $[T]_{\beta_b}$
+and $[T]_{\beta_e}$ respectively. Show that 
+\begin{align*}
+[T]_{\beta_e} = [T]_{{\beta_b}P} = P^{-1}[T]_{\beta_b} P.
+\end{align*}
+\horz
