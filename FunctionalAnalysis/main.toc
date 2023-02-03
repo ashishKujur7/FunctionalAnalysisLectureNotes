@@ -1,31 +1,31 @@
-\contentsline {section}{\numberline {\S 1}Lecture 1 --- \textit {Introduction to Hilbert Spaces and some examples} --- 9th January, 2023}{4}{section.1}%
-\contentsline {subsection}{\numberline {\S 1.1}Inner Product Spaces}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {\S 1.2}Hilbert Spaces}{5}{subsection.1.2}%
-\contentsline {section}{\numberline {\S 2}Lecture 2 --- \textit {Hilbert Spaces!} --- 11th January, 2023}{7}{section.2}%
-\contentsline {subsection}{\numberline {\S 2.1}Closed and Convex!}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {\S 2.2}Projections}{10}{subsection.2.2}%
-\contentsline {section}{\numberline {\S 3}Lecture 3 --- \textit {Riesz Representation Theorem for Hilbert Spaces} --- 13th January, 2023}{14}{section.3}%
-\contentsline {subsection}{\numberline {\S 3.1}Lecture 2 continued \ldots }{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {\S 3.2}Existence of closed subspaces of Hilbert Spaces}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {\S 3.3}Statement and Proof of Riesz Representation Theorem}{16}{subsection.3.3}%
-\contentsline {section}{\numberline {\S 4}Lecture 4 --- \textit {Projection for subspaces having countable orthonormal basis} --- 17th January, 2022}{18}{section.4}%
-\contentsline {subsection}{\numberline {\S 4.1}Projections and Orthonormal Sets in finite dimensions\ldots }{18}{subsection.4.1}%
-\contentsline {subsection}{\numberline {\S 4.2}Generalising projections to infinite dimensions\ldots }{18}{subsection.4.2}%
-\contentsline {subsection}{\numberline {\S 4.3}Existence of a maximal orthonormal set in a inner product space}{20}{subsection.4.3}%
-\contentsline {subsection}{\numberline {\S 4.4}Separability of Hilbert Spaces}{21}{subsection.4.4}%
-\contentsline {section}{\numberline {\S 5}Lecture 5 --- \textit {Examples Galore!} --- 18th January, 2023}{22}{section.5}%
-\contentsline {subsection}{\numberline {\S 5.1}Properties of Finite Dimensional Hilbert Spaces}{22}{subsection.5.1}%
-\contentsline {subsection}{\numberline {\S 5.2}Revisiting the examples of Hilbert spaces}{22}{subsection.5.2}%
-\contentsline {section}{\numberline {\S 6}Lecture 6 --- \textit {Nonseparable Hilbert Spaces \& Generalising Sums\ldots } --- 23rd January, 2023}{23}{section.6}%
-\contentsline {subsection}{\numberline {\S 6.1}Non separable Hilbert Spaces}{23}{subsection.6.1}%
-\contentsline {section}{\numberline {\S 7}Lecture 7 --- \textit {Banach Spaces and some examples} --- 25th January, 2023}{26}{section.7}%
-\contentsline {subsection}{\numberline {\S 7.1}Possibly, final}{26}{subsection.7.1}%
-\contentsline {subsection}{\numberline {\S 7.2}Class Sketch}{26}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {\S 7.2.1}Definition}{26}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {\S 7.2.2}Examples}{26}{subsubsection.7.2.2}%
-\contentsline {section}{\numberline {\S 8}Lecture 8 --- \textit {Equivalence of norms} --- 30th January, 2023}{29}{section.8}%
-\contentsline {subsection}{\numberline {\S 8.1}Equivalence of Norms}{29}{subsection.8.1}%
-\contentsline {section}{\numberline {\S 9}Lecture 9 --- \textit {Baire Category Theorem} --- 1st February, 2023}{33}{section.9}%
-\contentsline {subsection}{\numberline {\S 9.1}Consequence of Baire's Theorem}{33}{subsection.9.1}%
-\contentsline {subsection}{\numberline {\S 9.2}Compactness of unit ball}{33}{subsection.9.2}%
-\contentsline {subsection}{\numberline {\S 9.3}Quotient Space}{34}{subsection.9.3}%
+\contentsline {section}{\numberline {1}Lecture 1 --- \textit {Introduction to Hilbert Spaces and some examples} --- 9th January, 2023}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Inner Product Spaces}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Hilbert Spaces}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Lecture 2 --- \textit {Hilbert Spaces!} --- 11th January, 2023}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Closed and Convex!}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Projections}{8}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Lecture 3 --- \textit {Riesz Representation Theorem for Hilbert Spaces} --- 13th January, 2023}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Lecture 2 continued \ldots }{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Existence of closed subspaces of Hilbert Spaces}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Statement and Proof of Riesz Representation Theorem}{13}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Lecture 4 --- \textit {Projection for subspaces having countable orthonormal basis} --- 17th January, 2022}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Projections and Orthonormal Sets in finite dimensions\ldots }{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Generalising projections to infinite dimensions\ldots }{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Existence of a maximal orthonormal set in a inner product space}{16}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Separability of Hilbert Spaces}{16}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Lecture 5 --- \textit {Examples Galore!} --- 18th January, 2023}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Properties of Finite Dimensional Hilbert Spaces}{18}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Revisiting the examples of Hilbert spaces}{18}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Lecture 6 --- \textit {Nonseparable Hilbert Spaces \& Generalising Sums\ldots } --- 23rd January, 2023}{19}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Non separable Hilbert Spaces}{19}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Lecture 7 --- \textit {Banach Spaces and some examples} --- 25th January, 2023}{22}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Possibly, final}{22}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Class Sketch}{22}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Definition}{22}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Examples}{22}{subsubsection.7.2.2}%
+\contentsline {section}{\numberline {8}Lecture 8 --- \textit {Equivalence of norms} --- 30th January, 2023}{25}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Equivalence of Norms}{25}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Lecture 9 --- \textit {Baire Category Theorem} --- 1st February, 2023}{28}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Consequence of Baire's Theorem}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Compactness of unit ball}{28}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Quotient Space}{29}{subsection.9.3}%

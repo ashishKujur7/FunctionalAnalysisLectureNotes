@@ -1,4 +1,4 @@
-\section{Question2}
+\section{Question 2}
 
 \horz
 
@@ -6,3 +6,14 @@ Let $(V,\langle \cdot, \cdot \rangle)$ be an inner product space. Let $\overline
 Show that $\overline{B(0,1)}$ is strictly convex, that is, for any two distinct vector $x,y\in H,$ if $\|x\|=1, \|y\|=1,$ then $\|tx+(1-t)y\| < 1$ for each $t\in (0,1).$
  
 \horz
+
+\begin{proof}[Solution]
+    First, we show that $\overline{B\left( 0,1 \right)}$ is convex. Let $t\in [0,1]$. Then we have the following:
+    \begin{align*}
+	\norm{tx+(1-t)y}^{2} &= t^{2} \norm{x}^{2} + 2t(1-t)\Re(\ip{x,y}) + (1-t^{2} \norm{y}^{2} \\
+	    &\stackrel{\text{Cauchy Schwarz}} {\le} t^{2} + \left( 1-t \right)^{2} + 2t\left( 1-t \right) \\
+	    &= \left( t + \left( 1-t \right) \right)^{2} \\
+	    &= 1
+    \end{align*}
+    This shows the closed unit ball is convex. 
+\end{proof}

@@ -12,10 +12,13 @@ Let $M$ be a subspace of an inner product space $(V,\langle \cdot, \cdot \rangle
 \end{proof}
 
 \begin{claim}[orthogonal complement of orthogonal complement]
+    
     Let $M$ be a closed subspace of the Hilbert space $H$. Then 
     \begin{align*}
 	M = \left( M^{\perp} \right) ^{\perp}
     \end{align*}
+    
+\label{claim:o-comp-squared}
 \end{claim}
 \begin{proof}[Proof of Claim]
     Let us first show that $M \subset \left( M ^{\perp} \right)^{\perp}$ (which in fact holds for any set $M$). Let $v \in M$ and $w \in M^{\perp}$. It is clear by definition of $M^{\perp}$ that $\ip{v,w} = 0$. Hence, $v \in \left( M^{\perp} \right)^{\perp}$.
