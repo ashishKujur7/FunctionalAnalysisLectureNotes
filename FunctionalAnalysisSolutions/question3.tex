@@ -5,6 +5,23 @@ Fix a $n\times n$ strictly positive definite matrix $A= (\!\!( a_{i,j})\!\!).$ C
 \langle x, y \rangle = \sum\limits_{i,j=1}^n a_{i,j}x_j \bar{y}_i = \langle Ax,y\rangle_2,\,\,x,y\in \mathbb C^n.
 \end{align*}
 Prove that  $(\mathbb C^n, \langle \cdot, \cdot \rangle)$ is indeed an inner product space. Conversely show that if $\langle \cdot, \cdot \rangle$ is an inner product on $\mathbb C^n,$ then there exist a $n\times n$ strictly  positive definite matrix $A= (\!\!( a_{i,j})\!\!)$ such that \begin{align*}
-\langle x, y \rangle = \sum\limits_{i,j=1}^n a_{i,j}x_j \bar{y}_i = \langle Ax,y\rangle_2,\,\,x,y\in \mathbb C^n.
+    \langle x, y \rangle = \sum\limits_{i,j=1}^n a_{i,j}x_j \bar{y}_i = \langle Ax,y\rangle_2,\,\,x,y\in \mathbb C^n. \label{eqn:q3}
 \end{align*}
 \horz
+
+\begin{proof}[Solution]
+    $(\Longrightarrow)$ This direction is easy to check and follows immediately by the fact that $A$ is \textit{strictly} positive definite matrix.
+    
+    $(\Longleftarrow)$ Let $\ip{\cdot , \cdot}$ be an inner product on $\C ^{n}$. To complete the proof of this direction, we consider the Gramian matrix of the standard orthonormal basis of $\left\{ e_{1}, e_{2}, \ldots , e_{n} \right\}$ with standard inner product. Let us define the $n\times n$ matrix $A$ whose entries are given by
+    \begin{equation*}
+	A_{ij}= \ip{e_{j}, e_{i}} \text{ for each } 1 \le i,j \le n \text{.}
+    \end{equation*}
+    It suffices to show that \label{eqn:q3} holds for the standard orthonormal basis $\left\{ e_{1}, e_{2} , \ldots , e_{n} \right\}$ for linearity of the inner product does the rest of the job. Observe that
+    \begin{align*}
+	\ip{e_{j}, e_{i}} &= \ip{A{e_{j}}, e_{i}}_{2} 
+    \end{align*}
+    for all $i,j \in \left\{ 1, \ldots , n \right\}$.
+    
+
+    This completes the proof.
+\end{proof}
