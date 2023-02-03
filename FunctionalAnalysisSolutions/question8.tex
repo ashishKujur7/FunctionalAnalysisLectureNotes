@@ -1,7 +1,6 @@
 \section{Question 8}
 
 \horz
-
 (Direct sum of family of Hilbert spaces) : Let $\{H_k\}_{k\in \mathbb N}$ be a sequence of Hilbert space. Consider the vector space $H$ defined by 
 \begin{align*}
 H = \Big\{ (h_k)_{k\in\mathbb N} : h_k\in H_k \mbox{\,for all\,} n\in\mathbb N, \,\mbox{and}\, \sum\limits_{k=1}^{\infty}\|h_k\|^2 < \infty\Big\}.
@@ -11,6 +10,18 @@ For $h= (h_k)_{k\in\mathbb N} \in H$ and $g = (g_k)_{k\in\mathbb N}\in H,$ defin
 \langle h,g\rangle = \sum\limits_{k=1}^{\infty} \langle h_k,g_k\rangle_{H_k}.
 \end{align*} 
 Show that $H,\langle \cdot, \cdot \rangle$ is a Hilbert space. This $H$ is called the direct sum of the family of Hilbert spaces  $\{H_k\}_{k\in \mathbb N}$ and denoted as $\bigoplus\limits _{k\in\mathbb N} H_k.$
-
-
 \horz
+
+\begin{proof}[Solution]
+    First, we need to show that $H$ is a vector space. To do so, it suffices to show that it is closed under sum and scalar multiplication (as this is a subspace of the vector space of functions from $\N$ to $\cup_{i=1}^{n} H_{i}$). 
+
+Let $\left( h_{k} \right)_{k \in \N}$, $\left( g_{k} \right)_{k\in \N}$ be two elements of $H$. Then for any $k\in \N$, we have that
+\begin{equation*}
+\norm{h_{k} + g_{k}} ^{2} \stackrel{\textcolor{red}{?}}\le \norm{h_{k}}^{2} \end{equation*}
+If $\alpha \in \C$ then we have that 
+\begin{align*}
+    \sum_{k=1}^{\infty} \norm{\alpha h_{k}}^{2} \le \sum_{k=1}^{+\infty} \alpha \norm{h_{k}}^{2} < \infty
+\end{align*}
+This shows that $H$ is a vector space. Now, we proceed to show that the prescribed inner product is indeed an inner product.
+
+\end{proof}
