@@ -8,12 +8,25 @@ Show that $\overline{B(0,1)}$ is strictly convex, that is, for any two distinct 
 \horz
 
 \begin{proof}[Solution]
-    First, we show that $\overline{B\left( 0,1 \right)}$ is convex. Let $t\in [0,1]$. Then we have the following:
+    Let $x,y \in V$ with $\norm{x}=\norm{y}=1$ and $x\ne y$. A simple computation shows that: 
     \begin{align*}
-	\norm{tx+(1-t)y}^{2} &= t^{2} \norm{x}^{2} + 2t(1-t)\Re(\ip{x,y}) + (1-t^{2} \norm{y}^{2} \\
-	    &\stackrel{\text{Cauchy Schwarz}} {\le} t^{2} + \left( 1-t \right)^{2} + 2t\left( 1-t \right) \\
-	    &= \left( t + \left( 1-t \right) \right)^{2} \\
-	    &= 1
-    \end{align*}
-    This shows the closed unit ball is convex. 
+	\norm{tx+(1-t)y}^{2} -1 &= t^{2} \norm{x}^{2} + 2t(1-t)\Re(\ip{x,y}) + (1-t^{2}) \norm{y}^{2}  -1 \\
+	    &= 2t(1-t) \left( \Re (\ip{x,y}) -1 \right)
+	\end{align*}
+	Since $t\ne 0$ and $t\ne 1$, we will be done if we show that $\Re (\ip{x,y}) < 1$. If it happened that $\Re \left( \ip{x,y} \right) \ge 1$ then we would have
+	\begin{equation*}
+	    1 \le \Re  \left( \ip{x,y} \right) \le \abs{\ip{x,y}} \le \norm{x} \norm{y} \le 1
+	\end{equation*}
+	This shows that $\abs{\ip{x,y}} = \norm{x}\norm{y}$. Equality in CS inequality means that $x$ and $y$ are linearly dependent. Thus, we may assume that $x=\lambda y$ for some $\lambda \in \C$. But then
+	\begin{align*}
+	    x= \lambda y \Rightarrow \norm{x} = \abs{\lambda}\norm{y} \Rightarrow \abs{\lambda}=1\text{.}
+	\end{align*}
+
+	Hence, we may write $x=e^{i\theta} y$ for some $\theta \in [0,2\pi)$. Thus, we have
+	\begin{align*}
+	    \Re{\ip{x,y}} &= \Re {\ip{x, e^{i\theta} x}} \\
+	    &= \Re{(e^{-i\theta})} \\
+	    &= \cos \theta 
+	\end{align*}
+	By assumption that $\Re \left( \ip{x,y} \right) \ge 1$, we have that $\cos \theta \ge 1$. This implies $\cos \theta = 1$. Thus, $\theta = 0$ by our assumption that $\theta \in [0, 2\pi)$. This implies $x=y$ which contradicts our assumption $x\ne y$.
 \end{proof}
