@@ -16,12 +16,28 @@ Show that $H,\langle \cdot, \cdot \rangle$ is a Hilbert space. This $H$ is calle
     First, we need to show that $H$ is a vector space. To do so, it suffices to show that it is closed under sum and scalar multiplication (as this is a subspace of the vector space of functions from $\N$ to $\cup_{i=1}^{n} H_{i}$). 
 
 Let $\left( h_{k} \right)_{k \in \N}$, $\left( g_{k} \right)_{k\in \N}$ be two elements of $H$. Then for any $k\in \N$, we have that
-\begin{equation*}
-\norm{h_{k} + g_{k}} ^{2} \stackrel{\textcolor{red}{?}}\le \norm{h_{k}}^{2} \end{equation*}
+\begin{align*}
+    \norm{h_{k} + g_{k}} &\le \norm{h_{k}} + \norm{g_{k}} & \text{triangle inequality for $H_{k}$} \\
+    \leadsto \left( \norm{h_{k} + g_{k}} \right) ^{2} &\le  \left( \norm{h_{k}} + \norm{g_{k}}  \right)^{2} & \text{squaring both sides} \\
+    \leadsto \sum_{k=1}^{\infty} \left( \norm{h_{k} + g_{k}} \right) ^{2} &\le \sum_{k=1}^{\infty} \left( \norm{h_{k}} + \norm{g_{k}}  \right)^{2} & \text{taking sum both sides} \\
+    & \le 2 \sum_{k=1}^{\infty} \left( \norm{h_{k}}^{2} + \norm{g_{k}}^{2} \right) & \text{CS for $\R^{2}$} \\
+   & \le 2 \sum_{k=1}^{\infty}  \norm{h_{k}}^{2} + 2 \sum_{k=1}^{\infty} \norm{g_{k}}^{2}  \\
+   & < \infty
+\end{align*}
 If $\alpha \in \C$ then we have that 
 \begin{align*}
-    \sum_{k=1}^{\infty} \norm{\alpha h_{k}}^{2} \le \sum_{k=1}^{+\infty} \alpha \norm{h_{k}}^{2} < \infty
+    \sum_{k=1}^{\infty} \norm{\alpha h_{k}}^{2} \le \sum_{k=1}^{\infty} \alpha \norm{h_{k}}^{2} < \infty
 \end{align*}
 This shows that $H$ is a vector space. Now, we proceed to show that the prescribed inner product is indeed an inner product.
+
+First, we show that if $h, g \in H$ then $\ip{h,k} < \infty$. To do so, let $h,k \in H$ then
+\begin{align*}
+    \abs{\sum_{k=1}^{\infty} \ip{h_{k}, g_{k}}} &\le \sum_{k=1}^{\infty} \abs{\ip{h_{k},g_{k}}} & \text{continuity of absolute modulus} \\
+    &\le \sum_{k=1}^{\infty} \norm{h_{k}}\norm{g_{k}} &\text{CS for each of IPS}  \\
+    &\le \left( \sum_{k=1}^{\infty} \norm{h_{k}}^{2} \right) \left( \sum_{k=1}^{\infty} \norm{g_{k}}^{2} \right) & \text{Holder's inequality} \\
+&< \infty
+\end{align*}
+
+I'm feeling a little lazy at the moment but trust me, the rest are easy to check. \checkmark
 
 \end{proof}

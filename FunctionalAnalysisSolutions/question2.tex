@@ -10,7 +10,9 @@ Show that $\overline{B(0,1)}$ is strictly convex, that is, for any two distinct 
 \begin{proof}[Solution]
     Let $x,y \in V$ with $\norm{x}=\norm{y}=1$ and $x\ne y$. A simple computation shows that: 
     \begin{align*}
-	\norm{tx+(1-t)y}^{2} -1 &= t^{2} \norm{x}^{2} + 2t(1-t)\Re(\ip{x,y}) + (1-t^{2}) \norm{y}^{2}  -1 \\
+	\norm{tx+(1-t)y}^{2} -1 &= t^{2} \norm{x}^{2} + 2t(1-t)\Re(\ip{x,y}) + (1-t)^{2} \norm{y}^{2}  -1 \\
+	&= t^{2} +2t\left( t-1 \right) \Re\ip{x,y} + 1+t^{2}-2t -1 \\
+	&= 2t^{2} -2t + 2t\left( t-1 \right) \Re\left( \ip{x,y} \right) \\
 	    &= 2t(1-t) \left( \Re (\ip{x,y}) -1 \right)
 	\end{align*}
 	Since $t\ne 0$ and $t\ne 1$, we will be done if we show that $\Re (\ip{x,y}) < 1$. If it happened that $\Re \left( \ip{x,y} \right) \ge 1$ then we would have
