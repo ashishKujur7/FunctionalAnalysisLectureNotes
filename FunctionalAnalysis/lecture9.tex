@@ -1,4 +1,4 @@
-\section{Lecture 9 --- \textit{Baire Category Theorem} --- 1st February, 2023}
+\section{Lecture 9 --- \textit{Baire Category Theorem, Riesz Lemma, Quotient Spaces} --- 1st February, 2023}
 \horz
 
 \subsection{Consequence of Baire's Theorem}
@@ -11,7 +11,7 @@ It follows from Baire's theorem that
 
 Some interesting other consequences are that: $\R^{2}$ is not a union of countably many straight lines.
 
-\subsection{Compactness of unit ball}
+\subsection{Riesz says NO to compact unit balls in infinite dimensions}
 
 We saw that in a Hilbert Space, the unit ball in compact iff the space is of finite dimension.
 
@@ -62,6 +62,24 @@ Now, observe that $\norm{v_{j} - v_{k}} \ge 1/2$. Hence the unit ball cannot be 
 This shows that $d \left( x_{0}, M \right) \ge t$.
 \end{proof}
 
+\begin{theorem}
+    In an infinite dimensional normed linear space, neither the unit circle nor the unit disc is compact.
+    \label{thm:no-to-compact-unit-balls}
+\end{theorem}
+\begin{proof}
+    Let $X$ be an infifnite dimensional normed linear space. Select a vector $x_{1}$ in the unit circle, that is, $x_{1}$ has unit norm. Now span of $x_{1}$ is a finite dimensional subspace of $X$ hence must be closed, in view, of previous lecture. Hence, we can apply Riesz lemma, to obtain a vector $x_{2}$ of unit norm such that
+    \begin{equation*}
+	\norm{x_{2} - \alpha x_{1}} > \frac{1}{2} \text{ for every } \alpha \in \F\text{.}
+    \end{equation*}
+    Now, we can do the same with span of the vector $x_{2}$ and $x_{1}$ to get a third vector $x_{3}$ of unit norm such that 
+\begin{equation*}
+    \norm{x_{3} - \alpha x_{1} - \beta x_{2}} > \frac{1}{2} \text{ for every } \alpha, \beta \in \F\text{.}
+    \end{equation*}
+    Continuing this way, we obtain a sequence of vectors in the unit circle, satisfying, $\norm{x_{n}-x_{m}}> \frac{1}{2}$. Hence, we have obtained a sequence in the unit circle which has no hope of having a converging subsequence, hence, the unit circle is not compact. 
+
+    Note that the same argument shows that the closed unit disc is not compact as well.
+\end{proof}
+
 Let $X, Y$ be two normed linear space. One can construct another NLS by $X \oplus Y$ in the following way:
 \begin{equation*}
     \norm{\left( x_{1} , x_{2} \right)}_{1} = \norm{x_{1}}_{X} + \norm{x_{2}}_{Y} 
@@ -85,11 +103,16 @@ But is $X/M$ a Banach space? Yes:
 example: $M=\left\{ \left( x \right) : x_{1} =0 \right\}$ of $c_{00}$.
 
 \begin{lemma}
-    Let $X$ be a Banach space. If $\left\{ v_{j} \right\}$ is absolutely summable, that is, $\sum_{j=1}^{\infty} \norm{v_{j}} < \infty$. Then $S_{n} = \sum_{j=1}^{n}$ is convergent. 
+    Let $X$ be a Banach space. If $\left\{ v_{j} \right\}$ is absolutely summable, that is, $\sum_{j=1}^{\infty} \norm{v_{j}} < \infty$. Then $S_{n} = \sum_{j=1}^{n} v_{j}$ is convergent. 
     \label{lemma:Banach-absolutely-summable}
 \end{lemma}
 \begin{proof}
-    Consider $\norm{s_{n} - s_{m}}$. Show that cauchy and be done.
+    For $n \ge m$, consider the following:
+    \begin{align*}
+	\norm{S_{n} - S_{m}} &= \norm{\sum_{j=m+1}^{n} v_{j}} \\
+	& \le  \sum_{j=m+1}^{n} \norm{v_{j}}
+    \end{align*}
+    Since $\sum_{j=1}^{\infty} \norm{v_j} < \infty$, we have that its sequence of partial sums is Cauchy and the former inequality is also Cauchy. Since $X$ is a Banach space, $S_{n}$ converges. This completes the proof.
 \end{proof}
 
 \begin{theorem}

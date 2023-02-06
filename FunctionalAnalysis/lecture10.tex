@@ -1,0 +1,79 @@
+\section{Lecture 10 --- \textit{insert title here} --- 5th February, 2023}
+\horz
+\subsection{Continuing from where we left from\ldots}
+
+
+\begin{theorem}
+    Let $X$ be a NLS. The following are equivalent:
+    \begin{enumerate}
+	\item $X$ is complete.
+	\item Every absolutely summable sequence is summable.
+    \end{enumerate}
+    \label{thm:equivalent-thm-Banach}
+\end{theorem}
+\begin{proof}
+    $\left( \Longrightarrow \right)$ This is just Lemma \ref{lemma:Banach-absolutely-summable}.
+
+    $\left( \Longleftarrow \right)$ Let $\left\{ y_{n} \right\}$ be Cauchy in $Z$. It suffices to find a subsequence of $\left\{ y_{n} \right\}$ which converges. Since $\left\{ y_n \right\}$ is Cauchy, for every $k\in \N$, there is some $N_{k} \in \N$ such that 
+    \begin{align*}
+	\norm{y_{i} - y_{j}} < \frac{1}{2^{k}} \text{ for every } i, j \ge N_{k}\text{.}
+    \end{align*}
+    We may select $N_{k}$'s in a way that $N_{1} \le N_{2} \le \ldots$. Now defne the sequence
+    \begin{align*}
+	t_{j} = y_{N_{j}}
+    \end{align*}
+    for every $j \in \N$.
+
+    Hence, we have that for every $j \in \N$,
+    \begin{align*}
+    \norm{t_{j} - t_{j+1}} \le \norm{y_{N_{j}} - y_{N_{j+1}}} \le \frac{1}{2^{j}}
+    \end{align*}
+    
+    Now note that the sequence $\left\{ t_{j} - t_{j+1} \right\}_{j}$ is absolutely summable. By hypothesis, we have that $\left\{ t_{j} - t_{j+1} \right\}_{j}$is summable. But that is the same as saying $\sum_{j} {t_j}$ is convergent. Hence, we have that a subsequence of $\left\{ y_{n} \right\}$, namely, $\left\{ t_{j} \right\}_{j}$ is convergent and hence we are done.
+\end{proof}
+
+We proceed to prove Proposition \ref{prop:quotient-are-complete}:
+
+\begin{proof}
+    Let $[x_{n}]$ be an absolutely summable in $X/M$, that is, 
+    \begin{align*}
+	\sum_{n=1}^{\infty} \norm{[x_{n}]} < \infty
+    \end{align*}
+    We want to show that 
+    \begin{align*}
+	\sum_{k=1}^{n} [x_{k}] \to [x] 
+    \end{align*}
+    for some $x\in X$ as $n\to \infty$.
+
+    By the definition of the norm in the quotient space, for each $k\in \N$, we can find $m_{k} \in M$ such that
+    \begin{align*}
+	\norm{x_{k} + m_{k}} < \norm{[x_{k}]} + \frac{1}{2^{k}}
+    \end{align*}
+    From the above, we conclude that $\sum_{k=1}^{\infty} (x_{k} + m_{k})$ is summable. Hence,  $\sum_{k=1}^{\infty} (x_{k} + m_{k})$ converges to some $x\in M$. By the continuity of the projection, we are done (see below).
+\end{proof}
+
+\begin{proposition}
+    Projection map is continuous.
+    \label{prop:proj-is-cont}
+\end{proposition}
+
+\subsection{Continuous Linear Maps on Normed Linear Maps}
+
+\begin{example}
+    Consider the linear map $L: c_{00} \to \R$ given by
+    \begin{align*}
+	\left( x_{j} \right) \mapsto x_{1} + 2 x_{2} + \ldots + nx_{n} + \ldots
+    \end{align*}
+    This map is not continuous because we can consider the sequence $\left\{ e_{j}/j \right\}$. Note that $e_{j} /j \to 0$ but $T\left( e_{j} \right)/j = 1$ for every $j\in \N$.
+\end{example}
+
+\begin{proposition}
+    Let $T: X\to Y$ be a linear map. The following are equivalent:
+    \begin{enumerate}
+	\item $T$ is continuous map.
+	\item $T$ is continuous at $x=0$.
+	\item $T\left( B\left( 0,1 \right) \right)$ is bounded.
+	\item $\norm{Tx} \le M \norm{x}$ for every $x\in X$ .
+    \end{enumerate}
+    \label{prop:equiv-lin-maps}
+\end{proposition}

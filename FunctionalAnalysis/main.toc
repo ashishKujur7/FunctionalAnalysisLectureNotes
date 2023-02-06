@@ -25,7 +25,10 @@
 \contentsline {subsubsection}{\numberline {7.2.2}Examples}{22}{subsubsection.7.2.2}%
 \contentsline {section}{\numberline {8}Lecture 8 --- \textit {Equivalence of norms} --- 30th January, 2023}{25}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Equivalence of Norms}{25}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Lecture 9 --- \textit {Baire Category Theorem} --- 1st February, 2023}{28}{section.9}%
+\contentsline {section}{\numberline {9}Lecture 9 --- \textit {Baire Category Theorem, Riesz Lemma, Quotient Spaces} --- 1st February, 2023}{28}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Consequence of Baire's Theorem}{28}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Compactness of unit ball}{28}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Riesz says NO to compact unit balls in infinite dimensions}{28}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Quotient Space}{29}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Lecture 10 --- \textit {insert title here} --- 5th February, 2023}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Continuing from where we left from\ldots }{31}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Continuous Linear Maps on Normed Linear Maps}{32}{subsection.10.2}%

@@ -8,3 +8,43 @@ Consider $C[0,1],$ the space of all complex valued continuous function on the in
     Show that the set $S$ is closed and convex but the distance is never achieved. That is, there is no $f\in S$ such that $\|f\|_{\infty} = d(0,S)$.
     
 \horz
+\begin{proof}[Solution]
+   We begin by showing that $S$ is convex. Let $f, g \in S$ and $t\in [0,1]$. Then we have that 
+    \begin{align*}
+	\int_{0}^{1/2} \left( t f\left( x \right) + \left( 1-t \right) g\left( x \right)\right) dx - \int_{1/2}^{1} \left( t f\left( x \right) + \left( 1-t \right) g\left( x \right) dx  \right) &= t + (1-t) \\
+	&= 1
+    \end{align*}
+    Note that the second equality follows by the virtue of $f,g \in S$.
+
+    Now, we proceed to show that the $S$ is closed. Let $\left( f_{n} \right) $ be a sequence of functions in $S$ converging to $f \in C\left[ 0,1 \right]$. We need to prove that $f \in S$. Now convergence in supremum norm is the same as the uniform convergence, so, we have that following:
+    \begin{align*}
+	\lim_{n\to \infty}\left( \int_{0}^{1/2} f_{n}\left( x \right) dx - \int_{1/2}^{1} f_{n} \left( x \right) dx \right) =1
+    \end{align*}
+    implies 
+    \begin{align*}
+\int_{0}^{1/2} f\left( x \right) dx - \int_{1/2}^{1} f \left( x \right) dx =1 
+\end{align*}
+and thus $f \in S$.
+Consider the zero function and the set $S$, we show that that there is no $f \in S$ such that $d (0,S) = d(f,0)=\norm{f}_{\infty}$. We show this in gentle steps as it follows.
+
+Now, we proceed to show that $d\left( 0,S \right) = 1$. To do so, observe that we need to show that $\inf \left\{ \norm{f} _{\infty} : f \in S \right\} = 1$. First of all, if $f\in S$ then we have that 
+\begin{align*}
+    \int_{0}^{1/2} f - \int_{1/2}^{1} f =1 & \leadsto \abs {\int_{0}^{1/2} f - \int_{1/2}^{1} f } =1  \\
+&\leadsto  \abs {\int_{0}^{1/2} f} +\abs{ \int_{1/2}^{1} f } \ge 1  \\
+&\leadsto \norm{f}_{\infty} \ge 1
+\end{align*}
+
+Hence, we have that $1$ is a lowerbound for the set $S$. Now, let $\varepsilon > 0$ be given. We show that there is some function $f \in S$ such that $1 + \varepsilon > \norm{f}_{\infty}$. This will establish that $d\left( 0,S \right) = 1$. Select a $1/n < \varepsilon$.
+Consider the function
+\begin{align*}
+    f(x) = 
+    \begin{cases}
+	\frac{1+\varepsilon}{ 2/ (n+1)} & 0 \le x \le 2/(n+1) \\
+	1+\varepsilon & 2/(n+1) \le 0 \le 1
+    \end{cases}
+\end{align*}
+
+It can be shown that this function $f$ has sup norm equals $1+\varepsilon$ and is a member of $S$.
+Now, we proceed to show  that there is no function $f \in S$ such that $\norm{f}_{\infty} = 1$.
+
+\end{proof}
