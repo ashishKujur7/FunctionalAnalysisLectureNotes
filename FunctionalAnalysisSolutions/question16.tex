@@ -43,3 +43,68 @@ and $[T]_{\beta_e}$ respectively. Show that
 [T]_{\beta_e} = [T]_{{\beta_b}P} = P^{-1}[T]_{\beta_b} P.
 \end{align*}
 \horz
+
+\begin{proof}[Solution]
+    \begin{enumerate}[label=(\alph*)]
+	\item Let $G_e$ and $G_b$ be the matrix whose entries are given by
+   \begin{align*}
+       \left( G_{e} \right)_{ij} = \ip{e_{j}, e_{i}}
+   \end{align*}
+   and 
+   \begin{align*}
+       \left( G_{b} \right)_{ij} = \ip{b_{j}, b_{i}}
+   \end{align*}
+   for each $i,j \in \left\{ 1,2,\ldots , n \right\}$.
+   Consider the following:
+   \begin{align*}
+       \left( G_{e} \right) _{ij} &= \ip{e_{j}, e_{i}}  \\
+       &= \ip{\sum_{k=1}^{n} P_{kj} b_{k}, \sum_{l=1}^{n} P_{li} b_{l}} \\
+       &= \sum_{k=1}^{n} \sum_{l=1}^{n} P_{kj} \ip{b_{k}, b_{l}} \overline{P_{li}} \\
+       &= \sum_{k=1}^{n} \sum_{l=1}^{n} \left( P^{*} \right)_{il} (G_{b} )_{lk} P_{kj} \\
+       &= \left( P^{*} G_{b} P \right)_{ij}
+   \end{align*}
+   \item Clearly, we have that 
+       \begin{align*}
+	   \left( G_{e} ^{*} \right)_{ij} &= \left( \overline{G_{e}} \right) _{ji} \\
+	   &= \overline{\ip{e_{i}, e_{j}}} \\
+       &= \ip{e_{j}, e_{i}} \\
+	   &=  \left( G_{e} \right)_{ij}
+       \end{align*}
+       for all $i,j$. Hence $G_{e}$ is self-adjoint. Observe that
+       \begin{equation*}
+	   \ip{G_{b} e_{j} , e_{i}}_{2} = \ip {b_{j}, b_{i}}
+       \end{equation*}
+       for all $i,j$. Now let $x\in V$. Then there exists unique $x_{1}, x_{2}, \ldots , x_{n}  \in \C$ such that
+       \begin{align*}
+	   x= \sum_{i=1}^{n} x_{i}e_{i}
+       \end{align*}
+        Then we have that
+	\begin{align*}
+	    \ip{G_{b} x , x}_{2} &= \ip{G_{b} \left( \sum_{j=1}^{n}  x_{j} e_{j}  \right), \sum_{i=1}^{n} x_{i} e_{i}} \\
+	    &= \sum_{j=1}^{n} \sum_{i=1}^{n} x_{j}\overline{x_{i}} \ip{G_{b} e_{j}, e_{i}} \\
+	    &= \sum_{j=1}^{n} \sum_{i=1}^{n} x_{j}\overline{x_{i}} \ip{b_{j}, b_{i}} \\
+	    &= \ip{\sum_{j=1}^{n} x_{j} b_{j}, \sum_{i=1}^{n} x_{i} b_{i}}  \\
+	    & \ge 0
+	\end{align*}
+	\item By definition we have that $G_{e} = I$ iff $\left\{ e_{1}, \ldots , e_{n} \right\}$ is orthonormal. ALso from item (a) we have that 
+	    \begin{align*}
+		\text{$\left\{ e_1 , e_2 , \ldots , e_{n}\right\}$ is orthonormal } &\Leftrightarrow I=P^{*} G_{b} P \\
+		& \Leftrightarrow \left( P^{*} \right)^{-1} P^{-1} = G_{b} \\
+		& \Leftrightarrow \left( PP^{*} \right)^{-1} G_{b} \\ 
+		& \Leftrightarrow PP^{*} = G_{b}^{-1}
+	    \end{align*}
+	\item Clearly, $P = \left( I \right)_{\beta_{e}}^{\beta ^{b}}$. Then
+	    \begin{align*}
+		P \left( T \right)_{\beta_{e}} &=  \left( I \right)_{\beta^{e}} ^{\beta_{e}} \\
+		&=  \left( I \circ T \right) _{\beta_{e}}^{\beta^{b}} \\
+		&= \left( T \circ I \right) _{\beta_{e}}^{\beta^{b}} \\
+		&= \left( T \right)_{\beta_{b}}^{\beta_{b}} \left( I \right)_{\beta_{e}}^{\beta_{b}} \\
+		&= \left( T \right)_{\beta_{b}} P
+	    \end{align*}
+	    Hence, we have that 
+	    \begin{equation*}
+		\left( T \right)_{\beta_e} = P^{-1} \left( T \right)_{\beta_{b}} P
+	    \end{equation*}
+   \end{enumerate}
+   This completes the proof.
+\end{proof}
