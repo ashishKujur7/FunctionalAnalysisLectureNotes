@@ -1,16 +1,46 @@
-\section{Question 14}
+\section{Question 14 \texorpdfstring{$\checkmark$}{\text{✓}}}
 \horz
 Fix a positive integer $N$, put $\omega= e ^{2\pi i/N}.$ prove the following orthogonality relations
 
-\begin{align*}
-\frac{1}{N} \sum\limits_{n=1}^N=\omega^{nk} = 
+\begin{align}
+\frac{1}{N} \sum\limits_{n=1}^N\omega^{nk} = 
 \begin{cases}
 1, & k=0,\\
 0, & 1\leqslant k \leqslant N-1.
 \end{cases}
-\end{align*}
+\label{eqn:question14-1}
+\end{align}
 Using this identity show that
-\begin{align*}
+\begin{align}
 \langle x,y\rangle = \frac{1}{N} \sum\limits_{n=1}^N \|x+\omega^n y\|^2 \omega^n
-\end{align*} holds true in every inner product space provided $N\geqslant 3.$
+\label{eqn:question14-2}
+\end{align} holds true in every inner product space provided $N\geqslant 3.$
 \horz
+\begin{proof}[Solution]
+    We first prove \ref{eqn:question14-1}. Observe that if $k=0$ then $\omega^{n0} =1$ for every $n \in \left\{ 1,2, \ldots , N \right\}$ and thus we have that 
+    \begin{equation*}
+	\frac{1}{N} \sum_{n=1}^{N} \omega^{n0} = 1
+    \end{equation*}
+    
+    Now suppose that $1\le k \le N-1$. Then we have that
+    \begin{equation*}
+	\omega^{k} = e ^{i2\pi k / N} \ne 1
+    \end{equation*}
+and thus we can apply the geometric sum formula. Observe that we have
+\begin{align*}
+    \omega ^{k} + \omega ^{2k} + \ldots + \omega ^{ Nk } &= \omega^{k} \sum_{n=0}^{N-1} \omega ^{nk} \\
+    &= \omega ^{k} \frac{1- \omega^{Nk}}{1-\omega^{k}} \\ 
+    &= \omega ^{k} \frac{1- \left( e^{2\pi i /N} \right)^{Nk}}{1-\omega ^{k}} \\
+    &= \omega ^{k} \frac{1- e^{2\pi i k}}{1-\omega ^{k}} \\
+    &= 0\text{.}
+\end{align*}
+
+Now, we proceed to prove \ref{eqn:question14-2}. Let $N\ge 3$. Then we have that
+\begin{align*}
+\frac{1}{N} \sum\limits_{n=1}^N \|x+\omega^n y\|^2 \omega^n 
+&=  \frac{1}{N} \sum\limits_{n=1}^N \ip{x+\omega ^{n} y , x + \omega ^{n} y} \omega^n \\
+&= \cancelto{0}{\frac{\norm{x}^{2}}{N} \sum_{i=1}^{N} \omega ^{n}} + \frac{\ip{x,y}}{N} \sum_{i=1}^{N} 1  + \cancelto{0}{\frac{\ip{y,x}}{N} \sum_{i=1}^{N} \omega^{2n}} + \cancelto{0}{\frac{\norm{y}^{2}}{N} \sum_{i=1}^{N} \omega ^{n}} &  \text{using \ref{eqn:question14-1}} \\
+& = \ip{x,y}
+\end{align*}
+
+\end{proof}

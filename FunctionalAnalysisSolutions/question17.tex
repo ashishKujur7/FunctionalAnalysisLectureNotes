@@ -1,5 +1,12 @@
-\section{Question 17}
-
+\section{Question 17 \texorpdfstring{$\checkmark$}{\text{✓}}}
+\horz
+Let $(V,\| \cdot\|)$ be a normed linear space where the norm $\|\cdot\|$ on $V$ satisfies the parallelogram law, that is,
+\begin{align*}
+\|x+y\|^2 + \|x-y\|^2= 2 \|x\|^2 + 2 \|y\|^2,\,\,\,x,y\in V.
+\end{align*}
+Show that the norm $\|\cdot\|$ is induced by an inner product on $V,$ that is, $\|x\|^2= \langle x,x\rangle$ for some inner product $\langle \cdot,\cdot \rangle$ on $V.$
+\horz
+\begin{proof}[Solution (as it was done in class).]
 Assume $\left( V, \norm{} \right)$ is a real normed linear space which satisfies the parallelogram identity, that is, for all $a,b \in V$, 
 \begin{equation*}
     \norm{a+b}^{2} + \norm{a-b}^{2} = 2\norm{a}^{2} +2 \norm{b}^{2}
@@ -92,3 +99,4 @@ where $q(x,y)=  \frac{\norm{x+y}^{2} - \norm{x-y}^{2}}{4}$. We have already show
 
 Now one can use the properties of inner product for $q$ to show that $\ip{\cdot , \cdot}$ is an inner product over $\C$.
 
+\end{proof}
