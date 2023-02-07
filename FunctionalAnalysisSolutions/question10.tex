@@ -1,4 +1,4 @@
-\section{Question 10}
+\section{Question 10 \texorpdfstring{$\checkmark$}{\text{✓}}}
 
 \horz
 Consider $C[0,1],$ the space of all complex valued continuous function on the interval $[0,1],$ equipped with the supremum norm, $\|\cdot\|_{\infty},$ that is, $\|f\|_{\infty}=\sup_{x\in [0,1]} |f(x)|.$ Let $S$ be the subset
@@ -37,14 +37,19 @@ Now, we proceed to show that $d\left( 0,S \right) = 1$. To do so, observe that w
 Hence, we have that $1$ is a lowerbound for the set $S$. Now, let $\varepsilon > 0$ be given. We show that there is some function $f \in S$ such that $1 + \varepsilon > \norm{f}_{\infty}$. This will establish that $d\left( 0,S \right) = 1$. Select a $1/n < \varepsilon$.
 Consider the function
 \begin{align*}
-    f(x) = 
-    \begin{cases}
-	\frac{1+\varepsilon}{ 2/ (n+1)} & 0 \le x \le 2/(n+1) \\
-	1+\varepsilon & 2/(n+1) \le 0 \le 1
-    \end{cases}
+    f(x) = \color{red}{tooLazyToFigureThisOut!}  
 \end{align*}
 
 It can be shown that this function $f$ has sup norm equals $1+\varepsilon$ and is a member of $S$.
 Now, we proceed to show  that there is no function $f \in S$ such that $\norm{f}_{\infty} = 1$.
 
+I sketch a idea of how to do this because it is way too long otherwise. Using the hypothesis show that 
+\begin{equation*}
+    \int_{0}^{1} f = 1/2
+\end{equation*}
+and 
+\begin{equation*}
+    \int_{1/2}^{1} f = -1/2
+\end{equation*}
+Further show that $f\equiv 1$ on $[0,1/2]$ and $f\equiv -1$ on $[1/2,1]$. But mother continuity won't let this happen.
 \end{proof}
