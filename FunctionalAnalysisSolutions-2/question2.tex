@@ -1,0 +1,27 @@
+\section{Question 2 \texorpdfstring{$\checkmark$}{\text{✓}}}
+\horz
+Let $\{f_n\}_{n\in\mathbb N}$ be the sequence of function in $\mathscr C[0,1]$ given  by $f_n(x)=x^n,\,x\in[0,1],\,n\in\mathbb N.$ Let $d_1$ and $d_{\infty}$ be the metric induced by $\|\cdot\|_1$ and $\|\cdot\|_{\infty}$ as discussed in the previous question, that is, $d_1(f,g)=\|f-g\|_p$ and $d_{\infty}(f,g)=\|f-g\|_{\infty},\,\,f,g\in\mathscr C[0,1].$ Show that the sequence $d_1(f_n,0) \to 0$ as $n\to \infty$ but  $d_{\infty}(f_n,0)$ does not tends to $0$ as $n\to \infty.$ Show that even $\{f_n\}_{n\in\mathbb N}$ has no convergent subsequence in the metric space $(\mathscr C[0,1], d_{\infty}).$ Can you conclude from the above that $(\mathscr C[0,1], d_{\infty})$ is not equivalent to $(\mathscr C[0,1], d_{1})?$ Show that $(\mathscr C[0,1], d_{2})$ is not equivalent to $(\mathscr C[0,1], d_{1})?$
+\horz
+
+\begin{proof}[Solution]
+    We first show that $f_{n} := x^{n}$ converge to $0$ in the $1$-norm. This is easy to see:
+    \begin{align*}
+	\norm{f_{n}-0}_{1} &= \int_{0}^{1} \abs{f_{n}} dx \\
+	&= \int_{0}^{1} x^{n} dx \\
+	&= \frac{1}{n+1} \to 0 \text{ as } n\to \infty 
+    \end{align*}
+    We now show that $f_{n}$ has no convergent subsequence. For the sake of contradiction, let $\left\{ f_{n_{k}} \right\}$ be sequence which converges uniformly (same as convergence in sup norm) to some $f\in C[0,1]$. To obtain contradiction, we make use of the following fact:
+    \begin{center}
+	\textit{If $f_{n}: X \to \C$ is a sequence of function which converge to $f: X \to \C$ uniformly and $\left\{ x_{n} \right\}$ is a sequence in $X$ which converges to $x\in X$ then $\left\{ f_{n} \left( x_{n} \right) \right\}$ converges to $f\left( x \right)$.}
+    \end{center}
+
+    Now, since uniform convergence is stronger than pointwise convergence, using the above fact, we have that
+	\begin{align*}
+	    f(1) = \lim_{n\to \infty} f_{n_{k}} \left( 1 \right) = 1
+	\end{align*}
+	Also, since $\left( 1-1/n \right)$ converges to $1$, we have that
+	\begin{align*}
+	f(1)= \lim_{k\to \infty} f_{n_{k}} \left( 1-1/n_{k} \right) &=  \left( 1- \frac{1}{n_k} \right)^{n_{k}}= \frac{1}{e}
+	\end{align*}
+	 It is obvious to see now that that the two metrics are not equivalent.
+\end{proof}

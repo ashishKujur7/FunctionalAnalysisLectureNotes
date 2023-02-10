@@ -1,0 +1,628 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  9 FEB 2023 21:13
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**question1.tex
+(./question1.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-16>
+./question1.tex:1: Undefined control sequence.
+l.1 \section
+            {Question 1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./question1.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{Q
+              uestion 1}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+./question1.tex:2: Undefined control sequence.
+l.2 Let $a,b\in\mathbb
+                       R$ and $\mathscr C[a,b]$ denotes the space of real va...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+./question1.tex:2: Undefined control sequence.
+<recently read> \mathscr 
+                         
+l.2 Let $a,b\in\mathbb R$ and $\mathscr
+                                        C[a,b]$ denotes the space of real va...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+./question1.tex:2: Undefined control sequence.
+<recently read> \mathscr 
+                         
+l.2 ...f\|_{\infty}$ denotes the norm on $\mathscr
+                                                   C[a,b]$ given by
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+./question1.tex:3: Undefined control sequence.
+l.3 ...(x)|^p dx )^{\frac{1}{p}},$ for $p\geqslant
+                                                   1$ and $\|f\|_{\infty}= \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--5
+[]
+ []
+
+
+Overfull \hbox (23.46635pt too wide) in paragraph at lines 1--5
+\OML/cmm/m/it/10 a; b \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 1--5
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (27.44002pt too wide) in paragraph at lines 1--5
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]$
+ []
+
+
+Overfull \hbox (22.35532pt too wide) in paragraph at lines 1--5
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :$
+ []
+
+
+Overfull \hbox (20.59464pt too wide) in paragraph at lines 1--5
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[]$
+ []
+
+
+Overfull \hbox (24.44453pt too wide) in paragraph at lines 1--5
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[]$
+ []
+
+
+Overfull \hbox (27.44002pt too wide) in paragraph at lines 1--5
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]$
+ []
+
+
+Overfull \hbox (31.15015pt too wide) in paragraph at lines 1--5
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (66.05081pt too wide) in paragraph at lines 1--5
+\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10 dx\OT1/cmr/m/
+n/10 )[]\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (10.03127pt too wide) in paragraph at lines 1--5
+\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (35.00005pt too wide) in paragraph at lines 1--5
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (50.632pt too wide) in paragraph at lines 1--5
+[]\OMS/cmsy/m/n/10 fj\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/
+cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (15.15967pt too wide) in paragraph at lines 1--5
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (27.35533pt too wide) in paragraph at lines 1--5
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OMS/cmsy/m/n/10 g\OML/c
+mm/m/it/10 :$
+ []
+
+
+./question1.tex:6: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{enumerate}
+                     [(i)]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--6
+[] 
+ []
+
+
+./question1.tex:6: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{enumerate}[
+                      (i)]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+./question1.tex:7: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \item $
+           |\displaystyle \int f(x) g(x) dx| \leqslant \|f\|_p\|g\|_q, \,\,\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./question1.tex:7: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \item $
+           |\displaystyle \int f(x) g(x) dx| \leqslant \|f\|_p\|g\|_q, \,\,\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./question1.tex:7: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \item $
+           |\displaystyle \int f(x) g(x) dx| \leqslant \|f\|_p\|g\|_q, \,\,\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./question1.tex:7: Undefined control sequence.
+l.7 ...|\displaystyle \int f(x) g(x) dx| \leqslant
+                                                   \|f\|_p\|g\|_q, \,\,\,f,g...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./question1.tex:7: Undefined control sequence.
+l.7 ...slant \|f\|_p\|g\|_q, \,\,\,f,g\in \mathscr
+                                                   C[a,b], p > 1$ and $1/p +...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+
+./question1.tex:8: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \item $
+           |\displaystyle \int f(x) g(x) dx| \leqslant \|f\|_1\|g\|_{\infty}...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./question1.tex:8: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \item $
+           |\displaystyle \int f(x) g(x) dx| \leqslant \|f\|_1\|g\|_{\infty}...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./question1.tex:8: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \item $
+           |\displaystyle \int f(x) g(x) dx| \leqslant \|f\|_1\|g\|_{\infty}...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./question1.tex:8: Undefined control sequence.
+l.8 ...|\displaystyle \int f(x) g(x) dx| \leqslant
+                                                   \|f\|_1\|g\|_{\infty}, \,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./question1.tex:8: Undefined control sequence.
+l.8 ...|f\|_1\|g\|_{\infty}, \,\,\,f,g\in \mathscr
+                                                   C[a,b].$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./question1.tex:9: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \item $
+           \|f+g\|_p \leqslant \|f\|_p + \|g\|_p,\,\, f,g\in \mathscr C[a,b]...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./question1.tex:9: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \item $
+           \|f+g\|_p \leqslant \|f\|_p + \|g\|_p,\,\, f,g\in \mathscr C[a,b]...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./question1.tex:9: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \item $
+           \|f+g\|_p \leqslant \|f\|_p + \|g\|_p,\,\, f,g\in \mathscr C[a,b]...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./question1.tex:9: Undefined control sequence.
+l.9 \item $\|f+g\|_p \leqslant
+                               \|f\|_p + \|g\|_p,\,\, f,g\in \mathscr C[a,b]...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./question1.tex:9: Undefined control sequence.
+l.9 ...lant \|f\|_p + \|g\|_p,\,\, f,g\in \mathscr
+                                                   C[a,b],$ for every  $p\ge...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+./question1.tex:9: Undefined control sequence.
+l.9 ...in \mathscr C[a,b],$ for every  $p\geqslant
+                                                   1$ and $p=\infty.$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+
+./question1.tex:10: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (141.91357pt too wide) in paragraph at lines 6--10
+[]$\OMS/cmsy/m/n/10 j [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\
+OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m
+/n/10 )\OML/cmm/m/it/10 dx\OMS/cmsy/m/n/10 jk\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10
+ k[]k\OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 k[]\OML/cmm/m/it/10 ;    f; g \OMS/cmsy
+/m/n/10 2
+ []
+
+
+Overfull \hbox (47.47119pt too wide) in paragraph at lines 6--10
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/c
+mm/m/it/10 ; p >
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 6--10
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (22.80908pt too wide) in paragraph at lines 6--10
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 =p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (25.37845pt too wide) in paragraph at lines 6--10
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 =q \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 6--10
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :$
+ []
+
+
+Overfull \hbox (145.83327pt too wide) in paragraph at lines 6--10
+[]$\OMS/cmsy/m/n/10 j [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\
+OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m
+/n/10 )\OML/cmm/m/it/10 dx\OMS/cmsy/m/n/10 jk\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10
+ k[]k\OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 k[]\OML/cmm/m/it/10 ;    f; g \OMS/cmsy
+/m/n/10 2
+ []
+
+
+Overfull \hbox (30.2178pt too wide) in paragraph at lines 6--10
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/c
+mm/m/it/10 :$
+ []
+
+
+Overfull \hbox (18.75008pt too wide) in paragraph at lines 6--10
+[]$\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (43.12326pt too wide) in paragraph at lines 6--10
+\OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 k[]k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[] \
+OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (51.96248pt too wide) in paragraph at lines 6--10
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 k[]\OML/cmm/m/it/10 ;   f;
+ g \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (30.2178pt too wide) in paragraph at lines 6--10
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/c
+mm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (10.03127pt too wide) in paragraph at lines 6--10
+\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (15.58676pt too wide) in paragraph at lines 6--10
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (12.7778pt too wide) in paragraph at lines 6--10
+\OMS/cmsy/m/n/10 1\OML/cmm/m/it/10 :$ 
+ []
+
+)
+! Emergency stop.
+<*> question1.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 476091
+ 449 string characters out of 5794082
+ 1851330 words of memory out of 5000000
+ 20504 multiletter control sequences out of 15000+600000
+ 512287 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,3n,12p,222b,78s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

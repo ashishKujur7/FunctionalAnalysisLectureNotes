@@ -1,0 +1,15 @@
+\section{Question 3 \texorpdfstring{$\checkmark$}{\text{✓}}}
+\horz
+Let $(X,\|\cdot\|)$ be a normed linear space (in short NLS) and $(X,d)$ be the associated metric, that is, $d(a,b)=\|a-b\|,\,\,a,b\in X.$ Show that a ball $B_d(a,r)$ is always a convex subset of $X.$ 
+\horz
+\begin{proof}[Solution]
+    It suffices to show that $B(0,1)$ is convex because every other ball is just this (modulo translations and dilations).
+    We proceed to show that $B(0,1)$ is convex. Let $x,y \in B(0,1)$. Then we have that for $t\in[0,1]$,
+    \begin{align*}
+	\norm{tx+(1-t)y} &= t \norm{x} + (1-t)\norm{y} \\
+	&< t+(1-t) \\
+	&= 1
+    \end{align*}
+    And we're done.
+\end{proof}
+

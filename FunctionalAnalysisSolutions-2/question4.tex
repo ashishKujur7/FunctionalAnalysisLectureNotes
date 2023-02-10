@@ -1,0 +1,14 @@
+\section{Question 4 \texorpdfstring{$\checkmark$}{\text{✓}}}
+\horz
+Let $(X,\|\cdot\|)$ be a normed linear space and $Y$ be a proper subspace of $X$. Show that $Y^{\circ},$ the set of interior point of $Y$, is empty.
+\horz
+
+\begin{proof}[Solution]
+    Let $Y$ be proper subspace of a normed linear space $X$. Suppose that the interior of $Y$ was nonempty. Then there exists $y\in Y$ and $r>0$ such that $B(y,r) \subset Y$. Since $Y$ is a subspace, we have that $B(0,r) \subset Y$. We now show that $X \subset Y$ which would contradict that $Y$ is a proper subspace of $X$. 
+
+    Let $x\in X \setminus \left\{ 0 \right\}$. Then note that $\frac{r}{2} \frac{x}{\norm{x}} \in B(0,r)$ and  hence $\frac{r}{2} \frac{x}{\norm{x}} \in Y$. But then we have that $x \in Y$ because any $Y$ is a subspace and hence 
+    \begin{align*}
+	x= \frac{2\norm{x}}{r} \left( \frac{r}{2} \frac{x}{\norm{x}} \right) \in Y
+    \end{align*}
+    And we're done.
+\end{proof}

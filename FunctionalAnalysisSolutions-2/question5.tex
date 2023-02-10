@@ -1,0 +1,14 @@
+\section{Question 5 \texorpdfstring{$\checkmark$}{\text{✓}}} 
+\horz
+Let $X$ be a finite-dimensional normed linear space and $Y$ be any normed linear space. If $T : X \rightarrow Y$ is a linear transformation then show that $T$ is continuous.
+\horz
+
+\begin{proof}[Solution]
+    Let $\calI : \left( X, \norm{\cdot} \right) \to \left( \C^{n}, \norm{}_{2} \right)$ be an isometric isomorphism (such a thing exists provided $X$ is finite dimensional!). Let $T: \left( \C ^{n} , \norm{}_{2} \right) \to \left( Y, \norm{}_{Y} \right)$ be any linear transformation. Consider the following:
+    \begin{align*}
+	\norm{Tx}_{Y} &= \norm{T \left( \sum_{i=1}^{n} x_{i} e_{i} \right) }  \\
+	&= \norm{\sum_{i=1}^{n} x_{i} Te_{i}} \\
+	&\le \sqrt{\sum_{i=1}^{n} \norm{Te_{i}}^{2}} \norm{x}_{2}
+    \end{align*}
+    This shows that $T$ is continuous. Hence $T \circ \calI : \left( X, \norm{}_{X} \right) \to  \left( Y, \norm{}_{Y} \right)$ is continuous.
+\end{proof}
