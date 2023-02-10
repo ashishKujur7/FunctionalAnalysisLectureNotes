@@ -32,3 +32,4 @@
 \contentsline {section}{\numberline {10}Lecture 10 --- \textit {insert title here} --- 6th February, 2023}{31}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Continuing from where we left from\ldots }{31}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Continuous Linear Maps on Normed Linear Maps}{32}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Lecture 11 --- \textit {Linear Maps, I guess!} --- 08th February, 2022}{33}{section.11}%

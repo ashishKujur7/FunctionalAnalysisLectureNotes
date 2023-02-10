@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  9 FEB 2023 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  10 FEB 2023 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,7 +688,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./main.aux
 (./question1.aux) (./question2.aux) (./question3.aux) (./question4.aux)
-(./question5.aux))
+(./question5.aux) (./question6.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
@@ -882,17 +882,34 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 
 
 
-] (./main.aux
-(./question1.aux) (./question2.aux) (./question3.aux) (./question4.aux)
-(./question5.aux))
+]
+\openout2 = `question6.aux'.
+
+
+(./question6.tex
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 4--4
+ [] 
+ []
+
+) [7
+
+
+
+] (./main.aux (./question1.aux) (./question2.aux) (./question3.aux)
+(./question4.aux) (./question5.aux) (./question6.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 62A905F853603405D70528FAF5E31BC6;560.
+(rerunfilecheck)             Checksum: FDF9BF423114462255592A0DF93840CD;656.
  ) 
 Here is how much of TeX's memory you used:
- 23623 strings out of 476091
- 448381 string characters out of 5794082
- 1862330 words of memory out of 5000000
- 43528 multiletter control sequences out of 15000+600000
+ 23656 strings out of 476091
+ 449190 string characters out of 5794082
+ 1863330 words of memory out of 5000000
+ 43551 multiletter control sequences out of 15000+600000
  533489 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,10n,118p,858b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -914,10 +931,10 @@ onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm
 </usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfti1200.pfb>
-Output written on main.pdf (6 pages, 211343 bytes).
+Output written on main.pdf (7 pages, 218699 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

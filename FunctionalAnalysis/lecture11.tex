@@ -1,0 +1,63 @@
+\section{Lecture 11 --- \textit{Linear Maps, I guess!} --- 08th February, 2022}
+
+Let $X$ and $Y$ be two normed linear spaces. We define
+\begin{align*}
+    L(X,Y) =\left\{ T: X\to Y \, : \, T \text{ linear and continuous } \right\}
+\end{align*}
+
+This is a vector space with the following operations:
+\begin{align*}
+    (T_{1} + T_{2})(x) = T_{1} (x) + T_{2} (x) \\
+    (\alpha T ) (x) = \alpha T(x)
+\end{align*}
+for all $x,y \in X$.
+
+We can also give it a norm by:
+\begin{equation*}
+    \norm{T}=\sup \left\{ \norm{Tx}_{Y} : \norm{x}_{X} \le 1 \right\}
+\end{equation*}
+
+Note that this indeed defines a norm because if $T$ is continuous then there is some $M > 0$ such that $\norm{Tx} \le M \norm{x}$ for each $x \in V$. So $\norm{T} < \infty$. (check the other properties like triangle inequality!)
+
+\begin{observation}
+    If $T$ is continuous then $\norm{Tx} \le \norm{T}\norm{x}$ for each $x\in V$. This is easy to see if $x=0$. If $x\ne 0$ then 
+    \begin{align*}
+	\norm{T \left( \frac{x}{\norm{x}} \right)} &\le \norm{T} \\
+	\leadsto \norm{Tx}_{Y} &\le \norm{T} \norm{x}
+    \end{align*}
+\end{observation}
+
+\begin{lemma}
+    Let $X,Y$ be two normed linear spaces. If $Y$ is a Banach space then so is $B(X,Y)$ with the operator norm.
+    \label{lem:B(X,Y)-banach}
+\end{lemma}
+\begin{proof}
+    Let $\left\{ T_{n} \right\}$ be a Cauchy sequence in $B(X,Y)$. We claim that for each $x\in X$, we have that $\left\{ T_{n}x \right\}$ is Cauchy in $Y$. This is easy to see by the following:
+    \begin{align*}
+	\norm{T_{n} x -  T_{m} x} \le \norm{T_{n} - T_{m}} \norm{x}
+    \end{align*}
+    Thus, $\left\{ T_{n}x \right\}$ is Cauchy in $Y$. Hence, we define the following function $T: X\to Y$ we define 
+    \begin{align*}
+	\lim_{n\to \infty} T_{n} x =: T (x)
+    \end{align*}
+
+It is easy to see that $T$ is linear. Now, we need to check that $T$ is continuous. Since $\left\{ T_{n} \right\}$ is Cauchy, we have that $\left\{ T_{n} \right\}$ are bounded. So there is some $M>0$ such that $\norm{T_{n}} \le M$. Then we have that 
+\begin{align*}
+    \norm{T_{n} x} \le \norm{T_{n}} \norm{x} &\le M \norm{x} \\
+    \leadsto \norm{Tx} &\le M \norm{x} & \text{taking limits}
+\end{align*}
+Thus, $T$ is continuous. Now, we proceed to show that $T_{n}$ actually converges to the linear operator $T$.
+
+Let $\varepsilon > 0$ be given. Then there is some $K \in \N$ such that for every $n,m\ge K$, we have that
+\begin{align*}
+    \norm{T_{n} - T_{m}} < \varepsilon
+\end{align*}
+
+\end{proof}
+
+\begin{corollary}
+    Dual space of any normed linear space is complete!
+    \label{cor:dual-space-is-complete}
+\end{corollary}
+
+
