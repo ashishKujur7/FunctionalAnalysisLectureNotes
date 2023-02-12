@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  10 FEB 2023 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  12 FEB 2023 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,7 +688,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./main.aux
 (./question1.aux) (./question2.aux) (./question3.aux) (./question4.aux)
-(./question5.aux) (./question6.aux) (./question7.aux))
+(./question5.aux) (./question6.aux) (./question7.aux) (./question8.aux)
+(./question9.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
@@ -917,19 +918,54 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 4--4
 
 
 
-] (./main.aux (./question1.aux) (./question2.aux) (./question3.aux)
-(./question4.aux) (./question5.aux) (./question6.aux) (./question7.aux))
+]
+\openout2 = `question8.aux'.
+
+ (./question8.tex
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9--9
+ [] 
+ []
+
+) [9
+
+
+
+]
+\openout2 = `question9.aux'.
+
+ (./question9.tex
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 4--4
+ [] 
+ []
+
+[10
+
+
+
+]) [11] (./main.aux (./question1.aux) (./question2.aux) (./question3.aux)
+(./question4.aux) (./question5.aux) (./question6.aux) (./question7.aux)
+(./question8.aux) (./question9.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E24C8D8B55B662406513773E3894D2AB;752.
+(rerunfilecheck)             Checksum: 60CD3F0C6DD8EC09262A2A7AFDE1ED55;944.
  ) 
 Here is how much of TeX's memory you used:
- 23687 strings out of 476091
- 449977 string characters out of 5794082
- 1863330 words of memory out of 5000000
- 43573 multiletter control sequences out of 15000+600000
+ 23753 strings out of 476091
+ 451594 string characters out of 5794082
+ 1868330 words of memory out of 5000000
+ 43618 multiletter control sequences out of 15000+600000
  533489 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,10n,118p,858b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,118p,858b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -948,10 +984,10 @@ onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm
 </usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfti1200.pfb>
-Output written on main.pdf (8 pages, 221843 bytes).
+Output written on main.pdf (11 pages, 240834 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

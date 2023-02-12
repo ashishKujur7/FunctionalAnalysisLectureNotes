@@ -1,0 +1,60 @@
+\section{Question 9}
+\horz
+Let $X$ be a normed linear space and $S=\{x\in X: \|x\|=1\}$ be the unit sphere in $X$. Show that $X$ is complete if and only if $S$ is complete. 
+\horz
+\begin{proof}[Solution]
+    $\left( \Rightarrow \right)$ Suppose that $\left( V,d \right)$ is complete. Then $S$ is complete because $S$ is closed in $V$. 
+
+    $\left( \Leftarrow \right)$ Suppose that $\left( S,d \right)$ is complete. Let $\left\{ x_{n} \right\}$ be a Cauchy sequence in $V$.
+
+    We consider two different cases, namely.
+    \begin{enumerate}[label=(\roman*)]
+	\item $x_{n} = 0$ for infinitely many $n\in \N$ and
+	\item $x_{n} = 0$ for at most finitely many $n\in \N$.
+    \end{enumerate}
+
+    We conisder the first case. Suppose that $x_{n} = 0$ for infinitely many $n\in \N$. We, therefore, can select a subsequence $\left\{ x_{n_k} \right\}$ of $\left\{ x_{n} \right\}$ such that $x_{n_{k}} = 0$ for every $k\in \N$. We now show that $\left\{ x_{n} \right\}$ converges to $0$.
+
+    Let $\varepsilon > 0$ be given. Then there is some $N \in \N$ such that
+    \begin{align*}
+	\norm{x_{n} - x_{m}} < \varepsilon \text{ whenever } n,m \ge N\text{.}
+    \end{align*}
+    Select $k\in \N$ such that $n_{k} \ge N$. Now, we have that
+    \begin{align*}
+	\norm{x_{n}} &= \norm{x_{n} - x_{n_k}} \\
+	&< \varepsilon
+    \end{align*}
+    This shows that $\left\{ x_{n} \right\}$ converges to $0$.
+
+    We now consider the second case. Suppose that $x_{n} = 0$ for at most finitely many $n\in \N$. Therefore, there is some $N\in \N$ such that $x_{n} \ne 0$ for $n\ge N$. Convergence of sequence depends only on its tail, so, we assume without loss of generality, that $x_{n} \ne 0$ for every $n\in \N$.
+    
+    Now, consider the sequence $\left\{ y_{n} \right\} $ in $S$ given by
+    \begin{equation*}
+	y_{n} = \frac{x_{n}}{\norm{x_{n}}}
+    \end{equation*}
+    for each $n\in \N$.
+
+    We now claim that $\norm{x_{n}}$ converges to some $\lambda \ge 0$. Since $\left\{ x_{n} \right\}$ is Cauchy, so, is $\left\{ \norm{x_{n}} \right\}$. But Cauchy in $\R$ implies convergence, and, hence $\left\{ \norm{x_{n}} \right\}$ converges to some $\lambda \ge 0$. If $\norm{x_{n}}$ converges to $0$ then we have that $\{ x_{n} \}$ converges to $0$. And we would be done. So, suppose that $\lambda > 0$. So, by the definition of convergence, there must be some $K \in \N$ such that $\norm{x_{n}} > \frac{\lambda}{2}$ for every $n \ge K$.
+
+Consider the following for $n, m \in \N$,
+\begin{align*}
+    \norm{y_{m} - y_{n}} &=  \norm{\frac{x_{m}}{\norm{x_{m}}} - \frac{x_{n}}{\norm{x_{m}}}} \\
+    &= \norm{\frac{\norm{x_{n}}x_{m} - \norm{x_m}x_{n}}{\norm{x_{m}}\norm{x_{n}}}} \\
+    &= \norm{\frac{\norm{x_{n}}x_{m} - x_{m} \norm{x_{m}} + \norm{x_{m}} x_{m} - \norm{x_{m}} }{x_{n}\norm{x_{m}\norm{x_n}}} } \\
+    &= \norm{\frac{x_{m} \left( \norm{x_{n}} - \norm{x_m} \right) + \norm{x_m} \left( x_{m} -x_{n} \right)}{\norm{x_{m}}\norm{x_{n}}}} \\
+    &\le \frac{1}{\norm{x_{n}}\norm{x_{m}}} \left( \norm{x_{m}} \abs{\norm{x_{n}} - \norm{x_{m}}} + \norm{x_{m}} \norm{x_{m} - x_{n}} \right) \\
+    & \le \frac{2}{\norm{x_{n}}} \norm{x_{n} - x_{m}}
+\end{align*}
+
+    Now, let $\varepsilon > 0$ be given. Since $\left\{ x_{n} \right\}$ is Cauchy, we have that there is some $M \in \N$ such that 
+    \begin{align*}
+	\norm{x_{n} - x_{m}} < \frac{\lambda}{4} \varepsilon \text{ whenever } n,m \ge M\text{.}
+    \end{align*}
+
+    For $m,n \ge \max \left\{ M,K \right\}$ we have that
+    \begin{align*}
+	\norm{y_{m} - y_{n}} &\le \frac{2}{\norm{x_{n}}} \norm{x_{n} - x_{m}} \\
+	& < \frac{2}{\lambda/2} \frac{\lambda}{4} \varepsilon = \varepsilon
+    \end{align*}
+    This shows that $\left\{ y_{n} \right\}$ is Cauchy and hence convergent. Since $x_{n} = y_{n} \norm{x_{n}}$ for all $n\in \N$ and product of two convergent sequences is convergent. We have that $\left\{ x_{n} \right\}$ is convergenet.
+\end{proof}
