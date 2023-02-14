@@ -59,9 +59,13 @@ provides a counter example. (This also shows that in F. Riesz's Lemma the consta
     \end{align*}
     This shows that $\norm{T} \le 1$. To show the reverse inequality, let $\varepsilon > 0$. It is not hard to draw a "trapezoid like" function whose area is larger than $1-\varepsilon$. This shows that $\norm{T}=1$.
 
-    Thus, we have that $\abs{T(f)}=\abs{\int_{0}^{1} f} = 1 = \norm{f}_{\infty}$. We now show that the only functions $f$ satisfying the previous equality are the constant functions $1$ and $-1$. But this would contradict the fact that $f\in X$ as $f(0) =1 \text{ or } -1$ which is different from $0$.
+    Thus, we have that $\abs{T(f)}=\abs{\int_{0}^{1} f} = 1 = \norm{f}_{\infty}$. Consider the following:
+    \begin{align*}
+	1=\abs{\int_{0}^{1} f } \le \int_{0}^{1} \abs{f} \le \norm{f}_{\infty} =1\text{.}
+    \end{align*}
+    This shows that $\int_{0}^{1} \abs{f}=1$ and $\norm{f}_{\infty}=1$. Now, we show that $\abs{f} \equiv 1$ on $[0,1]$. If we do so, we will be done because then $f$ cannot be in $X$ as $\abs{f\left( 0 \right)}=1 \ne 0$.
 
-    First suppose that $\int_{0}^{1} f =1$. Consider the function $h=1-f$. Observe that this function is nonnegative as $\norm{f}_{\infty}=1$ and $\int_{0}^{1} h = 0$. Thus, $h\equiv 0 \leadsto f\equiv1$. The other case $\int_{0}^{1}f  = -1$ can be handled similarly.
+    To show that $\abs{f}\equiv 1$ on [0,1], we define a function $g : \left[ 0,1 \right]$ given by $g=\norm{f}_{\infty} - \abs{f} = 1 -f$. Observe that $g$ is nonnegative and $\int g =0$ and hence $g\equiv 0 \leadsto \abs{f}\equiv 1$ on $[0,1]$.
 
     This completes the proof.
 \end{proof}
