@@ -1,4 +1,4 @@
-\section{Question 11}
+\section{Question 11 \texorpdfstring{$\checkmark$}{\text{✓}}}
 \horz
 Let $X$ be a finite dimensional normed linear space and $M$ be a proper closed subspace of $X$. Show that the unit sphere  $S := \{x: \|x\|=1\}$ on $X$ is compact. Use this to show that there exist a unit vector $x$ such that $\text{dist}(x, M) = 1.$ This need not to be true if $X$ is infinite dimensional. Show that the choice
     \begin{align*}
@@ -34,5 +34,34 @@ provides a counter example. (This also shows that in F. Riesz's Lemma the consta
 	X&= \left\{ f \in C[0,1] : f(0)=0 \right\} \\
 	M&= \left\{ f\in X : \int_{0}^{1} f = 0 \right\}
     \end{align*}
-    We need to show that there is no vector $f\in X$ whose $\norm{f}_{\infty}=1$ but $d(f,M)=1$.
+    We need to show that there is no vector $f\in X$ whose $\norm{f}_{\infty}=1$ but $d(f,M)=1$. Assume the contrary and suppose that such an $f$ exists.
+
+    Consider the linear map $F : X \to \R$ given by
+    \begin{align*}
+	T(g)=\int_{0}^{1} g
+    \end{align*}
+    It is evident that $\ker F =M$. Hence, by Question 10, we have that
+    \begin{equation*}
+	\abs{T(g)}=d\left( g, M \right) \norm{T}
+    \end{equation*}
+    holds for every $g\in X$. (In case, $g\in M$ then both sides are zero!)
+    
+    Hence, we have, in particular, that 
+    \begin{equation*}
+	\abs{T(f)}=\norm{T}
+    \end{equation*}
+    
+    Now, we claim that $\norm{T}=1$. To prove this, let $f\in X$ with $\norm{f}_{\infty}\le1$. Then we have that
+    \begin{align*}
+	\abs{T\left( f \right)} &=  \abs{\int_{0}^{1} f} \\
+	&\le \int_{0}^{1} \abs{f} \\
+	& \le \norm{f}_{\infty} \le 1\text{.}
+    \end{align*}
+    This shows that $\norm{T} \le 1$. To show the reverse inequality, let $\varepsilon > 0$. It is not hard to draw a "trapezoid like" function whose area is larger than $1-\varepsilon$. This shows that $\norm{T}=1$.
+
+    Thus, we have that $\abs{T(f)}=\abs{\int_{0}^{1} f} = 1 = \norm{f}_{\infty}$. We now show that the only functions $f$ satisfying the previous equality are the constant functions $1$ and $-1$. But this would contradict the fact that $f\in X$ as $f(0) =1 \text{ or } -1$ which is different from $0$.
+
+    First suppose that $\int_{0}^{1} f =1$. Consider the function $h=1-f$. Observe that this function is nonnegative as $\norm{f}_{\infty}=1$ and $\int_{0}^{1} h = 0$. Thus, $h\equiv 0 \leadsto f\equiv1$. The other case $\int_{0}^{1}f  = -1$ can be handled similarly.
+
+    This completes the proof.
 \end{proof}
