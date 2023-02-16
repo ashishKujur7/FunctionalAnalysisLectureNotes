@@ -1,4 +1,4 @@
-\section{Lecture 10 --- \textit{insert title here} --- 6th February, 2023}
+\section{Lecture 10 --- \textit{Bounded Linear Maps} --- 6th February, 2023}
 \horz
 \subsection{Continuing from where we left from\ldots}
 
@@ -57,7 +57,7 @@ We proceed to prove Proposition \ref{prop:quotient-are-complete}:
     \label{prop:proj-is-cont}
 \end{proposition}
 
-\subsection{Continuous Linear Maps on Normed Linear Maps}
+\subsection{Continuous Linear Maps on Normed Linear Spaces}
 
 \begin{example}
     Consider the linear map $L: c_{00} \to \R$ given by
@@ -72,11 +72,34 @@ We proceed to prove Proposition \ref{prop:quotient-are-complete}:
     \begin{enumerate}
 	\item $T$ is continuous map.
 	\item $T$ is continuous at $x=0$.
-	\item $T\left( B\left( 0,1 \right) \right)$ is bounded.
+	\item $T\left( \overline{B_{X}\left( 0,1 \right)} \right)$ is bounded, that is, where $\overline{B_X(0,1)}$ denotes the closed unit ball in $X$ with centre at the origin. Equivalently speaking $$\sup \{ \|Tx\|_Y : \|x\| \leqslant 1\} < \infty.$$
 	\item $\norm{Tx} \le M \norm{x}$ for every $x\in X$ .
     \end{enumerate}
     \label{prop:equiv-lin-maps}
 \end{proposition}
+\begin{proof}
+    It is easy to see that item 1 implies item 2. 
+
+    We proceed to show that item 2 implies item 3. Suppose tha $T$ is continuous at $x=0$. We need to show that the set $T\left( \overline{B_{X}\left( 0,1 \right)} \right)$ is bounded. Since $T$ is continuous at $0$, there is some $\delta > 0$ such that 
+    \begin{align*}
+	\norm{x}_{X} < \delta \leadsto \norm{Tx}_{Y} < 1
+    \end{align*}
+    Now, let $x\in X$ with $\norm{x}_{X} \le 1$. Then we have that $\norm{\frac{\delta}{2}x}_{X}<\delta$ and hence we have that
+    \begin{align*}
+	\norm{T\left( \frac{\delta}{2} x \right)}_{Y} <1 \leadsto \norm{Tx}_{Y} < \frac{2}{\delta}
+    \end{align*}
+    This shows that $T\left( \overline{B_{X} \left( 0,1 \right) } \right)$ is bounded.
+    Now, we proceed to show that item 3 implies item 4. Suppose that $T\left( \overline{B_{X} \left( 0,1 \right) } \right)$ is bounded. That is, there is some $M > 0$ such that
+    \begin{align*}
+	\norm{x}_{X} \le 1 \leadsto \norm{Tx}_{Y} \le M
+    \end{align*}
+    Now, let $y\in X$ be arbitrary. If $y=0$ then we have that $\norm{Ty} = 0 \le M \norm{y}$. Suppose that $y\ne 0$. Then we have that the vector $y/\norm{y}$ has norm at most $1$ and therefore we have that 
+    \begin{align*}
+	\norm{T\left( y/\norm{y}_{Y} \right)} \le M \leadsto \norm{T \left( y \right)} \le M \norm{y}
+    \end{align*}
+    
+    Now, we proceed to prove that item 4 implies item 1. Because item 4 with linearity implies Lipschitz continuity.
+\end{proof}
 
 \begin{proposition}
     Every linear map on a finite dimensional normed linear space is continuous.
@@ -88,6 +111,27 @@ We proceed to prove Proposition \ref{prop:quotient-are-complete}:
     \begin{align*}
 	\left( x_{1},x_{2}, \ldots \right) \mapsto \left( \lambda_{1} x_{1}, \lambda _{2} x_{2}, \ldots \right)
     \end{align*}
-    Continuity iff $\left\{ \lambda_{i} \right\}$ is bounded.
+    We show that $T$ is continuous iff $\left\{ \lambda_{i} \right\}$ is bounded.
+    $\left( \Rightarrow \right)$ Suppose that $T$ is continuous. By Proposition \ref{prop:equiv-lin-maps}, we have that there is some $M>0$ such that
+    \begin{align*}
+	\norm{Tx} \le M \norm{x}
+    \end{align*}
+    for each $x\in \ell ^{2} \left( \N \right)$. Therefore for any $i\in \N$, we have that
+    \begin{align*}
+	\abs{\lambda_{i}} = \norm{Te_{1}}_{2} \le M \norm{e_{i}}_{2} = M\text{.}
+    \end{align*}
+    This shows that $\left\{ \lambda_{i} \right\}$ is a bounded sequence. Conversely suppose that $\left\{ \lambda_{i} \right\}$ is a bounded sequence. Therefore, there is some $M> 0$ such that $\abs{\lambda_{i}} \le M$ for all $i\in \N$. Now for any $x\in \ell ^{2} \left( \N \right)$, we have that
+    \begin{align*}
+	\norm{T \left( x_{1}, x_{2}, \ldots \right)} &= \norm{\left( \lambda_{1} x_{1}, \lambda_{2} x_{2}, \ldots \right)}_{2} \\
+	&= \left( \sum_{i=1}^{\infty} \abs{\lambda_{i}x_{i}}^{2} \right)^{\frac{1}{2}} \\
+	& \le M \left( \sum_{i=1}^{\infty} \abs{x_{i}}^{2} \right)^{\frac{1}{2}} \\
+	&= M\norm{\left( x_{1}, x_{2}, \ldots \right)}_{2}\text{.}
+    \end{align*}
+\end{example}
 
+\begin{example}[A discontinuous linear functional]
+Consider the normed linear space $X = (c_{00},\|\cdot\|_1).$ Consider the linear map $T: X \to \mathbb C$ defined by 
+$$T \Big((x_j)_{j\in\mathbb N}\Big)= \sum\limits_{k=1}^{\infty} kx_k,\,\,\,\,((x_j)_{j\in\mathbb N}\in c_{00}.$$ 
+Note that $\frac{e_n}{n}\to 0$ as $n \to \infty$ in  $(c_{00},\|\cdot\|_1)$ but $T(\frac{e_n}{n})=1$ for all $n\in\mathbb N.$ Hence $T$ is not continuous. (Here $e_n$ denote the coordinate sequence whose $n$-th term is $1$ and all other terms are $0.$)
+    
 \end{example}

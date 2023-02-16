@@ -29,7 +29,14 @@
 \contentsline {subsection}{\numberline {9.1}Consequence of Baire's Theorem}{28}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Riesz says NO to compact unit balls in infinite dimensions}{28}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Quotient Space}{29}{subsection.9.3}%
-\contentsline {section}{\numberline {10}Lecture 10 --- \textit {insert title here} --- 6th February, 2023}{31}{section.10}%
+\contentsline {section}{\numberline {10}Lecture 10 --- \textit {Bounded Linear Maps} --- 6th February, 2023}{31}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Continuing from where we left from\ldots }{31}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Continuous Linear Maps on Normed Linear Maps}{32}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Lecture 11 --- \textit {Linear Maps, I guess!} --- 08th February, 2022}{33}{section.11}%
+\contentsline {subsection}{\numberline {10.2}Continuous Linear Maps on Normed Linear Spaces}{32}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Lecture 11 --- \textit {More Bounded Linear Maps, I guess!} --- 08th February, 2023}{34}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Bounded Linear Maps form a Banach space!}{34}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Lecture 12 --- Hahn Banach Theorem \& Its Consequences --- 15th February, 2023}{36}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Class Work}{36}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Extensions}{36}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Finite Rank Operator}{36}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Completing the converse}{37}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.4}Hahn Banach Theorem}{37}{subsubsection.12.1.4}%

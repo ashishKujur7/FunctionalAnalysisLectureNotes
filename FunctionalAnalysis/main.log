@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  8 FEB 2023 09:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.2.6)  15 FEB 2023 10:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -681,7 +681,7 @@ Package csquotes Info: ... none found.
  (./main.aux
 (./ref.aux) (./lecture1.aux) (./lecture2.aux) (./lecture3.aux) (./lecture4.aux)
 (./lecture5.aux) (./lecture6.aux) (./lecture7.aux) (./lecture8.aux)
-(./lecture9.aux) (./lecture10.aux) (./lecture11.aux))
+(./lecture9.aux) (./lecture10.aux) (./lecture11.aux) (./lecture12.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 237.
@@ -988,25 +988,48 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
 
 
 
-]) [32]
+] [32]) [33]
 \openout2 = `lecture11.aux'.
 
- (./lecture11.tex [33
+ (./lecture11.tex
+Overfull \hbox (0.62852pt too wide) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/17.28 Lecture 11 --- \T1/cmr/bx/it/17.28 More Bounded Lin-ear Ma
+ps, I guess!
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
+ [] 
+ []
+
+[34
 
 
 
-]) [34] (./main.aux (./ref.aux) (./lecture1.aux) (./lecture2.aux) (./lecture3.a
-ux) (./lecture4.aux) (./lecture5.aux)
-(./lecture6.aux) (./lecture7.aux) (./lecture8.aux) (./lecture9.aux)
-(./lecture10.aux) (./lecture11.aux))
+]) [35]
+\openout2 = `lecture12.aux'.
+
+ (./lecture12.tex
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2--2
+ [] 
+ []
+
+[36
+
+
+
+]) [37] (./main.aux (./ref.aux) (./lecture1.aux) (./lecture2.aux)
+(./lecture3.aux) (./lecture4.aux) (./lecture5.aux) (./lecture6.aux)
+(./lecture7.aux) (./lecture8.aux) (./lecture9.aux) (./lecture10.aux)
+(./lecture11.aux) (./lecture12.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4288AC1CE0565864056FF536AA62CE38;9973.
+(rerunfilecheck)             Checksum: CC981AC0E83F7B560968A94F8F9875D2;11568.
  ) 
 Here is how much of TeX's memory you used:
- 23960 strings out of 476091
- 454652 string characters out of 5794082
- 1868330 words of memory out of 5000000
- 43671 multiletter control sequences out of 15000+600000
+ 24012 strings out of 476091
+ 455758 string characters out of 5794082
+ 1869330 words of memory out of 5000000
+ 43700 multiletter control sequences out of 15000+600000
  533921 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,17n,118p,940b,728s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1036,10 +1059,10 @@ ype1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfti1200.pfb>
-Output written on main.pdf (34 pages, 542862 bytes).
+Output written on main.pdf (37 pages, 558402 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
- 556 compressed objects within 6 object streams
- 171 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,82 @@
+\section{Lecture 12 --- Hahn Banach Theorem \& Its Consequences --- 15th February, 2023}
+\horz
+\subsection{Class Work}
+\subsubsection{Extensions}
+$T: X\to Y$ continuous/bounded, $Y$ is Banach
+$X$ is dense in $\hat{X}$ then there is $\hat{T}: \hat{X}\to Y$ continuous, $\hat{T}$ is unique such that
+\begin{align*}
+    \hat{T}x=Tx \text{ for all } x\in X
+\end{align*}
+and $\norm{T}_{X} = \norm{\hat{T}}_{\hat{X}}$
+
+Note that $\norm{Tx} \le \norm{T}\norm{x}$
+$\leadsto \norm{Tx-Ty} \le \norm{T} \norm{x-y}$ for every $x,y\in X$
+
+If $\left\{ x_{n} \right\}$ is Cauchy as
+\begin{equation*}
+    0 \le \norm{Tx-Ty} \le M\norm{x-y}
+\end{equation*}
+
+Now, if $x_{n} \to \pi$ then $Tx_{n}$ is Cauchy and define
+\begin{equation*}
+    \hat{T} (p) = \lim_{n} Tx_{n}
+\end{equation*}
+Let's try to show welldefinedness. Suppose $x_{n} \to p$ and $y_{n} \to p$. Then $x_{n} - y_{n} \to 0$ then $T\left( x_{n} - y_{n} \right) \to 0$. This shows uniqueness of limits.
+
+We proceed to show linearity. Let $x_{n} \to p$ and $y_{n} \to q$. Then $x_{n} + y_{n} \to p +q$ then 
+\begin{align*}
+    \hat{T} \left( p+q \right) &= \lim T\left( x_{n} + z_{n} \right) \\
+    &= \lim \left( Tx_{n} + Tz_{n} \right) \\
+    &= \hat{T} \left( p \right) + \hat{T} \left( q \right)
+\end{align*}
+
+Show that $\norm{T} = \norm{\hat{T}}$.
+
+\subsubsection{Finite Rank Operator}
+
+Let $H$ be a Hilbert space. Let $x,y \in H$. Define
+\begin{equation*}
+    x \otimes y : H \to H
+\end{equation*}
+\begin{equation*}
+    f \mapsto \ip{f,y}x 
+\end{equation*}
+for every $f\in H$.
+\begin{align*}
+    \norm{T_{x,y} \left( f \right)} &= \norm{\ip{f,y}x} \\
+    &= \abs{\ip{f,y}}\norm{x} \\
+&\le \norm{f} \norm{y} \norm{x}
+\end{align*}
+This is a operator of rank $1$. The converse is also true, any rank $1$ operator looks something like the above.
+
+\subsubsection{Completing the converse}
+
+Let $X$ and $Y$ be NLS. Fix a vector $y \in Y$ and fix $f\in X^{*}$. Define $T_{y,f} : X \to Y$ by $T_{y,f} x = f(x)y$. It is easy to see that $T_{y,f}$ is continuous, in fact, it can be shown, by Hahn Banach, that $\norm{T_{y,f}} =\norm{f}_{X^{*}} \norm{y}$.
+
+Let $\left\{ y_{n} \right\}$ be Cauchy. Consider the sequence of operators $T_{y_{n}, f}$ is again Cauchy, hence, we have that $T_{y_{n},f}$ converges to some $T$. Therefore, $T_{y_{n}, f} (x) \to Tx$ for some $f(x) \ne 0$. Hence $y_{n} \to \frac{Tx}{f\left( x \right)}$.
+
+\subsubsection{Hahn Banach Theorem}
+
+Let $X$ be a NLS. A map $p : X \to \R$ is called sublinear if
+\begin{enumerate}
+    \item $p\left( x+y \right) \le p\left( x \right) + p \left( y \right)$
+    \item $p\left( \alpha x \right) = \alpha p\left( x \right)$
+\end{enumerate}
+If besides the above, the condition
+\begin{equation*}
+    p\left( \alpha x \right) = \abs{\alpha}p(x)
+\end{equation*}
+for all $\alpha\in F$. Then $p$ is called a seminorm.
+
+\begin{theorem}[Hahn Banach Theorem for real vector space]
+    Suppose $X$ is a real NLS, $M$ be a subspace of $X$, $p : X \to \R$ is a sublinear map, let $T: M \to \R$ be a linear functionals satisfying 
+    \begin{equation*}
+	Tx \le p(x)
+    \end{equation*}
+    Then there exists a linear map $\hat{T} : X \to \R$ so that
+\begin{enumerate}
+    \item $\hat{T}_{M} = T$
+    \item $\hat{T} x \le p(x)$
+\end{enumerate}
+\label{thm:HBT-real}
+\end{theorem}
