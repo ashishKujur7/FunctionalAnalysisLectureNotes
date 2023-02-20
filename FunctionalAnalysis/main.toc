@@ -40,3 +40,6 @@
 \contentsline {subsubsection}{\numberline {12.1.2}Finite Rank Operator}{36}{subsubsection.12.1.2}%
 \contentsline {subsubsection}{\numberline {12.1.3}Completing the converse}{37}{subsubsection.12.1.3}%
 \contentsline {subsubsection}{\numberline {12.1.4}Hahn Banach Theorem}{37}{subsubsection.12.1.4}%
+\contentsline {section}{\numberline {13}Lecture 13 --- \emph {insert catchy title here\ldots } --- 20th February, 2023}{38}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Completing the proof of (Real) Hahn Banach Theorem \ldots }{38}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Application of Hahn-Banach Theorem}{39}{subsection.13.2}%

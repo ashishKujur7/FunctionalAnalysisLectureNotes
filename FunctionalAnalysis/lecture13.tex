@@ -1,0 +1,71 @@
+\section{Lecture 13 --- \emph{insert catchy title here\ldots} --- 20th February, 2023}
+\horz
+\subsection{Completing the proof of (Real) Hahn Banach Theorem \ldots}
+\begin{theorem}[Hahn Banach theorem]
+Let $X$ be a vector space over $\R$, $p$ be a sublinear functional on $X$,  $M$ be a subspace of $X$ and $M$ is proper. Let $T: M \to \R$ be a linear functional such that $Tm \le p (m)$ then there exists a extension $\hat{T} : X \to \R$ so that $\hat{T}$ is linear, $\hat{T} (m) = T(m)$ for all $m\in M$ and $\hat{T}(x) \le p (x) $ for all $x\in X$.
+\end{theorem}
+
+Collect the set $\left\{ \left( W, T_{W} \right) \right\}$ where $M \subset W$, $T_{W} \mid _{M} = T$ and $T_{W}(x) \le p(x)$ for all $x\in W$. We give an ordering on the set $\left( W, T_{W_{1}} \right) \le \left( W_{2} , T_{W_{2}} \right)$ iff $W_{1} \subset W_{2}$ and $T_{W_{2}} \mid W_{1} = T_{W_{1}}$. It is easy to check that $\le$ is a partial order on this set.
+
+Let $\calC = \left\{ \left( W_{i}, T_{W_{i}} \right) \right\}_{i\in I}$ is a chain. Let $W= \bigcup_{i \in I} W_{i}$. So $W$ is a subspace and let $T$ be the union of the maps $T_{i}$, $i\in I$. It is also easily seen that $T_{W} \left( w \right) \le p \left( w \right)$ for each $w \in W$. Note that $\left( W, T \right)$ is an upperbound for this chain $\calC$. 
+
+By Zorn's Lemma, let $\left( V, T \right)$ be a maximal element. By maximality, we have that $V=X$.
+
+
+\begin{definition}
+    Let $X$ be a NLS. A seminorm $p: X \to \F$ is map satisfying
+    \begin{enumerate}
+	\item $p\left( x \right) \ge 0$
+	\item $p\left( x+y \right) \le p\left( x \right) + p \left( y \right)$
+	\item $p\left( tx \right) = \abs{t} p\left( x \right)$ for every $t\in F$.
+    \end{enumerate}
+    \label{def:semi-norm}
+\end{definition}
+
+\begin{example}[Seminorm]
+    Let $X$ be a NLS. Consider the map $p\left( x \right) = c \norm{x}$ for every $x \in X$ where $c > 0$.
+\end{example}
+
+\begin{theorem}
+    Suppose $X$ is a NLS over $\R$ or $\C$. Let $M \subset X$ be a proper subspace, $p$ is a seminorm on $X$. Let $T: M \to \F$ linear, $\abs{Tx} \le p\left( x \right)$ for every $m\in M$. Then there exists $\hat{T} : X \to \F$ linear, $\abs{\hat{T}x} \le p\left( x \right)$ for each $x\in X$ and $\hat{T} m = Tm$ for every $m \in M$.
+    \label{thm:actual-hahn-banach}
+\end{theorem}
+
+
+\begin{corollary}
+    Every linear functional on a subspace of a NLS can extended so that the norm is preserved. 
+    \label{cor:continuous extension}
+\end{corollary}
+\begin{proof}
+    Take $p\left( x \right) = \norm{T} \norm{x}$. (fill the gap!)
+\end{proof}
+
+\begin{lemma}
+    Let $X$ be a vector space over $\C$, $f: X\to \R$ be a $\R$-linear map. 
+    \begin{enumerate}
+	\item Define $\hat{f} : X \to \C$ defined by $\hat{f} \left( x \right) = f\left( x \right) - i f\left( ix \right)$ for every $x\in X$. Then $\hat{f}$ is $\C$-linear and $\Re \hat{f} = f$. 
+\footnote{Let $g : X \to \C$ be a linear functional. Let $g=u+iv$. Then $u=\Re g$ and $\Im g$. Then $u$ and $v$ are $\R$-linear.}
+
+	\item  Let $g: X \to \C$ be $\C$ -linear, then $g(x)=f\left( x \right) + i v\left( x \right)$. Then $f$ is $\R$-linear and $g=\hat{f}$, that is, $g\left( x \right) = f\left( x \right) - i f\left( ix \right)$.
+
+	\item Suppose $g : X\to C$ is $\C$-linear, $g(x) = f\left( x \right)- if\left( ix \right)$ where $f=\Re g$. If $p$ is a seminorm on $X$, $\abs{f\left( x \right)} \le p(x) \Longleftrightarrow \abs{g(x)} \le p\left( x \right) $ for every $x\in X$. This tells us that $\norm{f}=\norm{g}$.
+
+    \end{enumerate}
+    \label{lemma:new}
+\end{lemma}
+\begin{proof}
+    Linearity of $\hat{f}$ is clear. Note that
+    \begin{align*}
+	\hat{f} \left( x_{1} + x_{2} \right) &= f\left( x_{1} + x_{2} \right) - i f\left( ix_{1} + ix_{2} \right) \\
+	&=  f\left( x_{1} \right) f\left( x_{2} \right) - i f\left( ix_{1} \right) - i f \left( ix_{2} \right)
+    \end{align*}
+
+    \begin{align*}
+	\hat{f} \left( (a+ib)x \right) = 
+    \end{align*}
+\end{proof}
+
+\horz
+
+
+\subsection{Application of Hahn-Banach Theorem}
