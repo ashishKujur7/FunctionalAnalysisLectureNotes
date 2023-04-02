@@ -1,0 +1,48 @@
+\section{Lecture 15 --- \textit{Dual Spaces and Some Properties} --- 13th March, 2023}
+
+\horz
+
+\subsection{Dual Spaces}
+
+\begin{definition}[The Dual Space]
+    Let $X$ be a normed linear space $X$, the space $X^{**}$ is defined by $\left( X^* \right) ^{*}$. 
+    \label{def:the-dual-map}
+\end{definition}
+
+\begin{definition}[The Evaluation Map]
+    Let $X$ be a normed linear space. For each $x\in X$, we define a linear functional $F_{x} : X^* \to \F$ given by $F_{x} (f)= f(x)$ for each $f \in X^{*}$.
+    \label{def:the-dual-element}
+\end{definition}
+
+\begin{lemma}
+    For any $x\in X$, the evaluation map is linear and $\norm{F_x}_{X^{**}} = \norm{x}_{X}$.
+    \label{lem:cont-norm-eval-map}
+\end{lemma}
+\begin{proof}
+    Let $x\in X$. The linearity of $F_x$ is clear. Observe that $\abs{F_x (f)} = \abs{f(x)} \le \norm{f} \norm{x}$. Hence, we have that $\norm{F_x} \le \norm{x}$ by taking supremum over all $f\in X^*$ with $\norm{f} \le 1$. From \ref{cor:the-dual-norm}, we have that 
+    \begin{align*}
+	\norm{x} &= \sup_{\norm{f}\le 1} \abs{f(x)} \\
+	&= \sup_{\norm{f} \le 1} \abs{F_{x} (f)} \\
+	&= \norm{F_{x}}
+    \end{align*}
+    This completes the proof.
+\end{proof}
+
+\begin{definition}
+    Let $X$ be any normed linear space. We define the mapping $J_X : X \to X^{**}$ by $J_{X} x = F_{x}$ for any $x\in X$.
+    \label{def:the-isometry}
+\end{definition}
+
+\begin{lemma}
+    The mapping $J_{X} : X \to X^{**}$ is a linear isometry. Hence
+    \begin{enumerate}[label=\alph*]
+	\item 
+    \end{enumerate}
+    \label{def:isometry-dual}
+\end{lemma}
+
+\begin{definition}
+    Let $M$ be a subspace of $X$. Then we define $M^{\perp}$ to be the set of all linear functionals on $X$ such that $f(m)=0$ for all $m\in M$.
+    \label{def:perp-in-banach-space}
+\end{definition}
+

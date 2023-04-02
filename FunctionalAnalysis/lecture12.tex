@@ -75,8 +75,51 @@ for all $\alpha\in F$. Then $p$ is called a seminorm.
     \end{equation*}
     Then there exists a linear map $\hat{T} : X \to \R$ so that
 \begin{enumerate}
-    \item $\hat{T}_{M} = T$
-    \item $\hat{T} x \le p(x)$
+    \item $\hat{T}_{M} = T$ and
+    \item $\hat{T} x \le p(x)$.
 \end{enumerate}
 \label{thm:HBT-real}
 \end{theorem}
+
+But before we prove this Hahn Banach theorem, we prove a preliminary lemma which tells us that we can take a "baby walk" first:
+
+\begin{lemma}
+Let $X$ be a real normed linear space, $W$ be a proper linear subspace of $X$, $p : X \to \R$ be a sublinear functional on $X$ and $f_{W}$ be a linear functional on $W$. Suppose that $f_{W} (w) \le p \left( w \right)$ for all $w\in W$. Let $z_{1} \not \in W$. Define $W_{1} = \operatorname{Sp} \left\{ w_{1} \oplus W \right\} = \left\{ \alpha z_{1} + w  : \alpha \in \R, w\in W\right\}$. Then there exists $\xi_{1} \in \R$ and $f_{W_{1}}: W_{1} \to \R$ such that 
+\begin{equation*}
+    f_{W_{1}} \left( \alpha z_{1} + w \right) = \alpha \xi_{1} + f_{W} \left( w \right) \le p \left( \alpha z_{1} + w \right), \alpha \in \R, w\in W.
+\end{equation*}
+Clearly, $f_{W_{1}}$ is linear on $W_{1}$, $f_{W_{1}}(w)=f_{W}(w)$ for $w\in W$, so $f_{W_{1}}$ is an extension of $f_{W}$.
+    \label{lem:hbt-baby}
+\end{lemma}
+\begin{proof}
+    Fix $u,w \in V$. Then observe that
+    \begin{align*}
+	f_{W} (u) + f_{W} (v) &= f_{W} \left( u+v \right) & \text{linear}\\
+	&\le p(u+w) &\text{by definition}\\
+	&\le p\left( u-z_{1} \right) + p\left( v+z_{1} \right). & \text{seminorm}
+    \end{align*}
+    This leads to 
+    \begin{equation*}
+	f_{W}(u)-p\left( u-z_{1} \right) \le p\left( v+z_{1} \right) - f_{W} (v).
+    \end{equation*}
+    Since $v$ was "arbitrarily" fixed, we have that
+    \begin{equation}
+	-\infty < f_{W} \left( u \right) - p\left( u-z_{1} \right) \le \inf_{v\in W} \left\{ p\left( v+z_{1} \right) - f_{W} \left( v \right) \right\}.
+	\label{eqn:hbt-real-case}
+    \end{equation}
+    Define $\xi_{1} = \inf_{v\in W} \left\{ p\left( v+z_{1} \right) - f_{W} \left( v \right) \right\}$.
+    We have that the following relation holds for arbitrary $v \in W$ and $\alpha \ne 0$:
+    \begin{equation*}
+	\xi_{1} + f_{W} \left( \frac{v}{\alpha} \right) \le p\left( \frac{v}{\alpha} + z_{1} \right)
+    \end{equation*}
+    Now if $\alpha > 0$ and $v\in W$ then we have that 
+    \begin{equation*}
+	\alpha \xi_{1} + f_{W}(v) \le p(v+ \alpha z_{1}).
+    \end{equation*}
+    If $\alpha < 0$ and $u\in W$, let $\beta = -\alpha$, then we have from \ref{eqn:hbt-real-case} that 
+    \begin{align*}
+	-\xi_{1} + f_{W} \left( \frac{u}{\beta}\right) \le p \left( \frac{u}{\beta}-z_{1} \right) &\leadsto  -\beta \xi_{1} + f_{W} \left( u \right) \le p \left( u - \beta z_{1} \right) \\
+	& \leadsto \alpha \xi_{1} + f_{W}\left( u \right) \le p \left( u+\alpha z_{1} \right).
+    \end{align*}
+    This completes the proof.
+\end{proof}

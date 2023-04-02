@@ -40,6 +40,10 @@
 \contentsline {subsubsection}{\numberline {12.1.2}Finite Rank Operator}{36}{subsubsection.12.1.2}%
 \contentsline {subsubsection}{\numberline {12.1.3}Completing the converse}{37}{subsubsection.12.1.3}%
 \contentsline {subsubsection}{\numberline {12.1.4}Hahn Banach Theorem}{37}{subsubsection.12.1.4}%
-\contentsline {section}{\numberline {13}Lecture 13 --- \emph {insert catchy title here\ldots } --- 20th February, 2023}{38}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Completing the proof of (Real) Hahn Banach Theorem \ldots }{38}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Application of Hahn-Banach Theorem}{39}{subsection.13.2}%
+\contentsline {section}{\numberline {13}Lecture 13 --- \emph {Completing Hahn Banach\ldots } --- 20th February, 2023}{39}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Completing the proof of Hahn Banach Theorem \ref {thm:HBT-real} \ldots }{39}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Hahn Banach - The Complex Version}{39}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Some applications of Hahn-Banach Theorem}{40}{subsection.13.3}%
+\contentsline {section}{\numberline {14}Lecture 14 --- More of Hahn Banach's Strength\ldots --- 22nd February, 2023}{41}{section.14}%
+\contentsline {section}{\numberline {15}Lecture 15 --- \textit {Dual Spaces and Some Properties} --- 13th March, 2023}{42}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Dual Spaces}{42}{subsection.15.1}%

@@ -1,32 +1,19 @@
-\section{Lecture 13 --- \emph{insert catchy title here\ldots} --- 20th February, 2023}
+\section{Lecture 13 --- \emph{Completing Hahn Banach\ldots} --- 20th February, 2023}
 \horz
-\subsection{Completing the proof of (Real) Hahn Banach Theorem \ldots}
-\begin{theorem}[Hahn Banach theorem]
-Let $X$ be a vector space over $\R$, $p$ be a sublinear functional on $X$,  $M$ be a subspace of $X$ and $M$ is proper. Let $T: M \to \R$ be a linear functional such that $Tm \le p (m)$ then there exists a extension $\hat{T} : X \to \R$ so that $\hat{T}$ is linear, $\hat{T} (m) = T(m)$ for all $m\in M$ and $\hat{T}(x) \le p (x) $ for all $x\in X$.
-\end{theorem}
-
+\subsection{Completing the proof of Hahn Banach Theorem \ref{thm:HBT-real} \ldots}
+\begin{proof}[Proof of \ref{thm:HBT-real}]
 Collect the set $\left\{ \left( W, T_{W} \right) \right\}$ where $M \subset W$, $T_{W} \mid _{M} = T$ and $T_{W}(x) \le p(x)$ for all $x\in W$. We give an ordering on the set $\left( W, T_{W_{1}} \right) \le \left( W_{2} , T_{W_{2}} \right)$ iff $W_{1} \subset W_{2}$ and $T_{W_{2}} \mid W_{1} = T_{W_{1}}$. It is easy to check that $\le$ is a partial order on this set.
 
 Let $\calC = \left\{ \left( W_{i}, T_{W_{i}} \right) \right\}_{i\in I}$ is a chain. Let $W= \bigcup_{i \in I} W_{i}$. So $W$ is a subspace and let $T$ be the union of the maps $T_{i}$, $i\in I$. It is also easily seen that $T_{W} \left( w \right) \le p \left( w \right)$ for each $w \in W$. Note that $\left( W, T \right)$ is an upperbound for this chain $\calC$. 
 
-By Zorn's Lemma, let $\left( V, T \right)$ be a maximal element. By maximality, we have that $V=X$.
-
-
-\begin{definition}
-    Let $X$ be a NLS. A seminorm $p: X \to \F$ is map satisfying
-    \begin{enumerate}
-	\item $p\left( x \right) \ge 0$
-	\item $p\left( x+y \right) \le p\left( x \right) + p \left( y \right)$
-	\item $p\left( tx \right) = \abs{t} p\left( x \right)$ for every $t\in F$.
-    \end{enumerate}
-    \label{def:semi-norm}
-\end{definition}
+By Zorn's Lemma, let $\left( V, T \right)$ be a maximal element. By maximality and Lemma \ref{lem:hbt-baby}, we have that $V=X$.
+\end{proof}
 
 \begin{example}[Seminorm]
     Let $X$ be a NLS. Consider the map $p\left( x \right) = c \norm{x}$ for every $x \in X$ where $c > 0$.
 \end{example}
-
-\begin{theorem}
+\subsection{Hahn Banach - The Complex Version}
+\begin{theorem}[Hahn Banach-Complex Version]
     Suppose $X$ is a NLS over $\R$ or $\C$. Let $M \subset X$ be a proper subspace, $p$ is a seminorm on $X$. Let $T: M \to \F$ linear, $\abs{Tx} \le p\left( x \right)$ for every $m\in M$. Then there exists $\hat{T} : X \to \F$ linear, $\abs{\hat{T}x} \le p\left( x \right)$ for each $x\in X$ and $\hat{T} m = Tm$ for every $m \in M$.
     \label{thm:actual-hahn-banach}
 \end{theorem}
@@ -34,10 +21,10 @@ By Zorn's Lemma, let $\left( V, T \right)$ be a maximal element. By maximality, 
 
 \begin{corollary}
     Every linear functional on a subspace of a NLS can extended so that the norm is preserved. 
-    \label{cor:continuous extension}
+    \label{cor:continuous-extension}
 \end{corollary}
 \begin{proof}
-    Take $p\left( x \right) = \norm{T} \norm{x}$. (fill the gap!)
+    Take $p\left( x \right) = \norm{T} \norm{x}$. 
 \end{proof}
 
 \begin{lemma}
@@ -65,7 +52,29 @@ By Zorn's Lemma, let $\left( V, T \right)$ be a maximal element. By maximality, 
     \end{align*}
 \end{proof}
 
-\horz
+\subsection{Some applications of Hahn-Banach Theorem}
 
 
-\subsection{Application of Hahn-Banach Theorem}
+\begin{corollary}
+Let $X$ be a normed linear space and $\{x_1,x_2,\ldots,x_n\}$ is a linearly independent subset of $X$ and $c_1,c_2,\ldots,c_n$ are arbitrary scalars. Then there exist a linear functional $f\in X^*$ such that $f(x_j)=c_j$ for $1\leqslant j \leqslant n.$
+\label{cor:lin-independent-HB}
+\end{corollary}
+\begin{proof}
+    Let $M=\operatorname{span} \left\{ x_{1}, \ldots , x_{n} \right\}$. We define a linear functional $f : M \to \F$ by $x_{j} \stackrel{f}{\mapsto} c_{j}$ for each $j\in \left\{ 1,2,\ldots , n \right\}$ and then extending it linearly. By Corollary \ref{cor:continuous-extension}, we have that there is a linear functional $F : X \to \F$ such that $F\mid_{M} = f$ and the result immediately follows.
+\end{proof}
+
+\begin{corollary}
+    Let $X$ be a normed linear space and $x\in X.$ Then
+\begin{align*}
+\|x\|= \sup \{ |f(x)| : \|f\|_{_{X^*}} \leqslant 1\}.
+\end{align*}
+Moreover this supremum is attained.
+    \label{cor:the-dual-norm}
+\end{corollary}
+\begin{proof}
+    First, observe that if $f\in X^{*}$ with $\norm{f}_{X^{*}} \le 1$ then we have
+    \begin{equation*}
+	\abs{f\left( x \right)} \le \norm{f}_{X^{*}} \norm{x}\le \norm{x}
+    \end{equation*}
+    and hence, we have that $\sup \left\{ \abs{f\left( x \right)} : \norm{f}_{X^{*}} \le 1 \right\} \le \norm{x}$. Now, we show that this supremum is actually achieved. Now, consider $M =\operatorname{span} \left\{ x \right\}$ and the functional $\varphi : M \to \F$ given by $\varphi (\lambda x) = \lambda \norm{x}$ for every $\lambda \in \F$. Observe that $\norm{\varphi}_{M^{*}}=1$. By Hahn's Banach theorem, there is a linear functional $f: X \to \F$ which extends $\varphi$ and $\norm{f}_{X^{*}}=\norm{\varphi}_{M^{*}} = 1$. Thus, the supremum is attained.
+\end{proof}
