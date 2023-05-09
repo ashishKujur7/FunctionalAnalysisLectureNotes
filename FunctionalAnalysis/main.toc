@@ -47,3 +47,6 @@
 \contentsline {section}{\numberline {14}Lecture 14 --- More of Hahn Banach's Strength\ldots --- 22nd February, 2023}{41}{section.14}%
 \contentsline {section}{\numberline {15}Lecture 15 --- \textit {Dual Spaces and Some Properties} --- 13th March, 2023}{42}{section.15}%
 \contentsline {subsection}{\numberline {15.1}Dual Spaces}{42}{subsection.15.1}%
+\contentsline {section}{\numberline {16}10th April, 2023}{43}{section.16}%
+\contentsline {section}{\numberline {17}12th April 2023}{44}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Some Examples of Operators on Hilbert Spaces}{44}{subsection.17.1}%

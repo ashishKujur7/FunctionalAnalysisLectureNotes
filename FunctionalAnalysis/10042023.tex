@@ -1,0 +1,40 @@
+\section{10th April, 2023}
+\horz
+Let $T: X\to Y$ be continuous linear map. The adjoint of a linear map $T$ is the map $T^{t} : Y^{*} \to X^{*}$ given by $T^{t} (f) = f \circ T$ for every $f \in Y^{*}$.
+
+We will not be discussing adjoint in the case of Banach spaces. We will mostly be interested in the case of Hilbert Space. Let $T: H \to K$ be continuous linear map where $H, K$ is a Hilbert spaces. We define the map $T^{*} : K \to H$. Fix $k \in K$. Define the map $f_{k} : H \to \F$ given by $h \stackrel{f_{k}}{\mapsto} \ip{Th, k}$. This map is is continuous. We have that
+\begin{equation*}
+    \abs{\ip{Th, k}} \le \norm{Th} \norm{k} \le \norm{T} \norm{h} \norm{k}.
+\end{equation*}
+This shows that the aforementioned linear functional is continuous. By the Riesz Representation theorem, we have that 
+\begin{equation*}
+    f_{k} \left( h \right) = \ip{Th, k}_{K} = \ip{h, T*k}
+\end{equation*}
+for some unique vector $T^{*} k \in H$.
+Thus, all in all, we have that 
+\begin{equation*}
+    \ip{Th, k}_{K} = \ip{h, T^{*}k}_{H}.
+\end{equation*}
+
+One can show that the map $T^{*}$ is linear map. Let $k_1 , k_{2} \in K$. As earlier, we have that
+\begin{align*}
+    \ip{Th, k_{1} + k_{2}} &= \ip{h, T^{*} \left( k_{1} + k_{2} \right) } \\
+    \ip{Th, k_{1}} &=  \ip{h, T^{*}k_{1}} \\
+    \ip{Th, k_{2}} &=  \ip{h, T^{*}k_{2}}
+\end{align*}
+for some $T^{*}\left( k_{1} + k_{2} \right) , T^{*}k_{1} , T^{*} k_{2} \in H$. 
+
+Thus, we have that
+\begin{equation*}
+    \ip{h, T^{*} k_{1} + T^{*} k_{2} - T^{*} \left( k_{1} + k_{2} \right)} = 0
+\end{equation*}
+for all $h \in H$.
+Hence, we have that $T^{*} \left( k_{1} + k_{2} \right) = T^{*} k_{1} + T^{*} k_{2}$. Homogeneity is similar.
+
+Continuity can be shown and it follows that $\norm{T^{*}} \le \norm{T}$. (\textsc{Fill details!})
+
+Let $T: H \to K$. Then $(T^{*})^{*} : H \to K$. Also, we have that $T=T^{**}$. (\textsc{Fill details!})
+
+It follows that $\norm{T} = \norm{T^{**}} \le \norm{T^{*}}$.
+
+Insert an example of Multiplication operator.

@@ -1,0 +1,58 @@
+\section{12th April 2023}
+
+\horz 
+
+\subsection{Some Examples of Operators on Hilbert Spaces}
+
+\begin{enumerate}
+    \item (\textsc{Linear Operators on Finite Dimensional Hilbert Spaces}) Any $T: \C ^n \to \C ^n$ linear operator is a operator on the Hilbert space on the Hilbert space $\C ^{n}$. Also, note that with a standard orthonormal basis, $T$ has an associated matrix $\left[ T \right]_{\left\{ e_{1}, \ldots , e_{n} \right\}} = \left[ a_{ij} \right]_{i,j=1}^{n}$.
+
+    \item (\textsc{Diagonal Operator}) Let $\lambda \in \ell ^{\infty} $. Then we can define a linear operator given by $D_{\lambda}: \ell ^{2} \to \ell ^{2}$ given by $D_{\lambda} e_{n} = \lambda_{n}e_{n}$ for each $n\in \N$. It can seen easily that this defines a bounded linear operator $\ell ^{2}$. One can associated a matrix with this linear operator with standard orthonormal basis of $\ell ^{2}$. It is easily seen that the matrix associated with this basis is:
+	\begin{equation*}
+	    \begin{bmatrix}
+		\lambda_{1} & 0 & 0 \ldots \\
+		0 & \lambda_{2} & 0 \ldots \\ 
+		0 & 0 & \lambda_{3} \ldots \\
+		\vdots & \vdots & \ddots 
+	    \end{bmatrix}
+	\end{equation*}
+	This obviously is an infinite matrix. In fact, it can be shown that the operator $D_{\lambda}$ defined as above is a bounded $\ell ^{2}$ operator iff $\lambda \in \ell ^{\infty}$. Furthermore, we have that $\norm{D_{\lambda}}_{\left( \ell ^{2} \right)^{*}} = \norm{\lambda}_{\infty}$. \footnote{See Proposition 2.1.1., Operator Theory by Example --- Garcia, Mashreghi, Ross.}
+
+    \item (\textsc{Right Shift Operator}) Let $S_{\rightarrow} : \ell ^{2} \to \ell ^{2}$ be given by the following action on the standard orthonormal basis:
+	\begin{equation*}
+	    S_{\rightarrow} e_{n} = e_{n+1} \text{ for each } n\in \N.
+	\end{equation*}
+	It can be seen alternatively that 
+	\begin{equation*}
+	    S_{\rightarrow}x =S_{\rightarrow} \left( x_{1} , x_{2}, x_{3} , \ldots \right) = \left( 0, x_{1}, x_{2}, \ldots \right)
+	\end{equation*}
+	for each $x\in \ell ^{2}$. It can be seen easily that $\norm{S} = 1$.
+    \item   (\textsc{Left Shift Operator}) Let $S_{\leftarrow}: \ell ^{2} \to \ell ^{2}$ be given by the following action on the standard orthonormal basis:
+	\begin{equation*}
+	    S_{\leftarrow} e_{n} = 
+	    \begin{cases}
+		0 & n=1 \\
+		e_{n-1} & n\ge 2
+	    \end{cases}
+	\end{equation*}
+	It can be seen alternatively that 
+	\begin{equation*}
+	    S_{\leftarrow}x =S_{\leftarrow} \left( x_{1} , x_{2}, x_{3} , \ldots \right) = \left(x_{2}, x_{3}, x_{4} \ldots \right)
+	\end{equation*}
+	for each $x\in \ell ^{2}$. It can be seen easily that $\norm{S} = 1$.
+    \item (\textsc{Weighted Right Shift Operator}) Fix $\omega \in \ell ^{\infty}$. Consider the operator given by $\ell ^{2} \to \ell ^{2}$ given by 
+	\begin{equation*}
+	    S_{\rightarrow} ^{\omega} \left( x \right) = \left( 0, \omega_{1} x_{1}, \omega_{2} x_{2} , \ldots \right)
+    \end{equation*}
+    for each $x\in \ell ^{2}$.
+    It is easily seen that $S_{\rightarrow} ^{\omega} = S_{\rightarrow} \circ D_{\lambda} =D_{\lambda} \circ S_{\rightarrow}$. It can be shown that the weight right shift operator has the same norm as that of the weight $\omega \in \ell ^{\infty}$.
+\item (\textsc{Multiplication Operator}) Let $\left( X, \calA, \mu \right)$ be a measure space and $h\in \calL ^{\infty} \left( \mu \right)$. We can then define the operator $M_{h} : L^{2} \left( \mu \right) \to L^{2} \left( \mu \right)$ which is given by
+    \begin{equation*}
+	M_{h} \left( f \right) = fh
+    \end{equation*}
+    for each $f\in L^{2} \left( \mu \right)$. It is easily seen that $\norm{M_{h}} \le \norm{h}_{\infty}$.
+\item (\textsc{Integral Operator}) Let $\left( X, \calA, \mu \right)$ and $\left( Y, \calB, \nu \right)$ be $\sigma$ finite measure spaces and $K \in \calL ^{2} \left( \mu \times \nu \right)$. Define a linear map $\calI _{K} : L^{2} \left( \nu \right) \to L^{2} \left( \mu \right)$ given by 
+    \begin{equation*}
+	\left( \calI f \right) \left( x \right) = \int_{Y} K\left( x,y \right) f\left( y \right) d\nu \left( y \right).
+    \end{equation*}
+\end{enumerate}
